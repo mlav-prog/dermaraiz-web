@@ -1,8 +1,19 @@
 import "./Hero.css";
+import heroImg from "../../assets/hero/hero-clinic.jpg";
 
 function Hero() {
     return (
         <section className="hero" id="inicio">
+
+            <div className="hero-media">
+                <img 
+                    src={heroImg} 
+                    alt="Clínica Dermaraíz"
+                    className="hero-image"
+                />
+                <div className="hero-fade"></div>
+            </div>
+
             <div className="hero-container">
                 <div className="hero-content">
                     <p className="hero-subtitle">Capilar & Estética</p>
@@ -23,10 +34,7 @@ function Hero() {
                         <a href="#tratamientos" className="btn-secondary">
                             Ver Tratamientos
                         </a>
-                    </div>
-                    <div className="hero-image-placeholder">
-                        Imagen principal de la clínica
-                    </div>    
+                    </div>  
                 </div>
             </div>
             
