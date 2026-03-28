@@ -1,3 +1,4 @@
+import "./Hero.css";
 
 function Hero() {
     return (
@@ -23,11 +24,12 @@ function Hero() {
                             Ver Tratamientos
                         </a>
                     </div>
+                    <div className="hero-image-placeholder">
+                        Imagen principal de la clínica
+                    </div>    
                 </div>
             </div>
-            <div className="hero-image-placeholder">
-                Imagen principal de la clínica
-            </div>
+            
         </section>
     )
 }

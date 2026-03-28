@@ -1,7 +1,10 @@
+import "./Footer.css";
+
 function Footer () {
     return (
         <footer className="footer">
             <div className="footer-container">
+
                 <div className="footer-brand">
                     <h2>Dermaraiz</h2>
                     <p>
@@ -25,7 +28,7 @@ function Footer () {
                     <h3>Contacto</h3>
                     <p>
                         <a 
-                            href=". Tratamientos personalizados para el cuidado del cabello y del cuero cabelludo."
+                            href="https://wa.me/5491173565160?text=Hola,%20quiero%20consultar%20por%20un%20tratamiento%20capilar."
                             target="_blank"
                             rel="noopener noreferrer"
                         >

@@ -1,5 +1,6 @@
-import beforeImage from "../assets/results/hair-transplant-before-01.jpeg"
-import afterImage from "../assets/results/hair-transplant-after-01.jpeg"
+import "./Results.css";
+import beforeImage from "../../assets/results/hair-transplant-before-01.jpeg";
+import afterImage from "../../assets/results/hair-transplant-after-01.jpeg";
 
 function Results () {
     return (
@@ -8,7 +9,7 @@ function Results () {
                 <h2>Resultados Reales</h2>
 
                 <p>
-                    Conocé algunos casos de pacientes que realizaron tratamientos capilares en nuestra clínica.
+                    Conocé algunos casos reales de pacientes que realizaron tratamientos capilares en nuestra clínica.
                 </p>
             </div>
 

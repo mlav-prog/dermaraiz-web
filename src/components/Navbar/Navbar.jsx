@@ -1,4 +1,5 @@
-import logo from "../assets/logo/dermaraiz-icon.svg";
+import "./Navbar.css";
+import logo from "../../assets/logo/dermaraiz-icon.svg";
 
 function Navbar() {
   return (

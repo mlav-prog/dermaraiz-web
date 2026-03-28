@@ -1,3 +1,4 @@
+import "./Treatments.css";
 function Treatments() {
     return (
         <section className="treatments" id="tratamientos">
@@ -17,7 +18,8 @@ function Treatments() {
                 <article className="treatment-card">
                     <div className="treatment-icon">💉</div>
                     <h3>PRP Capilar</h3>
-                    <p>Tratamiento con plasma rico en plaquetas. Tratamiento regenerativo que ayuda a estimular el crecimiento del
+                    <p>
+                        Tratamiento con plasma rico en plaquetas que ayuda a estimular el crecimiento del
                         cabello y fortalecer el folículo capilar.
                     </p>
                     <a href="#contacto" className="card-link">Consultar tratamiento</a>

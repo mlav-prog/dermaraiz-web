@@ -1,3 +1,5 @@
+import "./Testimonials.css";
+
 function Testimonials() {
 
     const testimonials = [
@@ -15,7 +17,7 @@ function Testimonials() {
         }
     ]
     return (
-        <section className="testimonials">
+        <section className="testimonials" id="testimonios">
 
             <div className="testimonials-header">
                 <h2>Opiniones de nuestros pacientes</h2>

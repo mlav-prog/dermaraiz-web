@@ -1,5 +1,6 @@
-import antiCaidaImg from "../assets/products/shampoo-anticaida.webp"
-import antiCaspaImg from "../assets/products/shampoo-anticaspa.webp"
+import "./Products.css";
+import antiCaidaImg from "../../assets/products/shampoo-anticaida.webp";
+import antiCaspaImg from "../../assets/products/shampoo-anticaspa.webp";
 
 function Products () {
 

@@ -1,0 +1,128 @@
+.navbar {
+    width: 100%;
+    background: var(--white);
+    border-bottom: 1px solid rgba(0, 0, 0 , 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+.navbar-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-logo {
+    width: auto;
+    height: 46px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover .navbar-logo {
+    transform: scale(1.05);
+}
+
+.brand-text {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.5px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.nav-links a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text);
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.nav-button {
+    white-space: nowrap;
+}
+
+/* Tablet */
+
+@media (max-width: 992px) {
+    .navbar-container {
+        padding: 14px 20px;
+        gap: 22px;
+    }
+
+    .navbar-logo {
+        height: 42px;
+    }
+
+    .brand-text {
+        font-size: 1.15rem;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .nav-links a {
+        font-size: 0.95rem;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding: 14px 16px;
+    }
+
+    .navbar-brand {
+        justify-content: center;
+    }
+
+    .navbar-logo {
+        height: 40px;
+    }
+
+    .brand-text {
+        font-size: 1.1rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .nav-links a {
+        font-size: 0.95rem;
+    }
+
+    .nav-button {
+        width: 100%;
+        max-width: 260px;
+        text-align: center;
+    }
+}

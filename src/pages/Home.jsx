@@ -1,11 +1,11 @@
-import Navbar from "../components/Navbar"
-import Hero from "../components/Hero"
-import Treatments from "../components/Treatments"
-import Results from "../components/Results"
-import Testimonials from "../components/Testimonials"
-import Products from "../components/Products"
-import Contact from "../components/Contact"
-import Footer from "../components/Footer"
+import Navbar from "../components/Navbar/Navbar.jsx"
+import Hero from "../components/Hero/Hero.jsx"
+import Treatments from "../components/Treatments/Treatments.jsx"
+import Results from "../components/Results/Results.jsx"
+import Testimonials from "../components/Testimonials/Testimonials.jsx"
+import Products from "../components/Products/Products.jsx"
+import Contact from "../components/Contact/Contact.jsx"
+import Footer from "../components/Footer/Footer.jsx"
 
 function Home() {
   return (
