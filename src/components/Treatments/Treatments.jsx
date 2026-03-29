@@ -1,4 +1,5 @@
 import "./Treatments.css";
+
 function Treatments() {
     return (
         <section className="treatments" id="tratamientos">
