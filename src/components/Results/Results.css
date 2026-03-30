@@ -1,5 +1,5 @@
 .results {
-    max-width: var(--max-width);
+    width: 100%;
     margin: 0 auto;
     padding: 90px 20px;
     background: transparent;
@@ -59,15 +59,13 @@
     margin-top: 10px;
 }
 
-@media (max-width: 1200px) {
-    .results-card-image {
-        height: 400px;
-    }
-}
-
 
 /* TABLET */
 @media (max-width: 992px) {
+    .results {
+        padding: 70px 16px;
+    }
+
     .results-grid {
         grid-template-columns: 1fr;
     }
@@ -76,7 +74,7 @@
 /* MOBILE */
 @media (max-width: 768px) {
     .results {
-        padding: 70px 16px;
+        padding: 60px 16px;
     }
 
     .results-header {
@@ -84,21 +82,13 @@
     }
 
     .results-card {
-        padding: 16px;
+        padding: 6px;
         border-radius: 20px;
     }
 
-    .results-card-image{
-        height: 260px;
-        border-radius: 16px;
-    }
-    
-    
+    .results-card-image
     .results-image {
         border-radius: 16px;
     }
 
-    .results-case-tag {
-        font-size: 0.9rem;
-    }
 }

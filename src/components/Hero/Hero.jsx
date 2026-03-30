@@ -10,6 +10,7 @@ function Hero() {
                     src={heroImg} 
                     alt="Clínica Dermaraíz"
                     className="hero-image"
+                    fetchpriority="high"
                 />
                 <div className="hero-fade"></div>
             </div>

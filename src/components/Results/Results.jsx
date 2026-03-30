@@ -6,12 +6,10 @@ import implantResult from "../../assets/results/result-implant-01.jpg";
 function Results() {
     const cases = [
         {
-            title: "Tratamiento Capilar",
             image: treatmentResult,
             alt: "Caso real de tratamiento capilar"
         },
         {
-            title: "Implante Capilar",
             image: implantResult,
             alt: "Caso real de implante capilar"
         }
@@ -36,14 +34,7 @@ function Results() {
                                 alt={item.alt} 
                                 className="results-image" 
                             />
-
-                            <div className="results-card-content">
-                                <span className="results-case-tag">
-                                    {item.title}
-                                </span>
-                            </div>
                         </div>
-
                     </div>
                 ))}
             </div>
