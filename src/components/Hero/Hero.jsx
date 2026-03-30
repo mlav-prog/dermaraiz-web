@@ -1,5 +1,5 @@
 import "./Hero.css";
-import heroImg from "../../assets/hero/hero-clinic.jpg";
+import heroImg from "../../assets/hero/hero-clinic.webp";
 
 function Hero() {
     return (
