@@ -1,0 +1,21 @@
+{
+  "name": "Dermaraíz",
+  "short_name": "Dermaraiz",
+  "icons": [
+    {
+      "src": "/dermaraiz-web/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/dermaraiz-web/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "theme_color": "#4f6f52",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
