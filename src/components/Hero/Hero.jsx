@@ -12,35 +12,55 @@ function Hero() {
                     className="hero-image"
                     fetchpriority="high"
                 />
+                <div className="hero-overlay"></div>
                 <div className="hero-fade"></div>
             </div>
 
             <div className="hero-container">
                 <div className="hero-content">
-                    <p className="hero-subtitle">Capilar & Estética</p>
+
+                    <span className="hero-kicker">Capilar & Estética</span>
+
+                    <div>
+                        <span className="hero-trust-pill">Atención personalizada</span>
+                        <span className="hero-trust-pill">Diagnóstico profesional</span>
+                    </div>
 
                     <h1 className="hero-title">
-                        Recuperá tu cabello con un tratamiento personalizado
+                        Recuperá tu cabello con resultados naturales y un tratamiento pensado para vos.
                     </h1>
 
                     <p className="hero-text">
-                        Diagnóstico profesional y tratamientos capilares adaptados a cada 
-                        paciente, con un enfoque integral en salud, estética y bienestar.
+                        Evaluación médica personalizada y tratamientos capilares avanzados
+                        para frenar la caída, fortalecer el cabello y acompañarte en cada
+                        etapa del proceso.
                     </p>
 
                     <div className="hero-buttons">
                         <a href="#contacto" className="btn-primary">
-                            Solicitar Consulta
+                            Reservar Consulta
                         </a>
-                        <a href="#tratamientos" className="btn-secondary">
-                            Ver Tratamientos
+                        <a href="#resultados" className="btn-secondary">
+                            Ver resultados reales
                         </a>
+                    </div>
+
+                    <div className="hero-highlights">
+                        <div className="hero-highlight">
+                            <strong>Enfoque integral</strong>
+                            <span>Salud, estética y seguimiento profesional.</span>
+                        </div>
+
+                        <div className="hero-highlight">
+                            <strong>Tratamientos adaptados</strong>
+                            <span>Cada caso se evalúa de forma personalizada.</span>
+                        </div>
                     </div>  
                 </div>
             </div>
             
         </section>
-    )
+    );
 }
 
 export default Hero;

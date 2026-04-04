@@ -13,8 +13,9 @@ function Navbar() {
 
         <ul className="nav-links">
           <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#tratamientos">Tratamientos</a></li>
           <li><a href="#resultados">Resultados</a></li>
+          <li><a href="#tratamientos">Tratamientos</a></li>
+          <li><a href="#professionales"></a>Profesionales</li>
           <li><a href="#productos">Productos</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>

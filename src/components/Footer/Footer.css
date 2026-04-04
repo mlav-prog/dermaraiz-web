@@ -1,13 +1,14 @@
 .footer {
     background: var(--primary);
     color: var(--white);
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .footer-container {
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 60px 20px 30px;
+    padding: 60px 20px 40px;
+
     display: grid;
     grid-template-columns: 1.3fr 1fr 1fr;
     gap: 40px;
@@ -20,12 +21,10 @@
     margin-bottom: 16px;
 }
 
-.footer-brand p,
-.footer-links a,
-.footer-contact a {
-    color: rgba(255, 255, 255, 0.88);
-    text-decoration: none;
+.footer-brand p {
+    color: rgba(255, 255, 255, 0.85);
     line-height: 1.7;
+    max-width: 320px;
 }
 
 .footer-links ul {
@@ -34,9 +33,21 @@
     gap: 10px;
 }
 
+.footer-links a,
+.footer-contact a {
+    color: rgba(255, 255, 255, 0.88);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: opacity 0.3s ease;
+}
+
 .footer-links a:hover,
 .footer-contact a:hover {
-    opacity: 0.8;
+    opacity: 0.75;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
 }
 
 .footer-bottom {
@@ -46,7 +57,7 @@
 }
 
 .footer-bottom p {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.7);
     font-size: 0.9rem;
 }
 
@@ -73,5 +84,9 @@
 
     .footer-brand {
         grid-column: span 1;
+    }
+
+    .footer-brand p {
+        max-width: 100%;
     }
 }

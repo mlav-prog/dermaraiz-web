@@ -6,10 +6,10 @@ function Footer () {
             <div className="footer-container">
 
                 <div className="footer-brand">
-                    <h2>Dermaraiz</h2>
+                    <h2>Dermaraíz</h2>
                     <p>
-                        Capilar & Estética. Tratamientos personalizados para el cuidado del
-                        cabello y del cuero cabelludo.
+                        Capilar & Estética. Tratamientos personalizados enfocados en la
+                        salud del cuero cabelludo y resultados naturales.
                     </p>  
                 </div>
 
@@ -17,8 +17,9 @@ function Footer () {
                     <h3>Navegación</h3>
                     <ul>
                         <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#tratamientos">Tratamientos</a></li>
                         <li><a href="#resultados">Resultados</a></li>
+                        <li><a href="#tratamientos">Tratamientos</a></li>
+                        <li><a href="#professionales">Profesionales</a></li>
                         <li><a href="#productos">Productos</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
@@ -56,11 +57,12 @@ function Footer () {
                         </a>
                     </p>
                 </div>
-
-                <div className="footer-bottom">
-                    <p>&copy; 2026 Dermaraiz. Todos los derechos reservados.</p>
-                </div>
             </div>
+
+            <div className="footer-bottom">
+                <p>© 2026 Dermaraíz. Todos los derechos reservados.</p>
+            </div>
+            
         </footer>
     )
 }

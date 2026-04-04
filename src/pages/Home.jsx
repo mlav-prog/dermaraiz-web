@@ -13,9 +13,9 @@ function Home() {
     <>
       <Navbar />
       <Hero />
-      <Team />
-      <Treatments />
       <Results />
+      <Treatments />
+      <Team />
       <Testimonials />
       <Products />
       <Contact />
