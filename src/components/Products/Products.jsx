@@ -27,8 +27,8 @@ function Products () {
     return (
         <section className="products" id="productos">
 
-            <div className="products-header">
-                <p>Productos</p>
+            <div className="section-header">
+                <p className="section-tag">Productos</p>
 
                 <h2>
                     Completá tu tratamiento capilar

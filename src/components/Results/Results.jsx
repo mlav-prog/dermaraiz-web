@@ -23,7 +23,7 @@ function Results() {
 
     return (
         <section className="results" id="resultados">
-            <div className="results-header">
+            <div className="section-header">
                 <p className="section-tag">Resultados</p>
                 <h2>Casos reales que reflejan nuestro enfoque</h2>
                 <p className="section-description">

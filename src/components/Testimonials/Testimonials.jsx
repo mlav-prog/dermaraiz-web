@@ -22,7 +22,7 @@ function Testimonials() {
     return (
         <section className="testimonials" id="testimonios">
             <div className="testimonials-container">
-                <div className="testimonials-header">
+                <div className="section-header">
                     
                     <p className="section-tag">Opiniones</p>
 

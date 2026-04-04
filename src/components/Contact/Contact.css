@@ -11,6 +11,12 @@
     text-align: center;
 }
 
+.section-tag {
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
 .contact-header p {
     max-width: 680px;
     margin: 0 auto;

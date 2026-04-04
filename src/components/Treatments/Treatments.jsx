@@ -28,7 +28,7 @@ function Treatments() {
 
     return (
         <section className="treatments" id="tratamientos">
-            <div className="treatments-header">
+            <div className="section-header">
                 <p className="section-tag">Tratamientos</p>
                 
                 <h2>Soluciones capilares adaptadas a cada paciente</h2>
