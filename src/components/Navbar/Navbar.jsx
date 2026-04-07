@@ -9,22 +9,24 @@ function Navbar() {
 
   return (
     <nav className="navbar">
+      {menuOpen && <div className="menu-overlay" onClick={() => setMenuOpen(false)}></div>}
       <div className="navbar-container">
+        <div className="navbar-left">
+          <a href="#inicio" className="navbar-brand">
+              <img src={logo} alt="Logo DermaRaíz" className="navbar-logo" />
+              <span className="brand-text">Dermaraíz</span>
+          </a>
 
-        <a href="#inicio" className="navbar-brand">
-            <img src={logo} alt="Logo DermaRaíz" className="navbar-logo" />
-            <span className="brand-text">Dermaraíz</span>
-        </a>
-
-        <button
-          className="hamburger"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Abrir menú"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+          <button
+            className={`hamburger ${menuOpen ? "active" : ""}`}
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Abrir menú"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
 
         <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
           <li><a href="#inicio" onClick={() => setMenuOpen(false)}>Inicio</a></li>
@@ -40,6 +42,7 @@ function Navbar() {
         </a>
       </div>
     </nav>
+    
   )
 }
 
