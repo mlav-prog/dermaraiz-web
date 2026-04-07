@@ -1,7 +1,12 @@
 import "./Navbar.css";
 import logo from "../../assets/logo/dermaraiz-icon.svg";
+import { useState} from "react";
 
 function Navbar() {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -11,13 +16,23 @@ function Navbar() {
             <span className="brand-text">Dermaraíz</span>
         </a>
 
-        <ul className="nav-links">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#resultados">Resultados</a></li>
-          <li><a href="#tratamientos">Tratamientos</a></li>
-          <li><a href="#professionales">Profesionales</a></li>
-          <li><a href="#productos">Productos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+        <button
+          className="hamburger"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Abrir menú"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
+          <li><a href="#inicio" onClick={() => setMenuOpen(false)}>Inicio</a></li>
+          <li><a href="#resultados" onClick={() => setMenuOpen(false)}>Resultados</a></li>
+          <li><a href="#tratamientos" onClick={() => setMenuOpen(false)}>Tratamientos</a></li>
+          <li><a href="#professionales" onClick={() => setMenuOpen(false)}>Profesionales</a></li>
+          <li><a href="#productos" onClick={() => setMenuOpen(false)}>Productos</a></li>
+          <li><a href="#contacto" onClick={() => setMenuOpen(false)}>Contacto</a></li>
         </ul>
 
         <a href="#contacto" className="btn-primary nav-button">
