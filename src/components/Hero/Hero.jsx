@@ -1,17 +1,11 @@
 import "./Hero.css";
-import heroImg from "../../assets/hero/hero-clinic.webp";
+import heroImg from "../../assets/hero/image-hero.jpg";
 
 function Hero() {
     return (
         <section className="hero" id="inicio">
 
             <div className="hero-media">
-                <img 
-                    src={heroImg} 
-                    alt="Clínica Dermaraíz"
-                    className="hero-image"
-                    fetchpriority="high"
-                />
                 <div className="hero-overlay"></div>
                 <div className="hero-fade"></div>
             </div>
@@ -22,18 +16,16 @@ function Hero() {
                     <span className="hero-kicker">Capilar & Estética</span>
 
                     <div>
-                        <span className="hero-trust-pill">Atención personalizada</span>
-                        <span className="hero-trust-pill">Diagnóstico profesional</span>
+                        <span className="hero-trust-pill">Médico especialista</span>
+                        <span className="hero-trust-pill">Resultados naturales</span>
                     </div>
 
                     <h1 className="hero-title">
-                        Recuperá tu cabello con resultados naturales y un tratamiento pensado para vos.
+                        Implante capilar con resultados naturales en manos profesionales.
                     </h1>
 
                     <p className="hero-text">
-                        Evaluación médica personalizada y tratamientos capilares avanzados
-                        para frenar la caída, fortalecer el cabello y acompañarte en cada
-                        etapa del proceso.
+                        Tratamientos avanzados, diagnóstico personalizado y seguimiento médico en cada etapa.
                     </p>
 
                     <div className="hero-buttons">
