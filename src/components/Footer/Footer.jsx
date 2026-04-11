@@ -31,7 +31,7 @@ function Footer() {
                         <li><a href="#inicio">Inicio</a></li>
                         <li><a href="#resultados">Resultados</a></li>
                         <li><a href="#tratamientos">Tratamientos</a></li>
-                        <li><a href="#professionales">Profesionales</a></li>
+                        <li><a href="#profesionales">Profesionales</a></li>
                         <li><a href="#productos">Productos</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>

@@ -121,6 +121,8 @@
     color: var(--primary);
     max-width: 11ch;
     text-wrap: balance;
+    font-weight: 700;
+    letter-spacing: -0.5px;
 }
 
 .hero-text {
@@ -136,6 +138,10 @@
     gap: 12px;
     flex-wrap: wrap;
     margin-bottom: 18px;
+}
+
+.hero-buttons .btn-primary {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .hero-highlight {
@@ -246,7 +252,7 @@
     .hero-title {
         font-size: 1.95rem;
         line-height: 1.08;
-        max-width: 10ch;
+        max-width: 100%;
         margin-left: auto;
         margin-right: auto;
     }

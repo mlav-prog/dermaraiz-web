@@ -32,7 +32,7 @@ function Navbar() {
           <li><a href="#inicio" onClick={() => setMenuOpen(false)}>Inicio</a></li>
           <li><a href="#resultados" onClick={() => setMenuOpen(false)}>Resultados</a></li>
           <li><a href="#tratamientos" onClick={() => setMenuOpen(false)}>Tratamientos</a></li>
-          <li><a href="#professionales" onClick={() => setMenuOpen(false)}>Profesionales</a></li>
+          <li><a href="#profesionales" onClick={() => setMenuOpen(false)}>Profesionales</a></li>
           <li><a href="#productos" onClick={() => setMenuOpen(false)}>Productos</a></li>
           <li><a href="#contacto" onClick={() => setMenuOpen(false)}>Contacto</a></li>
         </ul>

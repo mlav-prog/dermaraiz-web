@@ -68,7 +68,7 @@ function Products () {
                             rel="noopener noreferrer"
                             className="product-link"
                         >
-                            Ver en MercadoLibre
+                            Comprar en MercadoLibre
                         </a>
                     </article>
                 ))}

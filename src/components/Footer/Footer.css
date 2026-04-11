@@ -8,6 +8,8 @@
     );
     color: var(--white);
     overflow: hidden;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
 }
 
 .footer-top-line {

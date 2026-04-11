@@ -19,7 +19,7 @@ function Team() {
     ];
 
     return (
-        <section className="professionals" id="professionales">
+        <section className="professionals" id="profesionales">
             <div className="section-header">
                 <p className="section-tag">Profesionales</p>
                 <h2>Equipo médico especializado</h2>
