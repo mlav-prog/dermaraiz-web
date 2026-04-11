@@ -3,7 +3,6 @@ import "./Hero.css";
 function Hero() {
     return (
         <section className="hero" id="inicio">
-
             <div className="hero-media">
                 <div className="hero-overlay"></div>
                 <div className="hero-fade"></div>
@@ -11,10 +10,9 @@ function Hero() {
 
             <div className="hero-container">
                 <div className="hero-content">
-
                     <span className="hero-kicker">Capilar & Estética</span>
 
-                    <div>
+                    <div className="hero-trust">
                         <span className="hero-trust-pill">Médico especialista</span>
                         <span className="hero-trust-pill">Resultados naturales</span>
                     </div>
@@ -46,10 +44,9 @@ function Hero() {
                             <strong>Tratamientos adaptados</strong>
                             <span>Cada caso se evalúa de forma personalizada.</span>
                         </div>
-                    </div>  
+                    </div>
                 </div>
             </div>
-            
         </section>
     );
 }
