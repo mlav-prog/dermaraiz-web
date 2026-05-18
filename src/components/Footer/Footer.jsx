@@ -8,7 +8,7 @@ function Footer() {
 
             <div className="footer-container">
                 <div className="footer-brand">
-                    <a href="#inicio" className="footer-brand-link">
+                    <a href="/#inicio" className="footer-brand-link">
                         <img
                             src={logo}
                             alt="Logo Dermaraíz"
@@ -28,12 +28,12 @@ function Footer() {
                     <h3>Navegación</h3>
 
                     <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#resultados">Resultados</a></li>
-                        <li><a href="#tratamientos">Tratamientos</a></li>
-                        <li><a href="#profesionales">Profesionales</a></li>
-                        <li><a href="#productos">Productos</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="/#inicio">Inicio</a></li>
+                        <li><a href="/#resultados">Resultados</a></li>
+                        <li><a href="/#tratamientos">Tratamientos</a></li>
+                        <li><a href="/#profesionales">Profesionales</a></li>
+                        <li><a href="/#productos">Productos</a></li>
+                        <li><a href="/#contacto">Contacto</a></li>
                     </ul>
                 </div>
 
