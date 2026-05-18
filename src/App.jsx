@@ -8,12 +8,14 @@ import MesoterapiaCapilar from "./pages/MesoterapiaCapilar/MesoterapiaCapilar";
 import DiagnosticoCapilar from "./pages/DiagnosticoCapilar/DiagnosticoCapilar";
 
 import ScrollToHash from "./components/ScrollToHash/ScrollToHash";
+import GithubPagesRedirect from "./components/GithubPagesRedirect/GithubPagesRedirect";
 import RouteSeo from "./components/SEO/RouteSeo";
 import TreatmentAssistant from "./components/TreatmentAssistant/TreatmentAssistant";
 
 function App() {
   return (
     <BrowserRouter>
+      <GithubPagesRedirect />
       <RouteSeo />
       <ScrollToHash />
 
