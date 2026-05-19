@@ -1,14 +1,14 @@
 .treatments {
     width: min(100% - 32px, 1440px);
     margin-inline: auto;
-    padding: 90px 0;
+    padding: 92px 0;
     background: var(--white);
 }
 
 .treatments-header {
     text-align: center;
     max-width: 760px;
-    margin: 0 auto 52px;
+    margin: 0 auto 48px;
 }
 
 .section-tag {
@@ -30,82 +30,122 @@
 
 .treatments-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 26px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    align-items: stretch;
 }
 
 .treatment-card {
-    background: var(--white);
-    border-radius: 24px;
-    padding: 28px 24px 24px;
-    box-shadow: var(--shadow);
-    border: 1px solid rgba(0, 0, 0, 0.04);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    min-height: 360px;
     height: 100%;
+    background: var(--white);
+    border: 1px solid rgba(47, 93, 91, 0.14);
+    border-radius: 8px;
+    box-shadow: 0 18px 44px rgba(23, 46, 44, 0.08);
+    display: grid;
+    grid-template-columns: minmax(220px, 42%) minmax(0, 1fr);
+    grid-template-rows: 1fr auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .treatment-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.09);
+    transform: translateY(-5px);
+    border-color: rgba(47, 93, 91, 0.28);
+    box-shadow: 0 24px 54px rgba(23, 46, 44, 0.12);
 }
 
-.treatment-icon {
-    width: 58px;
-    height: 58px;
-    border-radius: 16px;
-    background: rgba(47, 93, 91, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.55rem;
-    margin-bottom: 18px;
-    flex-shrink: 0;
+.treatment-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 360px;
+    overflow: hidden;
+    background: rgba(47, 93, 91, 0.08);
+    grid-row: 1 / span 2;
 }
 
+.treatment-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.45s ease;
+}
+
+.treatment-image-prp img {
+    object-fit: contain;
+    object-position: center center;
+    background: #ece5d4;
+}
+
+.treatment-image-mesoterapia img {
+    object-position: 82% 68%;
+    transform: scale(1.44);
+}
+
+.treatment-image-diagnostico img {
+    object-position: 50% 45%;
+}
+
+.treatment-image-implante img {
+    object-position: 50% 34%;
+}
+
+.treatment-card:hover .treatment-image img {
+    transform: scale(1.04);
+}
+
+.treatment-card:hover .treatment-image-mesoterapia img {
+    transform: scale(1.48);
+}
 .treatment-content {
     display: flex;
-    flex-direction: column;
     flex: 1;
+    flex-direction: column;
+    padding: 28px 26px 0;
 }
 
 .treatment-card h3 {
     margin-bottom: 12px;
     color: var(--primary);
-    font-size: 1.25rem;
-    line-height: 1.25;
+    font-size: clamp(1.28rem, 1.55vw, 1.6rem);
+    line-height: 1.2;
 }
 
 .treatment-card p {
-    font-size: 0.97rem;
-    line-height: 1.7;
     margin-bottom: 18px;
     color: var(--text);
+    font-size: 1rem;
+    line-height: 1.7;
 }
 
 .treatment-benefit {
-    display: inline-block;
-    margin-bottom: 20px;
+    display: inline-flex;
+    width: fit-content;
+    max-width: 100%;
+    margin-top: auto;
     color: var(--accent);
     font-size: 0.9rem;
-    font-weight: 600;
-    line-height: 1.5;
+    font-weight: 700;
+    line-height: 1.45;
 }
 
 .card-link {
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    width: fit-content;
+    margin: 20px 26px 26px;
     color: var(--accent);
-    font-weight: 600;
     font-size: 0.95rem;
+    font-weight: 700;
     transition: opacity 0.3s ease, transform 0.3s ease;
-    margin-top: auto;
 }
 
 .card-link::after {
-    content: "→";
+    content: "->";
     transition: transform 0.3s ease;
 }
 
@@ -118,49 +158,57 @@
 }
 
 .featured {
-    border: 1px solid rgba(47, 93, 91, 0.2);
-    transform: scale(1.03);
+    border-color: rgba(47, 93, 91, 0.28);
 }
 
-/* Tablet */
-
-@media (max-width:992px) {
+@media (max-width: 992px) {
     .treatments {
         width: min(100% - 24px, 1440px);
-        padding: 70px 0;
+        padding: 74px 0;
     }
 
     .treatments-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    .treatment-card {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        min-height: 0;
+        height: 100%;
+    }
+
+    .treatment-image {
+        grid-row: auto;
+        height: 260px;
+        min-height: 260px;
+    }
+
+    .treatment-content {
+        padding: 24px 22px 0;
+    }
+
+    .card-link {
+        margin: 20px 22px 24px;
     }
 }
-
-/* Mobile */
 
 @media (max-width: 768px) {
     .treatments {
         width: min(100% - 20px, 1440px);
-        padding: 60px 0;
+        padding: 62px 0;
     }
 
     .treatments-header {
-        margin-bottom: 36px;
+        margin-bottom: 34px;
     }
 
     .treatments-grid {
         grid-template-columns: 1fr;
     }
 
-    .treatment-card {
-        padding: 24px 20px 22px;
-        border-radius: 20px;
-    }
-
-    .treatments-card h3 {
-        font-size: 1.15rem;
-    }
-
-    .treatments-card p {
-        font-size: 0.95rem;
+    .treatment-image {
+        height: clamp(260px, 76vw, 340px);
+        min-height: clamp(260px, 76vw, 340px);
     }
 }
