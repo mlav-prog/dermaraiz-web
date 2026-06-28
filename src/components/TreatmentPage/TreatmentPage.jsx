@@ -11,6 +11,9 @@ function TreatmentPage({
   heroImageAlt,
   benefits,
   steps,
+  galleryTitle = "Imágenes del tratamiento",
+  galleryText,
+  galleryImages,
   facts,
   detailImage,
   detailImageAlt,
@@ -22,8 +25,8 @@ function TreatmentPage({
   ctaText,
 }) {
   function handleGoBack() {
-  window.location.href = "/#tratamientos";
-}
+    window.location.href = "/#tratamientos";
+  }
 
   return (
     <>
@@ -83,6 +86,36 @@ function TreatmentPage({
           )}
         </section>
 
+        <section className="treatment-page-section treatment-process-section">
+          <div className="treatment-page-header">
+            <span className="section-tag">Proceso</span>
+            <h2>¿Cómo se realiza?</h2>
+          </div>
+
+          <div className="treatment-steps-grid">
+            {steps.map((step, index) => (
+              <article className="treatment-step-card" key={index}>
+                {step.image && (
+                  <figure className="treatment-step-media">
+                    <img
+                      src={step.image}
+                      alt={step.imageAlt || step.title}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </figure>
+                )}
+
+                <div className="treatment-step-content">
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  <h3>{step.title}</h3>
+                  <p>{step.text}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
         <section className="treatment-page-section">
           <div className="treatment-page-header">
             <span className="section-tag">Beneficios</span>
@@ -99,25 +132,41 @@ function TreatmentPage({
           </div>
         </section>
 
-        <section className="treatment-page-section">
-          <div className="treatment-page-header">
-            <span className="section-tag">Proceso</span>
-            <h2>¿Cómo se realiza?</h2>
-          </div>
+        {galleryImages && galleryImages.length > 0 && (
+          <section className="treatment-gallery-section">
+            <div className="treatment-gallery-header">
+              <span className="section-tag">Galería</span>
+              <h2>{galleryTitle}</h2>
+              {galleryText && <p>{galleryText}</p>}
+            </div>
 
-          <div className="treatment-steps-grid">
-            {steps.map((step, index) => (
-              <article className="treatment-step-card" key={index}>
-                <span>{String(index + 1).padStart(2, "0")}</span>
-                <h3>{step.title}</h3>
-                <p>{step.text}</p>
-              </article>
-            ))}
-          </div>
-        </section>
+            <div className="treatment-gallery-grid">
+              {galleryImages.map((image, index) => (
+                <figure className="treatment-gallery-item" key={image.src || index}>
+                  <img
+                    src={image.src}
+                    alt={image.alt || title}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  {(image.label || image.caption) && (
+                    <figcaption>
+                      {image.label && <span>{image.label}</span>}
+                      {image.caption && <p>{image.caption}</p>}
+                    </figcaption>
+                  )}
+                </figure>
+              ))}
+            </div>
+          </section>
+        )}
 
         {facts && facts.length > 0 && (
-          <section className="treatment-detail-section">
+          <section
+            className={`treatment-detail-section${
+              detailImage ? "" : " treatment-detail-section--text-only"
+            }`}
+          >
             <div className="treatment-detail-content">
               <span className="section-tag">Qué esperar</span>
               <h2>Información clave antes de comenzar</h2>

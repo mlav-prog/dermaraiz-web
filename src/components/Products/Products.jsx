@@ -12,6 +12,7 @@ function Products () {
             benefit: "Ideal para acompañar rutinas de fortalecimiento capilar.",
             link: "https://www.mercadolibre.com.ar/shampoo-anticaida-dermaraiz-250ml-liquido-hipoalergenico/up/MLAU3755171517?pdp_filters=item_id:MLA1660262753#is_advertising=true&searchVariation=MLAU3755171517&backend_model=search-backend&position=1&search_layout=grid&type=pad&tracking_id=9b2a16bd-0e48-4c9a-92fd-dfffa4584737&ad_domain=VQCATCORE_LST&ad_position=1&ad_click_id=MTMyMWFkNjUtNGQ5OC00YTRjLTk3MWItYjJjMTJmZTYxMDU0",
             image: antiCaidaImg,
+            imageAlt: "Shampoo anticaida Dermaraiz para cuidado del cuero cabelludo",
             badge: "Recomendado"
         },
         {
@@ -21,6 +22,7 @@ function Products () {
             benefit: "Pensado para mejorar el equilibrio del cuero cabelludo.",
             link: "https://www.mercadolibre.com.ar/shampoo-anticaspa-dermaraiz-250ml-liquido-magistral/up/MLAU3755227019?pdp_filters=item_id:MLA2814234880#is_advertising=true&searchVariation=MLAU3755227019&backend_model=search-backend&position=2&search_layout=grid&type=pad&tracking_id=5e8ebf77-a447-4a98-ab4c-026b480ae0bf&ad_domain=VQCATCORE_LST&ad_position=2&ad_click_id=YjE0NjhiMWMtMDU4YS00ODNhLWE1YmUtZjY2ODQyYzEzOTg5",
             image: antiCaspaImg,
+            imageAlt: "Shampoo anticaspa Dermaraiz para higiene y equilibrio del cuero cabelludo",
             badge: "Cuidado diario"
         },
     ]
@@ -50,7 +52,7 @@ function Products () {
                         <div className="product-image-placeholder">
                             <img 
                                 src={product.image} 
-                                alt={product.name} 
+                                alt={product.imageAlt} 
                                 className="product-image"
                                 loading="lazy" 
                             />

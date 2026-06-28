@@ -1,84 +1,87 @@
 import TreatmentPage from "../../components/TreatmentPage/TreatmentPage";
+import consultationImage from "../../assets/treatments/consulta-capilar-dermaraiz.jpeg";
 import prpImage from "../../assets/treatments/prp-capilar-plasma-rico-en-plaquetas-dermaraiz.jpg";
+import prpApplicationImage from "../../assets/treatments/prp-capilar-aplicacion-dermaraiz.jpeg";
 
 function PrpCapilar() {
   return (
     <TreatmentPage
       tag="PRP Capilar"
-      
       title="Estimulación capilar mediante Plasma Rico en Plaquetas"
-
-      description="El PRP Capilar es un tratamiento regenerativo que utiliza factores de crecimiento obtenidos de la propia sangre del paciente para estimular el folículo piloso y fortalecer el cabello."
-
+      description="El PRP Capilar es un tratamiento regenerativo que utiliza factores de crecimiento obtenidos de la propia sangre del paciente para acompañar la recuperación capilar, fortalecer el cabello y complementar planes personalizados."
       heroImage={prpImage}
-      heroImageAlt="Preparación de plasma rico en plaquetas"
-
+      heroImageAlt="Preparacion de plasma rico en plaquetas para PRP capilar en Dermaraiz"
       benefits={[
         "Estimula el crecimiento capilar.",
         "Fortalece el folículo piloso.",
         "Mejora la calidad y densidad del cabello.",
         "Ayuda a disminuir la caída.",
         "Procedimiento mínimamente invasivo.",
-        "Complementa otros tratamientos capilares."
+        "Complementa otros tratamientos capilares.",
       ]}
-
       steps={[
         {
-          title: "Extracción de sangre",
-          text: "Se obtiene una pequeña muestra de sangre del paciente."
+          title: "Evaluación inicial",
+          text: "Se revisa el caso, el diagnóstico y los objetivos del paciente para definir si el PRP es el abordaje adecuado o si conviene combinarlo.",
+          image: consultationImage,
+          imageAlt: "Consulta capilar previa al tratamiento PRP capilar en Dermaraiz CABA",
         },
         {
-          title: "Procesamiento",
-          text: "La muestra se centrifuga para separar el plasma rico en plaquetas."
+          title: "Preparación del plasma",
+          text: "A partir de una muestra propia se obtiene el plasma rico en plaquetas, que concentra factores de crecimiento útiles para el tratamiento.",
+          image: prpImage,
+          imageAlt: "Preparacion de plasma rico en plaquetas para tratamiento capilar PRP",
         },
         {
-          title: "Aplicación",
-          text: "El plasma se aplica sobre el cuero cabelludo mediante microinyecciones."
-        }
+          title: "Aplicación localizada",
+          text: "El plasma se aplica en zonas específicas del cuero cabelludo mediante microinyecciones, según diagnóstico y plan indicado.",
+          image: prpApplicationImage,
+          imageAlt: "Aplicacion de PRP capilar en cuero cabelludo en Dermaraiz Buenos Aires",
+        },
       ]}
-
       facts={[
         {
           label: "Origen",
-          text: "Se utiliza una muestra propia del paciente para obtener el plasma rico en plaquetas."
+          text: "Se utiliza una muestra propia del paciente para obtener el plasma rico en plaquetas.",
         },
         {
           label: "Objetivo",
-          text: "Busca estimular el folículo y acompañar la recuperación de la calidad capilar."
+          text: "Busca estimular el folículo y acompañar la recuperación de la calidad capilar.",
         },
         {
           label: "Plan",
-          text: "La cantidad de sesiones depende del diagnóstico y de la evolución observada."
+          text: "Puede integrarse en planes combinados con mesoterapia o medicación personalizada cuando corresponde.",
         },
         {
-          label: "Combinación",
-          text: "Puede integrarse con otros tratamientos cuando el caso lo requiere."
-        }
+          label: "Seguimiento",
+          text: "La evolución se controla de forma progresiva para ajustar el tratamiento a la respuesta del paciente.",
+        },
       ]}
-
       whatsappMessage="Hola, quiero consultar por PRP capilar."
       primaryCtaText="Reservar turno para PRP"
       faqs={[
         {
           question: "¿Para quién está indicado el PRP capilar?",
-          answer: "Puede indicarse en pacientes con caída capilar, afinamiento o pérdida de calidad del cabello, siempre luego de una evaluación profesional."
+          answer:
+            "Puede indicarse en pacientes con caída capilar, afinamiento o pérdida de calidad del cabello, siempre luego de una evaluación profesional.",
         },
         {
           question: "¿Cuántas sesiones se necesitan?",
-          answer: "La cantidad de sesiones depende del diagnóstico, la evolución y si se combina con otros tratamientos capilares."
+          answer:
+            "La cantidad de sesiones depende del diagnóstico, la evolución y si se combina con otros tratamientos capilares.",
         },
         {
           question: "¿Se puede combinar con mesoterapia?",
-          answer: "Sí, en algunos casos puede complementarse con mesoterapia u otros tratamientos para potenciar el abordaje."
+          answer:
+            "Sí, en algunos casos puede complementarse con mesoterapia u otros tratamientos para potenciar el abordaje.",
         },
         {
           question: "¿Cuándo se ven cambios?",
-          answer: "Los cambios suelen evaluarse de forma progresiva en los controles, observando caída, densidad y calidad capilar."
-        }
+          answer:
+            "Los cambios suelen evaluarse de forma progresiva en los controles, observando caída, densidad y calidad capilar.",
+        },
       ]}
-
       ctaTitle="¿Querés fortalecer tu cabello?"
-
       ctaText="Reservá una consulta para evaluar si el PRP Capilar es adecuado para tu caso."
     />
   );

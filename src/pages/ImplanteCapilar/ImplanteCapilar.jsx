@@ -3,6 +3,13 @@ import "../../components/TreatmentPage/TreatmentPage.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import implanteImage from "../../assets/treatments/implante-capilar-fue-procedimiento-dermaraiz.jpeg";
+import implantProcedureImage from "../../assets/treatments/procedimiento-implante-capilar-fue-dermaraiz.jpeg";
+import implantDetailImage from "../../assets/treatments/implante-capilar-procedimiento-detalle-dermaraiz.jpeg";
+import implantTeamImage from "../../assets/treatments/implante-capilar-equipo-dermaraiz.jpeg";
+import implantFrontMarkingImage from "../../assets/treatments/implante-capilar-marcacion-frontal-dermaraiz.jpeg";
+import implantDonorMarkingImage from "../../assets/treatments/implante-capilar-marcacion-donante-dermaraiz.jpeg";
+import implantDonorZoneDiagramImage from "../../assets/treatments/implante-capilar-zona-donante-esquema-dermaraiz.jpg";
+import implantPostImage from "../../assets/results/post-implante-capilar-fue-dermaraiz.jpeg";
 import { AGENDA_PRO_URL, getWhatsappUrl } from "../../utils/contactLinks";
 
 function ImplanteCapilar() {
@@ -16,11 +23,14 @@ function ImplanteCapilar() {
         <button
           type="button"
           className="floating-back-button"
-          onClick={() => window.location.href = "/#tratamientos"}
+          onClick={() => {
+            window.location.href = "/#tratamientos";
+          }}
           aria-label="Volver a tratamientos"
         >
           <span className="back-icon">‹</span>
         </button>
+
         <section className="implant-hero">
           <div className="implant-hero-content">
             <span className="section-tag">Implante capilar FUE</span>
@@ -28,9 +38,9 @@ function ImplanteCapilar() {
             <h1>Recuperá densidad capilar con un resultado natural</h1>
 
             <p>
-              El implante capilar consiste en trasladar cabello propio desde una
-              zona donante hacia las áreas despobladas, respetando la dirección,
-              el ángulo y la densidad natural del crecimiento.
+              El implante capilar FUE traslada unidades foliculares propias
+              desde la zona donante hacia las áreas despobladas. Cada caso se
+              planifica para cuidar diseño, ángulo, dirección y densidad.
             </p>
 
             <div className="implant-hero-buttons">
@@ -57,7 +67,7 @@ function ImplanteCapilar() {
           <figure className="implant-hero-media">
             <img
               src={implanteImage}
-              alt="Procedimiento de implante capilar FUE en Dermaraiz"
+              alt="Procedimiento de implante capilar FUE en Dermaraiz Buenos Aires"
               loading="eager"
               decoding="async"
               fetchPriority="high"
@@ -65,47 +75,177 @@ function ImplanteCapilar() {
           </figure>
         </section>
 
-        <section className="implant-section">
+        <section className="implant-section implant-process-section">
           <div className="implant-section-header">
             <span className="section-tag">¿Cómo se realiza?</span>
 
             <h2>Un procedimiento planificado en cada etapa</h2>
 
             <p>
-              La técnica FUE permite extraer unidades foliculares de forma
-              individual, para luego implantarlas en la zona receptora según el
-              diseño acordado con el paciente.
+              Antes de implantar se diseña el caso con el paciente. Luego el
+              procedimiento se organiza en extracción FUE, preparación de la zona
+              receptora y colocación de los folículos con su ángulo correspondiente.
             </p>
           </div>
 
           <div className="implant-steps">
             <article className="implant-card">
+              <figure className="implant-card-media">
+                <img
+                  src={implantFrontMarkingImage}
+                  alt="Diseño de linea frontal para implante capilar FUE en Dermaraiz"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
               <span>01</span>
-              <h3>Planificación y diseño</h3>
+              <h3>Diseño previo</h3>
               <p>
-                Se evalúa la zona a implantar y se define un diseño
-                personalizado, buscando naturalidad y armonía con el rostro.
+                Se evalúa la zona frontal, coronilla o área a tratar y se
+                acuerda un diseño personalizado para buscar naturalidad.
               </p>
             </article>
 
             <article className="implant-card">
+              <figure className="implant-card-media">
+                <img
+                  src={implantDonorMarkingImage}
+                  alt="Marcacion de zona donante para extraccion FUE en implante capilar"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
               <span>02</span>
               <h3>Extracción FUE</h3>
               <p>
-                Se extraen folículos uno por uno desde la zona donante,
-                generalmente nuca y laterales, utilizando micromotor.
+                Se extraen unidades foliculares una por una desde nuca y
+                laterales, usando punch con micromotor.
               </p>
             </article>
 
             <article className="implant-card">
+              <figure className="implant-card-media">
+                <img
+                  src={implantProcedureImage}
+                  alt="Preparacion de zona receptora durante implante capilar FUE"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
               <span>03</span>
-              <h3>Implantación</h3>
+              <h3>Zona receptora</h3>
               <p>
-                Los folículos se colocan en la zona receptora respetando el
-                ángulo, la dirección y la densidad necesaria.
+                Se realizan incisiones en el cuero cabelludo según la zona, la
+                angulación natural del pelo y la densidad buscada.
+              </p>
+            </article>
+
+            <article className="implant-card">
+              <figure className="implant-card-media">
+                <img
+                  src={implantDetailImage}
+                  alt="Colocacion de unidades foliculares durante implante capilar FUE"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+              <span>04</span>
+              <h3>Colocación</h3>
+              <p>
+                Los folículos extraídos se insertan en las incisiones respetando
+                el ángulo correspondiente para un resultado natural.
               </p>
             </article>
           </div>
+        </section>
+
+        <section className="implant-visual-story" aria-label="Imágenes de implante capilar FUE">
+          <div className="implant-visual-story-header">
+            <span className="section-tag">Galería</span>
+            <h2>Registro visual del implante</h2>
+            <p>
+              Cada imagen muestra una instancia del proceso: marcación, trabajo
+              técnico, equipo y evolución inmediata posterior.
+            </p>
+          </div>
+
+          <figure>
+            <img
+              src={implantFrontMarkingImage}
+              alt="Marcacion frontal previa al implante capilar FUE en Dermaraiz"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <span>Diseño frontal</span>
+              <p>Marcación previa para definir línea y distribución.</p>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={implantDonorMarkingImage}
+              alt="Marcacion de zona donante previa al implante capilar FUE"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <span>Zona donante</span>
+              <p>Planificación de extracción de unidades foliculares.</p>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={implantDonorZoneDiagramImage}
+              alt="Esquema de zona donante adecuada para implante capilar FUE"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <span>Zona segura</span>
+              <p>Referencia visual para entender de dónde se extraen folículos.</p>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={implantTeamImage}
+              alt="Equipo profesional de Dermaraiz trabajando en implante capilar"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <span>Equipo</span>
+              <p>Trabajo coordinado durante el procedimiento.</p>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={implantProcedureImage}
+              alt="Equipo medico de Dermaraiz realizando un implante capilar FUE"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <span>Técnica FUE</span>
+              <p>Implantación precisa respetando ángulo y dirección.</p>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={implantPostImage}
+              alt="Evolucion inmediata posterior a un implante capilar FUE en Dermaraiz"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <span>Post inmediato</span>
+              <p>Registro posterior al procedimiento.</p>
+            </figcaption>
+          </figure>
         </section>
 
         <section className="implant-facts">
@@ -119,8 +259,8 @@ function ImplanteCapilar() {
             <article className="implant-fact-card">
               <span>Diseño</span>
               <p>
-                Se planifica la línea frontal y la distribución folicular
-                buscando naturalidad y armonía con el rostro.
+                La línea frontal y la distribución se acuerdan con el paciente
+                para buscar naturalidad y armonía.
               </p>
             </article>
 
@@ -135,16 +275,16 @@ function ImplanteCapilar() {
             <article className="implant-fact-card">
               <span>Evolución</span>
               <p>
-                El crecimiento visible suele comenzar a partir de los primeros
-                meses y continúa progresando con el tiempo.
+                El cabello trasplantado puede caer en las primeras semanas; el
+                crecimiento visible suele iniciar cerca de los 3 meses.
               </p>
             </article>
 
             <article className="implant-fact-card">
               <span>Seguimiento</span>
               <p>
-                Los controles posteriores ayudan a acompañar la recuperación y
-                cuidar el resultado.
+                El resultado se acompaña con controles y suele consolidarse
+                progresivamente hacia los meses posteriores.
               </p>
             </article>
           </div>

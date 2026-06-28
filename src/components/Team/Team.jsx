@@ -33,7 +33,7 @@ function Team() {
             <div className="professionals-layout">
 
                 <div className="professionals-image">
-                    <img src={teamMain} alt="Equipo Dermaraíz" />
+                    <img src={teamMain} alt="Equipo medico de Dermaraiz especializado en implante capilar y estetica" />
                 </div>
 
                 <div className="professionals-grid">

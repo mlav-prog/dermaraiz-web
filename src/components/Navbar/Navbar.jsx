@@ -82,6 +82,14 @@ function Navbar() {
                   Implante Capilar FUE
                 </a>
               </li>
+              <li>
+                <a
+                  href="/#estetica"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Estetica
+                </a>
+              </li>
             </ul>
           </li>
 
