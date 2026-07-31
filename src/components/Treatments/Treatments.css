@@ -279,11 +279,11 @@
 @media (max-width: 768px) {
     .treatments {
         width: min(100% - 20px, 1440px);
-        padding: 62px 0;
+        padding: 48px 0;
     }
 
     .treatments-header {
-        margin-bottom: 34px;
+        margin-bottom: 28px;
     }
 
     .treatments-grid {
@@ -291,8 +291,21 @@
     }
 
     .treatment-image {
-        height: clamp(260px, 76vw, 340px);
-        min-height: clamp(260px, 76vw, 340px);
+        height: clamp(220px, 68vw, 290px);
+        min-height: clamp(220px, 68vw, 290px);
+    }
+
+    .treatment-content {
+        padding: 20px 18px 0;
+    }
+
+    .treatment-card p {
+        font-size: 0.95rem;
+        line-height: 1.62;
+    }
+
+    .card-link {
+        margin: 16px 18px 20px;
     }
 
     .aesthetic-treatment-block {
@@ -301,6 +314,8 @@
 
     .aesthetic-treatment-list {
         grid-template-columns: 1fr;
+        gap: 10px;
+        margin: 20px 0 22px;
     }
 
     .aesthetic-treatment-link {
@@ -309,5 +324,19 @@
 
     .aesthetic-treatment-item {
         min-height: 0;
+        padding: 16px;
+    }
+
+    .aesthetic-treatment-content {
+        padding: 24px 18px;
+    }
+
+    .aesthetic-treatment-content h3 {
+        font-size: 1.55rem;
+    }
+
+    .aesthetic-treatment-content p {
+        font-size: 0.95rem;
+        line-height: 1.62;
     }
 }

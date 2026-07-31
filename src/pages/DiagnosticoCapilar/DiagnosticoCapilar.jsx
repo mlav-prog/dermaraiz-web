@@ -1,9 +1,5 @@
 import TreatmentPage from "../../components/TreatmentPage/TreatmentPage";
-import diagnosticoImage from "../../assets/treatments/diagnostico-capilar-dermaraiz.jpg";
-import diagnosticoConsultorioImage from "../../assets/treatments/diagnostico-capilar-consultorio-dermaraiz.jpeg";
-import consultaCapilarImage from "../../assets/treatments/consulta-capilar-dermaraiz.jpeg";
-import dhtMiniaturizationImage from "../../assets/treatments/diagnostico-capilar-dht-miniaturizacion-dermaraiz.jpg";
-import trichoscopyConsultationImage from "../../assets/treatments/diagnostico-capilar-tricoscopia-consulta-dermaraiz.jpg";
+import { treatmentImages } from "../../assets/images";
 
 function DiagnosticoCapilar() {
   return (
@@ -11,8 +7,8 @@ function DiagnosticoCapilar() {
       tag="Diagnóstico Capilar"
       title="Evaluación profesional y personalizada del cuero cabelludo"
       description="El diagnóstico capilar permite analizar el cuero cabelludo, identificar causas posibles de caída, detectar signos de miniaturización y definir un tratamiento adecuado según cada paciente."
-      heroImage={diagnosticoImage}
-      heroImageAlt="Evaluacion capilar profesional en consultorio Dermaraiz CABA"
+      heroImage={treatmentImages.diagnosis}
+      heroImageAlt="Evaluación capilar profesional en consultorio Dermaraíz CABA"
       benefits={[
         "Permite orientar el tipo de alopecia.",
         "Ayuda a identificar causas genéticas, hormonales o nutricionales.",
@@ -25,20 +21,20 @@ function DiagnosticoCapilar() {
         {
           title: "Entrevista inicial",
           text: "Se revisa historial capilar, síntomas, antecedentes, estrés, medicación y posibles factores hormonales o nutricionales.",
-          image: consultaCapilarImage,
-          imageAlt: "Consulta capilar inicial y diagnostico personalizado en Dermaraiz",
+          image: treatmentImages.consultation,
+          imageAlt: "Consulta capilar inicial y diagnóstico personalizado en Dermaraíz",
         },
         {
           title: "Evaluación con tricoscopia",
           text: "Se observa el cuero cabelludo para detectar inflamación, miniaturización y signos que orientan el diagnóstico.",
-          image: trichoscopyConsultationImage,
-          imageAlt: "Evaluacion del cuero cabelludo con tricoscopia en Dermaraiz CABA",
+          image: treatmentImages.trichoscopyConsultation,
+          imageAlt: "Evaluación del cuero cabelludo con tricoscopia en Dermaraíz CABA",
         },
         {
           title: "Plan y seguimiento",
           text: "Se define una estrategia personalizada y controles para medir evolución y ajustar pautas si hace falta.",
-          image: diagnosticoConsultorioImage,
-          imageAlt: "Planificacion de tratamiento capilar personalizado en consultorio",
+          image: treatmentImages.diagnosisOffice,
+          imageAlt: "Planificación de tratamiento capilar personalizado en consultorio",
         },
       ]}
       benefitsTitle="¿Para qué sirve?"
@@ -46,20 +42,20 @@ function DiagnosticoCapilar() {
       galleryText="La evaluación permite entender por qué se cae el pelo, observar el cuero cabelludo y definir un plan con seguimiento."
       galleryImages={[
         {
-          src: trichoscopyConsultationImage,
-          alt: "Evaluacion capilar con tricoscopia profesional en Dermaraiz",
+          src: treatmentImages.trichoscopyConsultation,
+          alt: "Evaluación capilar con tricoscopia profesional en Dermaraíz",
           label: "Tricoscopia",
           caption: "Observación del cuero cabelludo para orientar el diagnóstico.",
         },
         {
-          src: dhtMiniaturizationImage,
-          alt: "Esquema de DHT y miniaturizacion folicular en alopecia androgenetica",
+          src: treatmentImages.dhtMiniaturization,
+          alt: "Esquema de DHT y miniaturización folicular en alopecia androgenética",
           label: "Miniaturización",
           caption: "La DHT puede achicar el folículo y afinar progresivamente el pelo.",
         },
         {
-          src: diagnosticoConsultorioImage,
-          alt: "Planificacion de tratamiento capilar luego del diagnostico en consultorio",
+          src: treatmentImages.diagnosisOffice,
+          alt: "Planificación de tratamiento capilar luego del diagnóstico en consultorio",
           label: "Plan",
           caption: "La consulta se traduce en una estrategia personalizada y controles.",
         },

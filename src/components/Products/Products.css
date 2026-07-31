@@ -139,11 +139,11 @@
 @media (max-width: 768px) {
     .products {
         width: min(100% - 20px, 1440px);
-        padding: 60px 0;
+        padding: 48px 0;
     }
 
     .products-header {
-        margin-bottom: 36px;
+        margin-bottom: 28px;
     }
 
     .products-grid {
@@ -153,5 +153,10 @@
     .product-card {
         padding: 20px;
         border-radius: 20px;
+    }
+
+    .product-card p {
+        font-size: 0.94rem;
+        line-height: 1.62;
     }
 }

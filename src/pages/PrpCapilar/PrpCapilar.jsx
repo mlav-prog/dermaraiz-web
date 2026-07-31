@@ -1,7 +1,5 @@
 import TreatmentPage from "../../components/TreatmentPage/TreatmentPage";
-import consultationImage from "../../assets/treatments/consulta-capilar-dermaraiz.jpeg";
-import prpImage from "../../assets/treatments/prp-capilar-plasma-rico-en-plaquetas-dermaraiz.jpg";
-import prpApplicationImage from "../../assets/treatments/prp-capilar-aplicacion-dermaraiz.jpeg";
+import { treatmentImages } from "../../assets/images";
 
 function PrpCapilar() {
   return (
@@ -9,8 +7,8 @@ function PrpCapilar() {
       tag="PRP Capilar"
       title="Estimulación capilar mediante Plasma Rico en Plaquetas"
       description="El PRP Capilar es un tratamiento regenerativo que utiliza factores de crecimiento obtenidos de la propia sangre del paciente para acompañar la recuperación capilar, fortalecer el cabello y complementar planes personalizados."
-      heroImage={prpImage}
-      heroImageAlt="Preparacion de plasma rico en plaquetas para PRP capilar en Dermaraiz"
+      heroImage={treatmentImages.prpPlasma}
+      heroImageAlt="Preparación de plasma rico en plaquetas para PRP capilar en Dermaraíz"
       benefits={[
         "Estimula el crecimiento capilar.",
         "Fortalece el folículo piloso.",
@@ -23,20 +21,20 @@ function PrpCapilar() {
         {
           title: "Evaluación inicial",
           text: "Se revisa el caso, el diagnóstico y los objetivos del paciente para definir si el PRP es el abordaje adecuado o si conviene combinarlo.",
-          image: consultationImage,
-          imageAlt: "Consulta capilar previa al tratamiento PRP capilar en Dermaraiz CABA",
+          image: treatmentImages.consultation,
+          imageAlt: "Consulta capilar previa al tratamiento PRP capilar en Dermaraíz CABA",
         },
         {
           title: "Preparación del plasma",
           text: "A partir de una muestra propia se obtiene el plasma rico en plaquetas, que concentra factores de crecimiento útiles para el tratamiento.",
-          image: prpImage,
-          imageAlt: "Preparacion de plasma rico en plaquetas para tratamiento capilar PRP",
+          image: treatmentImages.prpPlasma,
+          imageAlt: "Preparación de plasma rico en plaquetas para tratamiento capilar PRP",
         },
         {
           title: "Aplicación localizada",
           text: "El plasma se aplica en zonas específicas del cuero cabelludo mediante microinyecciones, según diagnóstico y plan indicado.",
-          image: prpApplicationImage,
-          imageAlt: "Aplicacion de PRP capilar en cuero cabelludo en Dermaraiz Buenos Aires",
+          image: treatmentImages.prpApplication,
+          imageAlt: "Aplicación de PRP capilar en cuero cabelludo en Dermaraíz Buenos Aires",
         },
       ]}
       facts={[

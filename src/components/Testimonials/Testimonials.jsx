@@ -1,56 +1,6 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import { testimonials, testimonialsSummary } from "../../data/testimonials";
 import "./Testimonials.css";
-
-const testimonials = [
-    {
-        name: "Judith de Vito",
-        source: "Google",
-        time: "Hace 5 meses",
-        text: "Una excelente experiencia en este consultorio medico con el Dr. Hernan. El espacio es comodo, limpio y bien organizado. La atencion fue profesional, clara y humana. Totalmente recomendable."
-    },
-    {
-        name: "Luz Micaela Princich",
-        source: "Google",
-        time: "Hace 4 meses",
-        text: "Excelente atencion de los profesionales de Dermaraiz, muy conforme y agradecida sobre todo de la Dra. Larisa. El lugar es hermoso y el clima muy calido."
-    },
-    {
-        name: "Lisandro Medina",
-        source: "Google",
-        time: "Hace un mes",
-        text: "Me devolvieron la esperanza. Excelente la atencion de todos y el consultorio un lujo, dan ganas de volver."
-    },
-    {
-        name: "Noelia Rosales",
-        source: "Google",
-        time: "Hace 6 meses",
-        text: "Hermoso lugar y excelente atencion. La verdad que super recomendable, muy profesionales y detallistas."
-    },
-    {
-        name: "Maria Teresa Pacheco",
-        source: "Google",
-        time: "Hace un mes",
-        text: "Increible atencion de parte del Dr. Lopez. Comienzo el tratamiento en cualquier momento. Estoy encantada."
-    },
-    {
-        name: "Anahi",
-        source: "Mesoterapia",
-        time: "Hace 3 meses",
-        text: "Me senti muy reconfortada de ser atendida en un dia feriado. Larisa y Hernan son dos profesionales dedicados, atentos y de una preciosa calidez."
-    },
-    {
-        name: "Amalita",
-        source: "Plasma rico en plaquetas capilar",
-        time: "Hace 3 meses",
-        text: "Totalmente satisfecha, excelente atencion. Gracias Dermaraiz, los recomiendo de 10."
-    },
-    {
-        name: "Liliana",
-        source: "Mesoterapia",
-        time: "Hace 3 meses",
-        text: "Excelente atencion profesional."
-    }
-];
 
 function Testimonials() {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -147,23 +97,23 @@ function Testimonials() {
                         <p className="section-tag">Opiniones</p>
 
                         <h2>
-                            Pacientes que ya confiaron en Dermaraiz
+                            Pacientes que ya confiaron en Dermaraíz
                         </h2>
 
                         <p className="section-description">
                             Reunimos opiniones reales de pacientes que destacaron la
-                            atencion, la claridad profesional y el acompanamiento durante
+                            atención, la claridad profesional y el acompañamiento durante
                             sus tratamientos capilares.
                         </p>
                     </div>
 
-                    <aside className="testimonials-score" aria-label="Valoracion de pacientes">
-                        <span className="testimonials-score-label">Resenas de Google</span>
+                    <aside className="testimonials-score" aria-label="Valoración de pacientes">
+                        <span className="testimonials-score-label">{testimonialsSummary.source}</span>
                         <div className="testimonials-score-row">
-                            <strong>5.0</strong>
-                            <span className="stars" aria-label="5 estrellas">★★★★★</span>
+                            <strong>{testimonialsSummary.rating}</strong>
+                            <span className="stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                         </div>
-                        <p>53 opiniones verificadas</p>
+                        <p>{testimonialsSummary.total}</p>
                     </aside>
                 </div>
 
@@ -194,13 +144,13 @@ function Testimonials() {
                                         <div className="testimonial-meta">
                                             <span className="testimonial-name">{testimonial.name}</span>
                                             <span className="testimonial-source">
-                                                Resena en {testimonial.source}
+                                                Reseña en {testimonial.source}
                                             </span>
                                         </div>
                                     </div>
 
                                     <div className="testimonial-rating-row">
-                                        <span className="stars" aria-label="5 estrellas">★★★★★</span>
+                                        <span className="stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                                         <span className="testimonial-time">{testimonial.time}</span>
                                     </div>
 
@@ -216,10 +166,10 @@ function Testimonials() {
                         <button
                             className="testimonial-arrow"
                             type="button"
-                            aria-label="Opinion anterior"
+                            aria-label="Opinión anterior"
                             onClick={() => moveCarousel(-1)}
                         >
-                            ‹
+                            &lsaquo;
                         </button>
 
                         <div className="testimonial-dots" aria-label="Opiniones disponibles">
@@ -228,7 +178,7 @@ function Testimonials() {
                                     className={`testimonial-dot${activeIndex === index ? " is-active" : ""}`}
                                     type="button"
                                     key={`dot-${testimonial.name}`}
-                                    aria-label={`Ver opinion de ${testimonial.name}`}
+                                    aria-label={`Ver opinión de ${testimonial.name}`}
                                     aria-current={activeIndex === index ? "true" : undefined}
                                     onClick={() => goToTestimonial(index)}
                                 />
@@ -238,10 +188,10 @@ function Testimonials() {
                         <button
                             className="testimonial-arrow"
                             type="button"
-                            aria-label="Opinion siguiente"
+                            aria-label="Opinión siguiente"
                             onClick={() => moveCarousel(1)}
                         >
-                            ›
+                            &rsaquo;
                         </button>
                     </div>
                 </div>

@@ -1,23 +1,8 @@
 import "./Team.css";
-
-import teamMain from "../../assets/team/team-dermaraiz-2.jpg";
+import { brandImages } from "../../assets/images";
+import { team } from "../../data/team";
 
 function Team() {
-    const team = [
-        {
-            name: "Dr. Hernán López",
-            license: "MN 199837",
-            role: "Implante capilar (FUE)",
-            description: "Especialista en implante capilar con enfoque en resultados naturales y personalizados."
-        },
-        {
-            name: "Dra. Larisa Espíndola",
-            license: "MN 194054",
-            role: "Medicina estética y capilar",
-            description: "Enfoque integral en tratamientos capilares y estética, priorizando la salud del paciente."
-        }
-    ];
-
     return (
         <section className="professionals" id="profesionales">
             <div className="section-header">
@@ -31,23 +16,22 @@ function Team() {
             </div>
 
             <div className="professionals-layout">
-
                 <div className="professionals-image">
-                    <img src={teamMain} alt="Equipo medico de Dermaraiz especializado en implante capilar y estetica" />
+                    <img
+                        src={brandImages.teamMain}
+                        alt="Equipo médico de Dermaraíz especializado en implante capilar y estética"
+                    />
                 </div>
 
                 <div className="professionals-grid">
-                    {team.map((person, index) => (
-                        <article className="professional-card" key={index}>
+                    {team.map((person) => (
+                        <article className="professional-card" key={person.name}>
+                            <span className="professional-role">{person.role}</span>
 
-                            <span className="professional-role">
-                                {person.role}
-                            </span>
-                            
                             <h3>{person.name}</h3>
 
                             <span className="professional-license">
-                                Matrícula:{person.license}
+                                Matrícula: {person.license}
                             </span>
 
                             <p>{person.description}</p>
@@ -55,8 +39,7 @@ function Team() {
                             <a href="#contacto" className="professional-link">
                                 Consultar con este especialista
                             </a>
-
-                    </article>
+                        </article>
                     ))}
                 </div>
             </div>

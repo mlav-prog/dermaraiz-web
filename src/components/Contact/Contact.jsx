@@ -24,12 +24,12 @@ function Contact() {
     event.preventDefault();
 
     const lines = [
-      "Hola, quiero solicitar una evaluacion en Dermaraiz.",
+      "Hola, quiero solicitar una evaluación en Dermaraíz.",
       "",
       `Nombre: ${formData.name}`,
-      `Telefono: ${formData.phone}`,
+      `Teléfono: ${formData.phone}`,
       formData.email ? `Email: ${formData.email}` : null,
-      `Tratamiento de interes: ${formData.treatment}`,
+      `Tratamiento de interés: ${formData.treatment}`,
       formData.message ? `Mensaje: ${formData.message}` : null,
     ].filter(Boolean);
 
@@ -41,10 +41,10 @@ function Contact() {
     <section className="contact" id="contacto">
       <div className="section-header">
         <p className="section-tag">Contacto</p>
-        <h2>Solicita tu evaluacion</h2>
+        <h2>Solicitá tu evaluación</h2>
         <p className="section-description">
-          Completa el formulario y te contactamos para orientarte sobre el
-          tratamiento mas adecuado para tu caso.
+          Completá el formulario y te contactamos para orientarte sobre el
+          tratamiento más adecuado para tu caso.
         </p>
       </div>
 
@@ -60,13 +60,13 @@ function Contact() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="Ej: Juan Perez"
+                  placeholder="Ej: Juan Pérez"
                   required
                 />
               </label>
 
               <label className="contact-field">
-                <span>Telefono</span>
+                <span>Teléfono</span>
                 <input
                   type="tel"
                   name="phone"
@@ -89,26 +89,26 @@ function Contact() {
               </label>
 
               <label className="contact-field">
-                <span>Tratamiento de interes</span>
+                <span>Tratamiento de interés</span>
                 <select
                   name="treatment"
                   value={formData.treatment}
                   onChange={handleChange}
                   required
                 >
-                  <option value="">Selecciona una opcion</option>
+                  <option value="">Seleccioná una opción</option>
                   <optgroup label="Tratamientos capilares">
-                    <option value="Diagnostico capilar">Diagnostico capilar</option>
+                    <option value="Diagnóstico capilar">Diagnóstico capilar</option>
                     <option value="PRP capilar">PRP capilar</option>
                     <option value="Mesoterapia capilar">Mesoterapia capilar</option>
                     <option value="Implante capilar FUE">Implante capilar FUE</option>
                   </optgroup>
-                  <optgroup label="Estetica">
+                  <optgroup label="Estética">
                     <option value="Plasma rico en plaquetas">Plasma rico en plaquetas</option>
                     <option value="Mesoterapia facial y corporal">Mesoterapia facial y corporal</option>
                     <option value="NCTF / PDRN">NCTF / PDRN</option>
-                    <option value="Toxina botulinica">Toxina botulinica</option>
-                    <option value="Peeling medico">Peeling medico</option>
+                    <option value="Toxina botulínica">Toxina botulínica</option>
+                    <option value="Peeling médico">Peeling médico</option>
                     <option value="Skinbooster">Skinbooster</option>
                   </optgroup>
                   <option value="No estoy seguro">No estoy seguro</option>
@@ -121,7 +121,7 @@ function Contact() {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Contanos que te gustaria mejorar o consultar."
+                  placeholder="Contanos qué te gustaría mejorar o consultar."
                   rows="5"
                 />
               </label>
@@ -137,9 +137,9 @@ function Contact() {
         <div className="contact-side">
           <div className="contact-card featured">
             <span>Turnos online</span>
-            <h3>Agenda tu evaluacion</h3>
+            <h3>Agendá tu evaluación</h3>
             <p>
-              Elegi dia y horario desde la agenda online para reservar tu
+              Elegí día y horario desde la agenda online para reservar tu
               consulta en pocos pasos.
             </p>
             <a className="contact-button" href={AGENDA_PRO_URL} target="_blank" rel="noreferrer">
@@ -149,7 +149,7 @@ function Contact() {
 
           <div className="contact-card">
             <h3>Seguinos en Instagram</h3>
-            <p>Resultados, novedades y contenido del equipo Dermaraiz.</p>
+            <p>Resultados, novedades y contenido del equipo Dermaraíz.</p>
             <a
               className="contact-button secondary"
               href="https://www.instagram.com/derma_raiz/"
@@ -164,7 +164,7 @@ function Contact() {
 
       <div className="contact-info">
         <div>
-          <h3>Ubicacion</h3>
+          <h3>Ubicación</h3>
           <p>Cdad. de la Paz 2984 Depto 2, CABA</p>
         </div>
         <button className="map-toggle" type="button" onClick={() => setShowMap((value) => !value)}>
@@ -175,7 +175,7 @@ function Contact() {
       <div className={`contact-map-embed ${showMap ? "is-visible" : ""}`}>
         {showMap ? (
           <iframe
-            title="Dermaraiz en Google Maps"
+            title="Dermaraíz en Google Maps"
             src="https://www.google.com/maps?q=Ciudad%20de%20la%20Paz%202984%20Depto%202%20CABA&output=embed"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
@@ -183,7 +183,7 @@ function Contact() {
           />
         ) : (
           <div className="map-placeholder">
-            <span>Mapa disponible al abrir la ubicacion</span>
+            <span>Mapa disponible al abrir la ubicación</span>
           </div>
         )}
       </div>

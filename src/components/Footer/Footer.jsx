@@ -1,5 +1,5 @@
 import "./Footer.css";
-import logo from "../../assets/logo/dermaraiz-icon.svg";
+import { brandImages } from "../../assets/images";
 
 function Footer() {
     return (
@@ -10,7 +10,7 @@ function Footer() {
                 <div className="footer-brand">
                     <a href="/#inicio" className="footer-brand-link">
                         <img
-                            src={logo}
+                            src={brandImages.logoIcon}
                             alt="Logo Dermaraíz"
                             className="footer-logo"
                         />

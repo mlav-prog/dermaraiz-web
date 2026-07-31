@@ -227,13 +227,13 @@
 @media (max-width: 768px) {
     .contact {
         width: min(100% - 20px, 1440px);
-        padding: 60px 0;
+        padding: 48px 0;
     }
 
     .contact-form-card,
     .contact-card,
     .contact-info {
-        padding: 22px;
+        padding: 20px;
     }
 
     .contact-form-grid {
@@ -252,6 +252,6 @@
     }
 
     .contact-map-embed iframe {
-        height: 360px;
+        height: 320px;
     }
 }

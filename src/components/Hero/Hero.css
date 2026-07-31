@@ -229,7 +229,7 @@
 /* MOBILE */
 @media (max-width: 768px) {
     .hero {
-        padding: 66px 0 36px;
+        padding: 50px 0 28px;
     }
 
     .hero-container {
@@ -250,11 +250,12 @@
     }
 
     .hero-title {
-        font-size: 1.95rem;
+        font-size: clamp(1.72rem, 7.6vw, 2rem);
         line-height: 1.08;
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 12px;
     }
 
     .hero-text {
@@ -262,18 +263,35 @@
         margin-left: auto;
         margin-right: auto;
         font-size: 0.94rem;
-        line-height: 1.68;
+        line-height: 1.58;
+        margin-bottom: 16px;
+    }
+
+    .hero-kicker {
+        margin-bottom: 10px;
+    }
+
+    .hero-trust {
+        gap: 8px;
+        margin-bottom: 12px;
+    }
+
+    .hero-trust-pill {
+        padding: 6px 10px;
+        font-size: 0.74rem;
     }
 
     .hero-buttons {
         flex-direction: column;
         align-items: center;
-        margin-bottom: 24px;
+        gap: 10px;
+        margin-bottom: 18px;
     }
 
     .hero-buttons a {
         width: 100%;
-        max-width: 270px;
+        max-width: 260px;
+        padding: 12px 16px;
         text-align: center;
     }
 

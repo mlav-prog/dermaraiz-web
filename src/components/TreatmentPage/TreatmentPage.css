@@ -671,27 +671,36 @@
   .treatment-page {
     width: min(100% - 20px, 1440px);
 
-    padding: 100px 0 70px;
+    padding: 92px 0 62px;
   }
 
   .treatment-page-hero {
-    margin-bottom: 60px;
+    margin-bottom: 48px;
 
-    padding: 34px 22px 24px;
+    padding: 28px 20px 22px;
 
-    border-radius: 28px;
+    gap: 24px;
+    border-radius: 24px;
   }
 
   .treatment-page-hero-media {
     min-height: 0;
-    aspect-ratio: 4 / 5;
-    border-radius: 22px;
+    aspect-ratio: 4 / 3;
+    border-radius: 20px;
   }
 
   .treatment-page-hero h1 {
-    font-size: clamp(2rem, 10vw, 2.8rem);
+    margin-bottom: 16px;
+    font-size: clamp(1.82rem, 8.6vw, 2.35rem);
+    line-height: 1.12;
 
     letter-spacing: -1px;
+  }
+
+  .treatment-page-hero p {
+    margin-bottom: 20px;
+    font-size: 0.98rem;
+    line-height: 1.68;
   }
 
   .treatment-page-buttons {

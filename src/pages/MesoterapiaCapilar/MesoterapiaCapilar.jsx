@@ -1,10 +1,5 @@
 import TreatmentPage from "../../components/TreatmentPage/TreatmentPage";
-import consultationImage from "../../assets/treatments/consulta-capilar-dermaraiz.jpeg";
-import mesoterapiaImage from "../../assets/treatments/mesoterapia-capilar-dermaraiz.jpeg";
-import tecnicaZafiroImage from "../../assets/treatments/tecnica-zafiro-dermaraiz.webp";
-import pistolaMesoterapiaImage from "../../assets/treatments/pistola-mesoterapia-capilar.jpg";
-import ampollasMesoterapiaImage from "../../assets/treatments/ampollas-mesoterapia-capilar.jpg";
-import magistralMedicationImage from "../../assets/treatments/mesoterapia-medicacion-magistral-dermaraiz.jpg";
+import { treatmentImages } from "../../assets/images";
 
 function MesoterapiaCapilar() {
   return (
@@ -12,8 +7,8 @@ function MesoterapiaCapilar() {
       tag="Mesoterapia Capilar"
       title="Nutrición y revitalización directa del cuero cabelludo"
       description="La mesoterapia capilar consiste en la aplicación localizada de activos específicos sobre el cuero cabelludo para acompañar la recuperación capilar, mejorar la calidad del pelo y complementar planes personalizados."
-      heroImage={mesoterapiaImage}
-      heroImageAlt="Aplicacion de mesoterapia capilar en consultorio Dermaraiz"
+      heroImage={treatmentImages.mesotherapy}
+      heroImageAlt="Aplicación de mesoterapia capilar en consultorio Dermaraíz"
       benefits={[
         "Ayuda a nutrir el folículo piloso.",
         "Mejora la calidad del cabello.",
@@ -26,45 +21,45 @@ function MesoterapiaCapilar() {
         {
           title: "Evaluación previa",
           text: "Se analiza el diagnóstico, la evolución esperada y si conviene combinar mesoterapia con otros tratamientos.",
-          image: consultationImage,
-          imageAlt: "Consulta previa para mesoterapia capilar en Dermaraiz CABA",
+          image: treatmentImages.consultation,
+          imageAlt: "Consulta previa para mesoterapia capilar en Dermaraíz CABA",
         },
         {
           title: "Selección de activos",
           text: "Se eligen activos y medicación magistral cuando corresponde, siempre según indicación profesional.",
-          image: magistralMedicationImage,
-          imageAlt: "Medicacion magistral para mesoterapia y tratamiento capilar personalizado",
+          image: treatmentImages.mesotherapyMedication,
+          imageAlt: "Medicación magistral para mesoterapia y tratamiento capilar personalizado",
         },
         {
           title: "Aplicación localizada",
           text: "Los activos se aplican en cuero cabelludo mediante microinyecciones y se controla la evolución del plan.",
-          image: mesoterapiaImage,
-          imageAlt: "Aplicacion localizada de mesoterapia capilar en cuero cabelludo",
+          image: treatmentImages.mesotherapy,
+          imageAlt: "Aplicación localizada de mesoterapia capilar en cuero cabelludo",
         },
       ]}
       galleryTitle="Técnica, instrumental y activos seleccionados"
       galleryText="La mesoterapia se adapta al diagnóstico de cada paciente, combinando técnica, activos y seguimiento para acompañar la recuperación capilar."
       galleryImages={[
         {
-          src: magistralMedicationImage,
-          alt: "Medicacion magistral utilizada en tratamientos capilares personalizados",
+          src: treatmentImages.mesotherapyMedication,
+          alt: "Medicación magistral utilizada en tratamientos capilares personalizados",
           label: "Activos",
           caption: "Selección personalizada según diagnóstico e indicación profesional.",
         },
         {
-          src: tecnicaZafiroImage,
-          alt: "Tecnica Zafiro e instrumental de precision en Dermaraiz",
+          src: treatmentImages.zafiroTechnique,
+          alt: "Técnica Zafiro e instrumental de precisión en Dermaraíz",
           label: "Técnica",
           caption: "Instrumental de precisión para trabajar de forma localizada.",
         },
         {
-          src: pistolaMesoterapiaImage,
-          alt: "Instrumental para aplicacion de mesoterapia capilar en Dermaraiz",
+          src: treatmentImages.mesotherapyGun,
+          alt: "Instrumental para aplicación de mesoterapia capilar en Dermaraíz",
           label: "Aplicación",
           caption: "Herramientas utilizadas para distribuir los activos en cuero cabelludo.",
         },
         {
-          src: ampollasMesoterapiaImage,
+          src: treatmentImages.ampoulesMesotherapy,
           alt: "Ampollas y activos utilizados en mesoterapia capilar",
           label: "Preparación",
           caption: "Componentes seleccionados para acompañar el plan capilar.",

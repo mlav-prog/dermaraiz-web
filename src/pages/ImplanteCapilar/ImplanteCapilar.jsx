@@ -2,14 +2,7 @@ import "./ImplanteCapilar.css";
 import "../../components/TreatmentPage/TreatmentPage.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-import implanteImage from "../../assets/treatments/implante-capilar-fue-procedimiento-dermaraiz.jpeg";
-import implantProcedureImage from "../../assets/treatments/procedimiento-implante-capilar-fue-dermaraiz.jpeg";
-import implantDetailImage from "../../assets/treatments/implante-capilar-procedimiento-detalle-dermaraiz.jpeg";
-import implantTeamImage from "../../assets/treatments/implante-capilar-equipo-dermaraiz.jpeg";
-import implantFrontMarkingImage from "../../assets/treatments/implante-capilar-marcacion-frontal-dermaraiz.jpeg";
-import implantDonorMarkingImage from "../../assets/treatments/implante-capilar-marcacion-donante-dermaraiz.jpeg";
-import implantDonorZoneDiagramImage from "../../assets/treatments/implante-capilar-zona-donante-esquema-dermaraiz.jpg";
-import implantPostImage from "../../assets/results/post-implante-capilar-fue-dermaraiz.jpeg";
+import { resultImages, treatmentImages } from "../../assets/images";
 import { AGENDA_PRO_URL, getWhatsappUrl } from "../../utils/contactLinks";
 
 function ImplanteCapilar() {
@@ -66,8 +59,8 @@ function ImplanteCapilar() {
 
           <figure className="implant-hero-media">
             <img
-              src={implanteImage}
-              alt="Procedimiento de implante capilar FUE en Dermaraiz Buenos Aires"
+              src={treatmentImages.implantFueProcedure}
+              alt="Procedimiento de implante capilar FUE en Dermaraíz Buenos Aires"
               loading="eager"
               decoding="async"
               fetchPriority="high"
@@ -92,8 +85,8 @@ function ImplanteCapilar() {
             <article className="implant-card">
               <figure className="implant-card-media">
                 <img
-                  src={implantFrontMarkingImage}
-                  alt="Diseño de linea frontal para implante capilar FUE en Dermaraiz"
+                  src={treatmentImages.implantFrontMarking}
+                  alt="Diseño de línea frontal para implante capilar FUE en Dermaraíz"
                   loading="lazy"
                   decoding="async"
                 />
@@ -109,8 +102,8 @@ function ImplanteCapilar() {
             <article className="implant-card">
               <figure className="implant-card-media">
                 <img
-                  src={implantDonorMarkingImage}
-                  alt="Marcacion de zona donante para extraccion FUE en implante capilar"
+                  src={treatmentImages.implantDonorMarking}
+                  alt="Marcación de zona donante para extracción FUE en implante capilar"
                   loading="lazy"
                   decoding="async"
                 />
@@ -126,8 +119,8 @@ function ImplanteCapilar() {
             <article className="implant-card">
               <figure className="implant-card-media">
                 <img
-                  src={implantProcedureImage}
-                  alt="Preparacion de zona receptora durante implante capilar FUE"
+                  src={treatmentImages.implantProcedure}
+                  alt="Preparación de zona receptora durante implante capilar FUE"
                   loading="lazy"
                   decoding="async"
                 />
@@ -143,8 +136,8 @@ function ImplanteCapilar() {
             <article className="implant-card">
               <figure className="implant-card-media">
                 <img
-                  src={implantDetailImage}
-                  alt="Colocacion de unidades foliculares durante implante capilar FUE"
+                  src={treatmentImages.implantDetail}
+                  alt="Colocación de unidades foliculares durante implante capilar FUE"
                   loading="lazy"
                   decoding="async"
                 />
@@ -171,8 +164,8 @@ function ImplanteCapilar() {
 
           <figure>
             <img
-              src={implantFrontMarkingImage}
-              alt="Marcacion frontal previa al implante capilar FUE en Dermaraiz"
+              src={treatmentImages.implantFrontMarking}
+              alt="Marcación frontal previa al implante capilar FUE en Dermaraíz"
               loading="lazy"
               decoding="async"
             />
@@ -184,8 +177,8 @@ function ImplanteCapilar() {
 
           <figure>
             <img
-              src={implantDonorMarkingImage}
-              alt="Marcacion de zona donante previa al implante capilar FUE"
+              src={treatmentImages.implantDonorMarking}
+              alt="Marcación de zona donante previa al implante capilar FUE"
               loading="lazy"
               decoding="async"
             />
@@ -197,7 +190,7 @@ function ImplanteCapilar() {
 
           <figure>
             <img
-              src={implantDonorZoneDiagramImage}
+              src={treatmentImages.implantDonorZoneDiagram}
               alt="Esquema de zona donante adecuada para implante capilar FUE"
               loading="lazy"
               decoding="async"
@@ -210,8 +203,8 @@ function ImplanteCapilar() {
 
           <figure>
             <img
-              src={implantTeamImage}
-              alt="Equipo profesional de Dermaraiz trabajando en implante capilar"
+              src={treatmentImages.implantTeam}
+              alt="Equipo profesional de Dermaraíz trabajando en implante capilar"
               loading="lazy"
               decoding="async"
             />
@@ -223,8 +216,8 @@ function ImplanteCapilar() {
 
           <figure>
             <img
-              src={implantProcedureImage}
-              alt="Equipo medico de Dermaraiz realizando un implante capilar FUE"
+              src={treatmentImages.implantDoubleImplantation}
+              alt="Equipo médico de Dermaraíz realizando un implante capilar FUE"
               loading="lazy"
               decoding="async"
             />
@@ -236,8 +229,8 @@ function ImplanteCapilar() {
 
           <figure>
             <img
-              src={implantPostImage}
-              alt="Evolucion inmediata posterior a un implante capilar FUE en Dermaraiz"
+              src={resultImages.implantFue}
+              alt="Evolución inmediata posterior a un implante capilar FUE en Dermaraíz"
               loading="lazy"
               decoding="async"
             />

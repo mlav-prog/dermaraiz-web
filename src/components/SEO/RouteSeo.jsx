@@ -1,58 +1,54 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import implanteSeoImage from "../../assets/treatments/implante-capilar-fue-procedimiento-dermaraiz.jpeg";
-import prpSeoImage from "../../assets/treatments/prp-capilar-plasma-rico-en-plaquetas-dermaraiz.jpg";
-import mesoterapiaSeoImage from "../../assets/treatments/mesoterapia-capilar-dermaraiz.jpeg";
-import diagnosticoSeoImage from "../../assets/treatments/diagnostico-capilar-dermaraiz.jpg";
-import resultadosSeoImage from "../../assets/results/resultado-tratamiento-capilar-dermaraiz.jpeg";
+import { resultImages, treatmentImages } from "../../assets/images";
 
 const SITE_URL = "https://dermaraiz.com.ar";
 
 const pages = {
   "/": {
-    title: "Dermaraiz | Tratamientos capilares en Buenos Aires",
+    title: "Dermaraíz | Tratamientos capilares en Buenos Aires",
     description:
-      "Clinica capilar en CABA especializada en diagnostico, PRP, mesoterapia e implante capilar FUE con atencion personalizada.",
+      "Clínica capilar en CABA especializada en diagnóstico, PRP, mesoterapia e implante capilar FUE con atención personalizada.",
     keywords:
-      "tratamiento capilar, implante capilar, caida del cabello, PRP capilar, mesoterapia capilar, clinica capilar Buenos Aires",
-    image: resultadosSeoImage,
-    imageAlt: "Resultados de tratamientos capilares en Dermaraiz Buenos Aires",
+      "tratamiento capilar, implante capilar, caída del cabello, PRP capilar, mesoterapia capilar, clínica capilar Buenos Aires",
+    image: resultImages.coffeeFollowUp,
+    imageAlt: "Resultados de tratamientos capilares en Dermaraíz Buenos Aires",
   },
   "/implante-capilar": {
-    title: "Implante capilar FUE en Buenos Aires | Dermaraiz",
+    title: "Implante capilar FUE en Buenos Aires | Dermaraíz",
     description:
-      "Implante capilar FUE con planificacion personalizada, extraccion folicular e implantacion orientada a resultados naturales.",
+      "Implante capilar FUE con planificación personalizada, extracción folicular e implantación orientada a resultados naturales.",
     keywords:
       "implante capilar FUE, implante capilar Buenos Aires, transplante capilar, recuperar cabello",
-    image: implanteSeoImage,
-    imageAlt: "Procedimiento de implante capilar FUE en Dermaraiz Buenos Aires",
+    image: treatmentImages.implantFueProcedure,
+    imageAlt: "Procedimiento de implante capilar FUE en Dermaraíz Buenos Aires",
   },
   "/prp-capilar": {
-    title: "PRP capilar en Buenos Aires | Dermaraiz",
+    title: "PRP capilar en Buenos Aires | Dermaraíz",
     description:
-      "Tratamiento de PRP capilar con plasma rico en plaquetas para estimular el foliculo y acompanar la recuperacion capilar.",
+      "Tratamiento de PRP capilar con plasma rico en plaquetas para estimular el folículo y acompañar la recuperación capilar.",
     keywords:
-      "PRP capilar, plasma rico en plaquetas capilar, tratamiento caida cabello, fortalecimiento capilar",
-    image: prpSeoImage,
-    imageAlt: "Plasma rico en plaquetas para PRP capilar en Dermaraiz",
+      "PRP capilar, plasma rico en plaquetas capilar, tratamiento caída cabello, fortalecimiento capilar",
+    image: treatmentImages.prpPlasma,
+    imageAlt: "Plasma rico en plaquetas para PRP capilar en Dermaraíz",
   },
   "/mesoterapia-capilar": {
-    title: "Mesoterapia capilar en Buenos Aires | Dermaraiz",
+    title: "Mesoterapia capilar en Buenos Aires | Dermaraíz",
     description:
-      "Mesoterapia capilar con aplicacion localizada de activos para nutrir la raiz, mejorar la calidad del cabello y acompanar tratamientos capilares.",
+      "Mesoterapia capilar con aplicación localizada de activos para nutrir la raíz, mejorar la calidad del cabello y acompañar tratamientos capilares.",
     keywords:
-      "mesoterapia capilar, mesoterapia para caida cabello, tratamiento capilar Buenos Aires",
-    image: mesoterapiaSeoImage,
-    imageAlt: "Aplicacion de mesoterapia capilar en Dermaraiz Buenos Aires",
+      "mesoterapia capilar, mesoterapia para caída cabello, tratamiento capilar Buenos Aires",
+    image: treatmentImages.mesotherapy,
+    imageAlt: "Aplicación de mesoterapia capilar en Dermaraíz Buenos Aires",
   },
   "/diagnostico-capilar": {
-    title: "Diagnostico capilar en Buenos Aires | Dermaraiz",
+    title: "Diagnóstico capilar en Buenos Aires | Dermaraíz",
     description:
-      "Evaluacion profesional del cuero cabelludo para identificar tipos de alopecia y definir un plan capilar personalizado.",
+      "Evaluación profesional del cuero cabelludo para identificar tipos de alopecia y definir un plan capilar personalizado.",
     keywords:
-      "diagnostico capilar, evaluacion capilar, alopecia, caida del cabello, cuero cabelludo",
-    image: diagnosticoSeoImage,
-    imageAlt: "Diagnostico capilar profesional en Dermaraiz CABA",
+      "diagnóstico capilar, evaluación capilar, alopecia, caída del cabello, cuero cabelludo",
+    image: treatmentImages.diagnosis,
+    imageAlt: "Diagnóstico capilar profesional en Dermaraíz CABA",
   },
 };
 
@@ -165,14 +161,14 @@ function RouteSeo() {
     upsertJsonLd("local-business", {
       "@context": "https://schema.org",
       "@type": "MedicalClinic",
-      name: "Dermaraiz Capilar & Estetica",
+      name: "Dermaraíz Capilar & Estética",
       url: SITE_URL,
       image: imageUrl,
       telephone: "+54 9 11 7356-5160",
       address: {
         "@type": "PostalAddress",
         streetAddress: "Ciudad de la Paz 2984 Depto 2",
-        addressLocality: "Ciudad Autonoma de Buenos Aires",
+        addressLocality: "Ciudad Autónoma de Buenos Aires",
         addressRegion: "CABA",
         addressCountry: "AR",
       },
@@ -199,7 +195,7 @@ function RouteSeo() {
       inLanguage: "es-AR",
       isPartOf: {
         "@type": "WebSite",
-        name: "Dermaraiz",
+        name: "Dermaraíz",
         url: SITE_URL,
       },
     });
