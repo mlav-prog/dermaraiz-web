@@ -57,7 +57,7 @@ function Results() {
               <img
                 src={item.image}
                 alt={item.alt}
-                className="results-image"
+                className={`results-image${item.toneDown ? " results-image--toned-down" : ""}`}
                 loading="lazy"
               />
             </div>

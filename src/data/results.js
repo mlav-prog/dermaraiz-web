@@ -74,6 +74,7 @@ export const resultRecords = [
     },
     {
         image: resultImages.implantPostAugust,
+        toneDown: true,
         alt: "Post inmediato de implante capilar con técnica FUE en Dermaraíz",
         category: "Implante capilar",
         title: "Post inmediato documentado",

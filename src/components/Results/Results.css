@@ -140,7 +140,11 @@
     aspect-ratio: 13 / 9;
     object-fit: cover;
     display: block;
-    transition: transform 0.4s ease;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.results-image--toned-down {
+    filter: saturate(35%) brightness(1.08) contrast(0.9);
 }
 
 .results-card:hover .results-image {
