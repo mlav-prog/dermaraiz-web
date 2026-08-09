@@ -18,7 +18,7 @@ function Treatments() {
             <div className="treatments-grid">
                 {treatments.map((treatment) => (
                     <article
-                        className={`treatment-card ${treatment.link === "/implante-capilar" ? "featured" : ""}`}
+                        className={`treatment-card ${treatment.link === "/implante-capilar/" ? "featured" : ""}`}
                         key={treatment.title}
                     >
                         <a

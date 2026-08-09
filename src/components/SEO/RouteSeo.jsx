@@ -15,36 +15,40 @@ const pages = {
     imageAlt: "Resultados de tratamientos capilares en Dermaraíz Buenos Aires",
   },
   "/implante-capilar": {
-    title: "Implante capilar FUE en Buenos Aires | Dermaraíz",
+    title: "Implante capilar FUE en CABA | Dermaraíz",
     description:
-      "Implante capilar FUE con planificación personalizada, extracción folicular e implantación orientada a resultados naturales.",
+      "Implante capilar FUE en CABA con evaluación y planificación personalizada. Conocé el procedimiento y reservá una consulta en Buenos Aires.",
+    serviceName: "Implante capilar FUE",
     keywords:
       "implante capilar FUE, implante capilar Buenos Aires, transplante capilar, recuperar cabello",
     image: treatmentImages.implantFueProcedure,
     imageAlt: "Procedimiento de implante capilar FUE en Dermaraíz Buenos Aires",
   },
   "/prp-capilar": {
-    title: "PRP capilar en Buenos Aires | Dermaraíz",
+    title: "PRP capilar en CABA y Buenos Aires | Dermaraíz",
     description:
-      "Tratamiento de PRP capilar con plasma rico en plaquetas para estimular el folículo y acompañar la recuperación capilar.",
+      "PRP capilar en CABA con evaluación profesional y plasma rico en plaquetas. Conocé el tratamiento y reservá una consulta en Dermaraíz.",
+    serviceName: "PRP capilar",
     keywords:
       "PRP capilar, plasma rico en plaquetas capilar, tratamiento caída cabello, fortalecimiento capilar",
     image: treatmentImages.prpPlasma,
     imageAlt: "Plasma rico en plaquetas para PRP capilar en Dermaraíz",
   },
   "/mesoterapia-capilar": {
-    title: "Mesoterapia capilar en Buenos Aires | Dermaraíz",
+    title: "Mesoterapia capilar en CABA | Dermaraíz",
     description:
-      "Mesoterapia capilar con aplicación localizada de activos para nutrir la raíz, mejorar la calidad del cabello y acompañar tratamientos capilares.",
+      "Mesoterapia capilar en CABA con activos seleccionados según cada caso. Conocé el tratamiento y reservá una consulta en Buenos Aires.",
+    serviceName: "Mesoterapia capilar",
     keywords:
       "mesoterapia capilar, mesoterapia para caída cabello, tratamiento capilar Buenos Aires",
     image: treatmentImages.mesotherapy,
     imageAlt: "Aplicación de mesoterapia capilar en Dermaraíz Buenos Aires",
   },
   "/diagnostico-capilar": {
-    title: "Diagnóstico capilar en Buenos Aires | Dermaraíz",
+    title: "Diagnóstico capilar en CABA | Dermaraíz",
     description:
-      "Evaluación profesional del cuero cabelludo para identificar tipos de alopecia y definir un plan capilar personalizado.",
+      "Diagnóstico capilar en CABA con evaluación del cuero cabelludo y tricoscopia para orientar un plan personalizado según cada caso.",
+    serviceName: "Diagnóstico capilar",
     keywords:
       "diagnóstico capilar, evaluación capilar, alopecia, caída del cabello, cuero cabelludo",
     image: treatmentImages.diagnosis,
@@ -90,10 +94,15 @@ function upsertJsonLd(id, data) {
   element.textContent = JSON.stringify(data);
 }
 
+function removeJsonLd(id) {
+  document.head.querySelector(`script[data-seo="${id}"]`)?.remove();
+}
+
 function RouteSeo() {
   const { pathname } = useLocation();
-  const page = pages[pathname] || pages["/"];
-  const canonical = `${SITE_URL}${pathname === "/" ? "/" : pathname}`;
+  const normalizedPath = pathname === "/" ? "/" : pathname.replace(/\/+$/, "");
+  const page = pages[normalizedPath] || pages["/"];
+  const canonical = `${SITE_URL}${normalizedPath === "/" ? "/" : `${normalizedPath}/`}`;
   const imageUrl = new URL(page.image, window.location.origin).href;
 
   useEffect(() => {
@@ -161,7 +170,10 @@ function RouteSeo() {
     upsertJsonLd("local-business", {
       "@context": "https://schema.org",
       "@type": "MedicalClinic",
+      "@id": `${SITE_URL}/#medical-clinic`,
       name: "Dermaraíz Capilar & Estética",
+      description:
+        "Clínica capilar en CABA con diagnóstico, PRP, mesoterapia e implante capilar FUE.",
       url: SITE_URL,
       image: imageUrl,
       telephone: "+54 9 11 7356-5160",
@@ -170,8 +182,10 @@ function RouteSeo() {
         streetAddress: "Ciudad de la Paz 2984 Depto 2",
         addressLocality: "Ciudad Autónoma de Buenos Aires",
         addressRegion: "CABA",
+        postalCode: "1428",
         addressCountry: "AR",
       },
+      priceRange: "$$",
       medicalSpecialty: [
         "HairTransplantation",
         "Dermatology",
@@ -199,6 +213,42 @@ function RouteSeo() {
         url: SITE_URL,
       },
     });
+
+    if (page.serviceName) {
+      upsertJsonLd("service", {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: page.serviceName,
+        description: page.description,
+        url: canonical,
+        areaServed: ["CABA", "Buenos Aires"],
+        provider: {
+          "@id": `${SITE_URL}/#medical-clinic`,
+        },
+      });
+
+      upsertJsonLd("breadcrumbs", {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Inicio",
+            item: `${SITE_URL}/`,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: page.serviceName,
+            item: canonical,
+          },
+        ],
+      });
+    } else {
+      removeJsonLd("service");
+      removeJsonLd("breadcrumbs");
+    }
   }, [canonical, imageUrl, page]);
 
   return null;

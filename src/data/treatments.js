@@ -6,7 +6,7 @@ export const treatments = [
         description:
             "Tratamiento regenerativo que utiliza factores de crecimiento obtenidos de la sangre del paciente para estimular el folículo piloso y fortalecer el cabello.",
         benefit: "Ideal para fortalecer y estimular el crecimiento.",
-        link: "/prp-capilar",
+        link: "/prp-capilar/",
         image: treatmentImages.prpPlasma,
         imageAlt: "Plasma rico en plaquetas para tratamiento PRP capilar en Dermaraíz CABA",
         imageFocus: "prp",
@@ -16,7 +16,7 @@ export const treatments = [
         description:
             "Aplicación de activos específicos sobre el cuero cabelludo para nutrir la raíz, mejorar la calidad capilar y complementar tratamientos de recuperación.",
         benefit: "Nutrición y revitalización capilar.",
-        link: "/mesoterapia-capilar",
+        link: "/mesoterapia-capilar/",
         image: treatmentImages.mesotherapy,
         imageAlt: "Mesoterapia capilar aplicada en consultorio Dermaraíz Buenos Aires",
         imageFocus: "mesoterapia",
@@ -26,7 +26,7 @@ export const treatments = [
         description:
             "Evaluación profesional orientada a identificar distintos tipos de alopecia y definir un tratamiento adecuado según cada paciente.",
         benefit: "Permite definir un tratamiento personalizado.",
-        link: "/diagnostico-capilar",
+        link: "/diagnostico-capilar/",
         image: treatmentImages.diagnosis,
         imageAlt: "Diagnóstico capilar profesional con evaluación personalizada en Dermaraíz",
         imageFocus: "diagnostico",
@@ -36,7 +36,7 @@ export const treatments = [
         description:
             "Procedimiento que permite recuperar cabello en zonas despobladas mediante la extracción e implantación folicular pelo por pelo.",
         benefit: "Resultados naturales y permanentes.",
-        link: "/implante-capilar",
+        link: "/implante-capilar/",
         image: treatmentImages.implantFueProcedure,
         imageAlt: "Implante capilar FUE realizado por el equipo médico de Dermaraíz",
         imageFocus: "implante",

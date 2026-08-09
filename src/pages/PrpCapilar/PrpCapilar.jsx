@@ -5,7 +5,8 @@ function PrpCapilar() {
   return (
     <TreatmentPage
       tag="PRP Capilar"
-      title="Estimulación capilar mediante Plasma Rico en Plaquetas"
+      title="PRP capilar en CABA con Plasma Rico en Plaquetas"
+      currentPath="/prp-capilar/"
       description="El PRP Capilar es un tratamiento regenerativo que utiliza factores de crecimiento obtenidos de la propia sangre del paciente para acompañar la recuperación capilar, fortalecer el cabello y complementar planes personalizados."
       heroImage={treatmentImages.prpPlasma}
       heroImageAlt="Preparación de plasma rico en plaquetas para PRP capilar en Dermaraíz"

@@ -5,7 +5,8 @@ function DiagnosticoCapilar() {
   return (
     <TreatmentPage
       tag="Diagnóstico Capilar"
-      title="Evaluación profesional y personalizada del cuero cabelludo"
+      title="Diagnóstico capilar en CABA con evaluación personalizada"
+      currentPath="/diagnostico-capilar/"
       description="El diagnóstico capilar permite analizar el cuero cabelludo, identificar causas posibles de caída, detectar signos de miniaturización y definir un tratamiento adecuado según cada paciente."
       heroImage={treatmentImages.diagnosis}
       heroImageAlt="Evaluación capilar profesional en consultorio Dermaraíz CABA"

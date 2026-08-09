@@ -2,6 +2,7 @@ import "./ImplanteCapilar.css";
 import "../../components/TreatmentPage/TreatmentPage.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
+import RelatedTreatments from "../../components/RelatedTreatments/RelatedTreatments";
 import { resultImages, treatmentImages } from "../../assets/images";
 import { AGENDA_PRO_URL, getWhatsappUrl } from "../../utils/contactLinks";
 
@@ -28,7 +29,7 @@ function ImplanteCapilar() {
           <div className="implant-hero-content">
             <span className="section-tag">Implante capilar FUE</span>
 
-            <h1>Recuperá densidad capilar con un resultado natural</h1>
+            <h1>Implante capilar FUE en CABA con planificación personalizada</h1>
 
             <p>
               El implante capilar FUE traslada unidades foliculares propias
@@ -415,6 +416,8 @@ function ImplanteCapilar() {
             </article>
           </div>
         </section>
+
+        <RelatedTreatments currentPath="/implante-capilar/" />
 
         <section className="implant-cta">
           <h2>¿Querés saber si sos candidato para un implante capilar?</h2>

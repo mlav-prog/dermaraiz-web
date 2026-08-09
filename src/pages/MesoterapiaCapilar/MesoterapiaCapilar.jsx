@@ -5,7 +5,8 @@ function MesoterapiaCapilar() {
   return (
     <TreatmentPage
       tag="Mesoterapia Capilar"
-      title="Nutrición y revitalización directa del cuero cabelludo"
+      title="Mesoterapia capilar en CABA para el cuidado del cabello"
+      currentPath="/mesoterapia-capilar/"
       description="La mesoterapia capilar consiste en la aplicación localizada de activos específicos sobre el cuero cabelludo para acompañar la recuperación capilar, mejorar la calidad del pelo y complementar planes personalizados."
       heroImage={treatmentImages.mesotherapy}
       heroImageAlt="Aplicación de mesoterapia capilar en consultorio Dermaraíz"

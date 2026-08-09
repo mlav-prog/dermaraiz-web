@@ -1,6 +1,7 @@
 import "./TreatmentPage.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
+import RelatedTreatments from "../RelatedTreatments/RelatedTreatments";
 import { AGENDA_PRO_URL, getWhatsappUrl } from "../../utils/contactLinks";
 
 function TreatmentPage({
@@ -23,6 +24,7 @@ function TreatmentPage({
   faqs,
   ctaTitle,
   ctaText,
+  currentPath,
 }) {
   function handleGoBack() {
     window.location.href = "/#tratamientos";
@@ -211,6 +213,8 @@ function TreatmentPage({
             </div>
           </section>
         )}
+
+        <RelatedTreatments currentPath={currentPath} />
 
         <section className="treatment-page-cta">
           <h2>{ctaTitle}</h2>

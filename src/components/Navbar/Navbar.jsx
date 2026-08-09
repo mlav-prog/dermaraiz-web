@@ -38,10 +38,10 @@ function Navbar() {
             </a>
 
             <ul className="dropdown-menu">
-              <li><a href="/prp-capilar" onClick={closeMenu}>PRP Capilar</a></li>
-              <li><a href="/mesoterapia-capilar" onClick={closeMenu}>Mesoterapia</a></li>
-              <li><a href="/diagnostico-capilar" onClick={closeMenu}>Diagnóstico</a></li>
-              <li><a href="/implante-capilar" onClick={closeMenu}>Implante Capilar FUE</a></li>
+              <li><a href="/prp-capilar/" onClick={closeMenu}>PRP Capilar</a></li>
+              <li><a href="/mesoterapia-capilar/" onClick={closeMenu}>Mesoterapia</a></li>
+              <li><a href="/diagnostico-capilar/" onClick={closeMenu}>Diagnóstico</a></li>
+              <li><a href="/implante-capilar/" onClick={closeMenu}>Implante Capilar FUE</a></li>
               <li><a href="/#estetica" onClick={closeMenu}>Estética</a></li>
             </ul>
           </li>
