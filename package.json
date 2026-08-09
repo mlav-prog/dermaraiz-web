@@ -6,7 +6,7 @@
   "homepage": "https://mlav-prog.github.io/dermaraiz-web/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/generate-route-entrypoints.mjs",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
