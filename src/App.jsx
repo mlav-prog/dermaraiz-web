@@ -12,11 +12,13 @@ import ScrollReveal from "./components/ScrollReveal/ScrollReveal";
 import GithubPagesRedirect from "./components/GithubPagesRedirect/GithubPagesRedirect";
 import RouteSeo from "./components/SEO/RouteSeo";
 import TreatmentAssistant from "./components/TreatmentAssistant/TreatmentAssistant";
+import AnalyticsTracker from "./components/AnalyticsTracker/AnalyticsTracker";
 
 function App() {
   return (
     <BrowserRouter>
       <GithubPagesRedirect />
+      <AnalyticsTracker />
       <RouteSeo />
       <ScrollToHash />
       <ScrollReveal />
