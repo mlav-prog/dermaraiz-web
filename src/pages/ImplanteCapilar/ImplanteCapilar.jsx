@@ -3,7 +3,7 @@ import "../../components/TreatmentPage/TreatmentPage.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import RelatedTreatments from "../../components/RelatedTreatments/RelatedTreatments";
-import { resultImages, treatmentImages } from "../../assets/images";
+import { treatmentImages } from "../../assets/images";
 import { AGENDA_PRO_URL, getWhatsappUrl } from "../../utils/contactLinks";
 
 function ImplanteCapilar() {
@@ -230,14 +230,14 @@ function ImplanteCapilar() {
 
           <figure>
             <img
-              src={resultImages.implantFue}
-              alt="Evolución inmediata posterior a un implante capilar FUE en Dermaraíz"
+              src={treatmentImages.implantFrontalPostAugust}
+              alt="Zona frontal posterior a implante capilar FUE en Dermaraíz Buenos Aires"
               loading="lazy"
               decoding="async"
             />
             <figcaption>
-              <span>Post inmediato</span>
-              <p>Registro posterior al procedimiento.</p>
+              <span>Zona receptora</span>
+              <p>Control visual de la zona frontal luego del procedimiento.</p>
             </figcaption>
           </figure>
         </section>

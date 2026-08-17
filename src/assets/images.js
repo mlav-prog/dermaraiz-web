@@ -9,6 +9,7 @@ import teamMain from "./team/team-dermaraiz-2.jpg";
 
 import resultImplantBefore from "./results/implante-capilar-before-02.jpeg";
 import resultImplantPost from "./results/implante-capilar-post-02.jpeg";
+import resultImplantImmediateAugust from "./results/implante-capilar-post-inmediato-agosto-dermaraiz.jpeg";
 import resultImplantPostAugust from "./results/implante-capilar-post-agosto-dermaraiz.jpeg";
 import resultMesotherapyMonthOne from "./results/mesoterapia-primer-mes-dermaraiz.jpeg";
 import resultMesotherapyMonthFour from "./results/mesoterapia-mes-4-dermaraiz.jpeg";
@@ -36,6 +37,7 @@ import treatmentImplantFrontMarking from "./treatments/implante-capilar-marcacio
 import treatmentImplantDetail from "./treatments/implante-capilar-procedimiento-detalle-dermaraiz.jpeg";
 import treatmentImplantDonorZoneDiagram from "./treatments/implante-capilar-zona-donante-esquema-dermaraiz.jpg";
 import treatmentImplantDoubleImplantation from "./treatments/implante-capilar-doble-implantacion-dermaraiz.jpeg";
+import treatmentImplantFrontalPostAugust from "./treatments/implante-capilar-zona-frontal-post-agosto-dermaraiz.webp";
 import treatmentMesotherapy from "./treatments/mesoterapia-capilar-dermaraiz.jpeg";
 import treatmentMesotherapyMedication from "./treatments/mesoterapia-medicacion-magistral-dermaraiz.jpg";
 import treatmentMesotherapyGun from "./treatments/pistola-mesoterapia-capilar.jpg";
@@ -59,6 +61,7 @@ export const productImages = {
 export const resultImages = {
     implantBefore: resultImplantBefore,
     implantPost: resultImplantPost,
+    implantImmediateAugust: resultImplantImmediateAugust,
     implantPostAugust: resultImplantPostAugust,
     mesotherapyMonthOne: resultMesotherapyMonthOne,
     mesotherapyMonthFour: resultMesotherapyMonthFour,
@@ -88,6 +91,7 @@ export const treatmentImages = {
     implantDetail: treatmentImplantDetail,
     implantDonorZoneDiagram: treatmentImplantDonorZoneDiagram,
     implantDoubleImplantation: treatmentImplantDoubleImplantation,
+    implantFrontalPostAugust: treatmentImplantFrontalPostAugust,
     mesotherapy: treatmentMesotherapy,
     mesotherapyMedication: treatmentMesotherapyMedication,
     mesotherapyGun: treatmentMesotherapyGun,

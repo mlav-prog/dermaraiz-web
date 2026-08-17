@@ -73,13 +73,13 @@ export const resultRecords = [
             "Cada procedimiento se realiza con planificación, cuidado del detalle y acompañamiento profesional.",
     },
     {
-        image: resultImages.implantPostAugust,
+        image: resultImages.implantImmediateAugust,
         toneDown: true,
-        alt: "Post inmediato de implante capilar con técnica FUE en Dermaraíz",
+        alt: "Post inmediato de implante capilar FUE con zona implantada en Dermaraíz Buenos Aires",
         category: "Implante capilar",
-        title: "Post inmediato documentado",
+        title: "Zona implantada post procedimiento",
         description:
-            "Registro clínico del área implantada al finalizar el procedimiento.",
+            "Registro clínico de la zona receptora al finalizar el implante capilar FUE.",
     },
     {
         image: treatmentImages.implantDoubleImplantation,

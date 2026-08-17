@@ -11,7 +11,7 @@ const pages = {
       "Clínica capilar en CABA especializada en diagnóstico, PRP, mesoterapia e implante capilar FUE con atención personalizada.",
     keywords:
       "tratamiento capilar, implante capilar, caída del cabello, PRP capilar, mesoterapia capilar, clínica capilar Buenos Aires",
-    image: resultImages.coffeeFollowUp,
+    image: "/preview.png",
     imageAlt: "Resultados de tratamientos capilares en Dermaraíz Buenos Aires",
   },
   "/implante-capilar": {
