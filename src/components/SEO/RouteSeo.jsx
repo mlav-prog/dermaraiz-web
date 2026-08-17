@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { resultImages, treatmentImages } from "../../assets/images";
 
 const SITE_URL = "https://dermaraiz.com.ar";
+const SITE_PREVIEW_IMAGE = "/preview-dermaraiz-tratamientos-capilares.png";
 
 const pages = {
   "/": {
@@ -11,7 +12,7 @@ const pages = {
       "Clínica capilar en CABA especializada en diagnóstico, PRP, mesoterapia e implante capilar FUE con atención personalizada.",
     keywords:
       "tratamiento capilar, implante capilar, caída del cabello, PRP capilar, mesoterapia capilar, clínica capilar Buenos Aires",
-    image: "/preview.png",
+    image: SITE_PREVIEW_IMAGE,
     imageAlt: "Resultados de tratamientos capilares en Dermaraíz Buenos Aires",
   },
   "/implante-capilar": {
@@ -139,6 +140,22 @@ function RouteSeo() {
     upsertMeta('meta[property="og:image"]', {
       property: "og:image",
       content: imageUrl,
+    });
+    upsertMeta('meta[property="og:image:secure_url"]', {
+      property: "og:image:secure_url",
+      content: imageUrl,
+    });
+    upsertMeta('meta[property="og:image:width"]', {
+      property: "og:image:width",
+      content: "1200",
+    });
+    upsertMeta('meta[property="og:image:height"]', {
+      property: "og:image:height",
+      content: "630",
+    });
+    upsertMeta('meta[property="og:image:type"]', {
+      property: "og:image:type",
+      content: "image/png",
     });
     upsertMeta('meta[property="og:image:alt"]', {
       property: "og:image:alt",
