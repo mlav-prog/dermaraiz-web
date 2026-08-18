@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { resultImages, treatmentImages } from "../../assets/images";
 
 const SITE_URL = "https://dermaraiz.com.ar";
-const SITE_PREVIEW_IMAGE = "/preview-dermaraiz-isotipo-beige-v5.png";
+const SITE_PREVIEW_IMAGE = "/preview-dermaraiz-isotipo-beige-brown-v6.png";
 
 const pages = {
   "/": {
