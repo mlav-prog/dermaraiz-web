@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { resultImages, treatmentImages } from "../../assets/images";
 
 const SITE_URL = "https://dermaraiz.com.ar";
-const SITE_PREVIEW_IMAGE = "/preview-dermaraiz-logo-real-v2.png";
+const SITE_PREVIEW_IMAGE = "/preview-dermaraiz-logo-square-v3.png";
 
 const pages = {
   "/": {
@@ -151,7 +151,7 @@ function RouteSeo() {
     });
     upsertMeta('meta[property="og:image:height"]', {
       property: "og:image:height",
-      content: "630",
+      content: "1200",
     });
     upsertMeta('meta[property="og:image:type"]', {
       property: "og:image:type",
