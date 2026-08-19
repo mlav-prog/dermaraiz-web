@@ -3,7 +3,6 @@ import { testimonials, testimonialsSummary } from "../../data/testimonials";
 import "./Testimonials.css";
 
 function Testimonials() {
-    const [activeIndex, setActiveIndex] = useState(0);
     const [slideIndex, setSlideIndex] = useState(testimonials.length);
     const [slideStep, setSlideStep] = useState(0);
     const [isTransitioning, setIsTransitioning] = useState(true);
@@ -17,6 +16,8 @@ function Testimonials() {
         ((index % testimonials.length) + testimonials.length) % testimonials.length
     );
 
+    const activeIndex = normalizeIndex(slideIndex);
+
     const moveCarousel = (direction) => {
         setIsTransitioning(true);
         setSlideIndex((currentIndex) => currentIndex + direction);
@@ -24,7 +25,6 @@ function Testimonials() {
 
     const goToTestimonial = (index) => {
         const nextIndex = normalizeIndex(index);
-        setActiveIndex(nextIndex);
         setIsTransitioning(true);
         setSlideIndex(testimonials.length + nextIndex);
     };
@@ -47,10 +47,6 @@ function Testimonials() {
 
         return () => window.removeEventListener("resize", updateSlideStep);
     }, []);
-
-    useEffect(() => {
-        setActiveIndex(normalizeIndex(slideIndex));
-    }, [slideIndex]);
 
     useEffect(() => {
         if (isPaused) {

@@ -1,24 +1,24 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { resultImages, treatmentImages } from "../../assets/images";
+import { treatmentImages } from "../../assets/images";
 
 const SITE_URL = "https://dermaraiz.com.ar";
 const SITE_PREVIEW_IMAGE = "/preview-dermaraiz-isotipo-beige-brown-v6.png";
 
 const pages = {
   "/": {
-    title: "Dermaraíz | Tratamientos capilares en Buenos Aires",
+    title: "Dermaraíz | Clínica capilar en CABA y Buenos Aires",
     description:
-      "Clínica capilar en CABA especializada en diagnóstico, PRP, mesoterapia e implante capilar FUE con atención personalizada.",
+      "Clínica capilar en CABA especializada en diagnóstico, PRP, mesoterapia e implante capilar FUE. Atención personalizada y resultados naturales.",
     keywords:
-      "tratamiento capilar, implante capilar, caída del cabello, PRP capilar, mesoterapia capilar, clínica capilar Buenos Aires",
+      "tratamiento capilar CABA, implante capilar Buenos Aires, caída del cabello, PRP capilar, mesoterapia capilar, clínica capilar Buenos Aires",
     image: SITE_PREVIEW_IMAGE,
     imageAlt: "Resultados de tratamientos capilares en Dermaraíz Buenos Aires",
   },
   "/implante-capilar": {
     title: "Implante capilar FUE en CABA | Dermaraíz",
     description:
-      "Implante capilar FUE en CABA con evaluación y planificación personalizada. Conocé el procedimiento y reservá una consulta en Buenos Aires.",
+      "Implante capilar FUE en CABA con diagnóstico, planificación de línea capilar y técnica zafiro. Conocé el procedimiento y reservá tu consulta.",
     serviceName: "Implante capilar FUE",
     keywords:
       "implante capilar FUE, implante capilar Buenos Aires, transplante capilar, recuperar cabello",
@@ -26,9 +26,9 @@ const pages = {
     imageAlt: "Procedimiento de implante capilar FUE en Dermaraíz Buenos Aires",
   },
   "/prp-capilar": {
-    title: "PRP capilar en CABA y Buenos Aires | Dermaraíz",
+    title: "PRP capilar en CABA | Plasma rico en plaquetas | Dermaraíz",
     description:
-      "PRP capilar en CABA con evaluación profesional y plasma rico en plaquetas. Conocé el tratamiento y reservá una consulta en Dermaraíz.",
+      "PRP capilar en CABA con plasma rico en plaquetas y evaluación profesional para fortalecer el cabello. Reservá tu consulta en Dermaraíz.",
     serviceName: "PRP capilar",
     keywords:
       "PRP capilar, plasma rico en plaquetas capilar, tratamiento caída cabello, fortalecimiento capilar",
@@ -38,7 +38,7 @@ const pages = {
   "/mesoterapia-capilar": {
     title: "Mesoterapia capilar en CABA | Dermaraíz",
     description:
-      "Mesoterapia capilar en CABA con activos seleccionados según cada caso. Conocé el tratamiento y reservá una consulta en Buenos Aires.",
+      "Mesoterapia capilar en CABA para caída del cabello, nutrición folicular y mejora de densidad. Tratamiento personalizado en Dermaraíz.",
     serviceName: "Mesoterapia capilar",
     keywords:
       "mesoterapia capilar, mesoterapia para caída cabello, tratamiento capilar Buenos Aires",
@@ -46,9 +46,9 @@ const pages = {
     imageAlt: "Aplicación de mesoterapia capilar en Dermaraíz Buenos Aires",
   },
   "/diagnostico-capilar": {
-    title: "Diagnóstico capilar en CABA | Dermaraíz",
+    title: "Diagnóstico capilar en CABA | Tricoscopia | Dermaraíz",
     description:
-      "Diagnóstico capilar en CABA con evaluación del cuero cabelludo y tricoscopia para orientar un plan personalizado según cada caso.",
+      "Diagnóstico capilar en CABA con evaluación del cuero cabelludo, tricoscopia y análisis de alopecia para definir un plan personalizado.",
     serviceName: "Diagnóstico capilar",
     keywords:
       "diagnóstico capilar, evaluación capilar, alopecia, caída del cabello, cuero cabelludo",
@@ -104,7 +104,7 @@ function RouteSeo() {
   const normalizedPath = pathname === "/" ? "/" : pathname.replace(/\/+$/, "");
   const page = pages[normalizedPath] || pages["/"];
   const canonical = `${SITE_URL}${normalizedPath === "/" ? "/" : `${normalizedPath}/`}`;
-  const imageUrl = new URL(page.image, window.location.origin).href;
+  const imageUrl = new URL(page.image, SITE_URL).href;
 
   useEffect(() => {
     document.title = page.title;

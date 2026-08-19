@@ -6,6 +6,16 @@ function GithubPagesRedirect() {
   const navigate = useNavigate();
 
   useEffect(() => {
+    if (
+      window.location.protocol !== "https:" ||
+      window.location.hostname === "www.dermaraiz.com.ar"
+    ) {
+      window.location.replace(
+        `https://dermaraiz.com.ar${window.location.pathname}${window.location.search}${window.location.hash}`,
+      );
+      return;
+    }
+
     const params = new URLSearchParams(location.search);
     const redirect = params.get("redirect");
 
