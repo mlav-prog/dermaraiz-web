@@ -49,11 +49,34 @@ function Navbar() {
           <li><a href="/#profesionales" onClick={closeMenu}>Profesionales</a></li>
           <li><a href="/#productos" onClick={closeMenu}>Productos</a></li>
           <li><a href="/#contacto" onClick={closeMenu}>Contacto</a></li>
+          <li className="nav-language-links nav-language-mobile">
+            <a href="/en/" hrefLang="en" onClick={closeMenu} aria-label="View site in English">
+              <span className="language-flag language-flag-us" aria-hidden="true"></span>
+              <span className="language-label">English</span>
+            </a>
+            <a href="/pt/" hrefLang="pt" onClick={closeMenu} aria-label="Ver site em português">
+              <span className="language-flag language-flag-br" aria-hidden="true"></span>
+              <span className="language-label">Português</span>
+            </a>
+          </li>
         </ul>
 
-        <a href="/#contacto" className="btn-primary nav-button">
-          Solicitar consulta
-        </a>
+        <div className="navbar-actions">
+          <a href="/#contacto" className="btn-primary nav-button">
+            Solicitar consulta
+          </a>
+
+          <div className="nav-language-links nav-language-desktop" aria-label="Selector de idioma">
+            <a href="/en/" hrefLang="en" aria-label="View site in English">
+              <span className="language-flag language-flag-us" aria-hidden="true"></span>
+              <span className="language-label">English</span>
+            </a>
+            <a href="/pt/" hrefLang="pt" aria-label="Ver site em português">
+              <span className="language-flag language-flag-br" aria-hidden="true"></span>
+              <span className="language-label">Português</span>
+            </a>
+          </div>
+        </div>
       </div>
     </nav>
   );

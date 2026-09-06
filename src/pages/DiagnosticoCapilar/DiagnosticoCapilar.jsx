@@ -34,8 +34,8 @@ function DiagnosticoCapilar() {
         {
           title: "Plan y seguimiento",
           text: "Se define una estrategia personalizada y controles para medir evolución y ajustar pautas si hace falta.",
-          image: treatmentImages.diagnosisOffice,
-          imageAlt: "Planificación de tratamiento capilar personalizado en consultorio",
+          image: treatmentImages.diagnosisLarisaConsultation,
+          imageAlt: "Consulta de diagnóstico capilar personalizada con el equipo Dermaraíz",
         },
       ]}
       benefitsTitle="¿Para qué sirve?"
@@ -55,8 +55,8 @@ function DiagnosticoCapilar() {
           caption: "La DHT puede achicar el folículo y afinar progresivamente el pelo.",
         },
         {
-          src: treatmentImages.diagnosisOffice,
-          alt: "Planificación de tratamiento capilar luego del diagnóstico en consultorio",
+          src: treatmentImages.diagnosisLarisaConsultation,
+          alt: "Planificación de tratamiento capilar luego del diagnóstico con el equipo Dermaraíz",
           label: "Plan",
           caption: "La consulta se traduce en una estrategia personalizada y controles.",
         },

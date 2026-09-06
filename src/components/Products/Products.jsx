@@ -25,7 +25,8 @@ function Products() {
                                 src={product.image}
                                 alt={product.imageAlt}
                                 className="product-image"
-                                loading="lazy"
+                                loading="eager"
+                                decoding="async"
                             />
                         </div>
 

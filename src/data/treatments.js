@@ -18,7 +18,7 @@ export const treatments = [
         benefit: "Nutrición y revitalización capilar.",
         link: "/mesoterapia-capilar/",
         image: treatmentImages.mesotherapy,
-        imageAlt: "Mesoterapia capilar aplicada en consultorio Dermaraíz Buenos Aires",
+        imageAlt: "Aplicación de mesoterapia capilar en consultorio Dermaraíz Buenos Aires",
         imageFocus: "mesoterapia",
     },
     {
@@ -37,8 +37,8 @@ export const treatments = [
             "Procedimiento que permite recuperar cabello en zonas despobladas mediante la extracción e implantación folicular pelo por pelo.",
         benefit: "Resultados naturales y permanentes.",
         link: "/implante-capilar/",
-        image: treatmentImages.implantFueProcedure,
-        imageAlt: "Implante capilar FUE realizado por el equipo médico de Dermaraíz",
+        image: treatmentImages.implantProcedure,
+        imageAlt: "Implante capilar FUE realizado por Hernán en Dermaraíz",
         imageFocus: "implante",
     },
 ];

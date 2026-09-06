@@ -15,6 +15,14 @@ function getPageData() {
   };
 }
 
+function sendLeadIntent(method, parameters = {}) {
+  sendEvent("generate_lead", {
+    method,
+    lead_source: "website",
+    ...parameters,
+  });
+}
+
 /**
  * Registra páginas vistas y acciones relevantes sin enviar datos personales,
  * datos médicos ni el contenido ingresado en el formulario.
@@ -39,12 +47,15 @@ function AnalyticsTracker() {
 
         if (href.includes("wa.me/")) {
           sendEvent("click_whatsapp", commonParameters);
+          sendLeadIntent("whatsapp", commonParameters);
         } else if (href.includes("agendapro.com/")) {
           sendEvent("click_book_appointment", commonParameters);
+          sendLeadIntent("online_booking", commonParameters);
         } else if (href.includes("instagram.com/")) {
           sendEvent("click_instagram", commonParameters);
         } else if (href.startsWith("tel:")) {
           sendEvent("click_phone", commonParameters);
+          sendLeadIntent("phone", commonParameters);
         }
       }
 
@@ -59,8 +70,7 @@ function AnalyticsTracker() {
     function handleSubmit(event) {
       if (!event.target.matches("form.contact-form")) return;
 
-      sendEvent("generate_lead", {
-        method: "whatsapp",
+      sendLeadIntent("contact_form_whatsapp", {
         page_path: window.location.pathname,
       });
     }

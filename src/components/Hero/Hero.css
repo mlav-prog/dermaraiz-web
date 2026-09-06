@@ -203,10 +203,10 @@
     }
 
     .hero-title {
-        max-width: 12ch;
+        max-width: 640px;
         margin-left: auto;
         margin-right: auto;
-        font-size: 2.25rem;
+        font-size: 2.55rem;
     }
 
     .hero-text {

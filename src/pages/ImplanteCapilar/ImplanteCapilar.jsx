@@ -60,8 +60,8 @@ function ImplanteCapilar() {
 
           <figure className="implant-hero-media">
             <img
-              src={treatmentImages.implantFueProcedure}
-              alt="Procedimiento de implante capilar FUE en Dermaraíz Buenos Aires"
+              src={treatmentImages.implantProcedure}
+              alt="Procedimiento de implante capilar FUE realizado por Hernán en Dermaraíz Buenos Aires"
               loading="eager"
               decoding="async"
               fetchPriority="high"
@@ -137,8 +137,8 @@ function ImplanteCapilar() {
             <article className="implant-card">
               <figure className="implant-card-media">
                 <img
-                  src={treatmentImages.implantDetail}
-                  alt="Colocación de unidades foliculares durante implante capilar FUE"
+                  src={treatmentImages.implantProcedure}
+                  alt="Trabajo técnico durante implante capilar FUE en Dermaraíz"
                   loading="lazy"
                   decoding="async"
                 />
@@ -204,27 +204,14 @@ function ImplanteCapilar() {
 
           <figure>
             <img
-              src={treatmentImages.implantTeam}
-              alt="Equipo profesional de Dermaraíz trabajando en implante capilar"
+              src={treatmentImages.implantProcedure}
+              alt="Hernán realizando procedimiento de implante capilar FUE en Dermaraíz"
               loading="lazy"
               decoding="async"
             />
             <figcaption>
-              <span>Equipo</span>
-              <p>Trabajo coordinado durante el procedimiento.</p>
-            </figcaption>
-          </figure>
-
-          <figure>
-            <img
-              src={treatmentImages.implantDoubleImplantation}
-              alt="Equipo médico de Dermaraíz realizando un implante capilar FUE"
-              loading="lazy"
-              decoding="async"
-            />
-            <figcaption>
-              <span>Técnica FUE</span>
-              <p>Implantación precisa respetando ángulo y dirección.</p>
+              <span>Procedimiento</span>
+              <p>Trabajo técnico durante la implantación capilar FUE.</p>
             </figcaption>
           </figure>
 
@@ -238,6 +225,19 @@ function ImplanteCapilar() {
             <figcaption>
               <span>Zona receptora</span>
               <p>Control visual de la zona frontal luego del procedimiento.</p>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={treatmentImages.implantFrontMarking}
+              alt="Diseño frontal previo a implante capilar FUE en Dermaraíz"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <span>Planificación</span>
+              <p>Diseño previo para definir distribución, cobertura y naturalidad.</p>
             </figcaption>
           </figure>
         </section>

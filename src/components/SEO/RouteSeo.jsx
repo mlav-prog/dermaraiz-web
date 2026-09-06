@@ -14,6 +14,13 @@ const pages = {
       "tratamiento capilar CABA, implante capilar Buenos Aires, caída del cabello, PRP capilar, mesoterapia capilar, clínica capilar Buenos Aires",
     image: SITE_PREVIEW_IMAGE,
     imageAlt: "Resultados de tratamientos capilares en Dermaraíz Buenos Aires",
+    language: "es-AR",
+    alternates: {
+      "es-AR": "/",
+      en: "/en/",
+      pt: "/pt/",
+      "x-default": "/",
+    },
   },
   "/implante-capilar": {
     title: "Implante capilar FUE en CABA | Dermaraíz",
@@ -22,8 +29,31 @@ const pages = {
     serviceName: "Implante capilar FUE",
     keywords:
       "implante capilar FUE, implante capilar Buenos Aires, transplante capilar, recuperar cabello",
-    image: treatmentImages.implantFueProcedure,
+    image: treatmentImages.implantProcedure,
     imageAlt: "Procedimiento de implante capilar FUE en Dermaraíz Buenos Aires",
+    language: "es-AR",
+    faqs: [
+      {
+        question: "¿Quién puede realizarse un implante capilar?",
+        answer:
+          "La indicación depende de la zona donante, el tipo de alopecia, la edad, los antecedentes y los objetivos del paciente.",
+      },
+      {
+        question: "¿El resultado es permanente?",
+        answer:
+          "Los folículos trasplantados provienen de una zona más resistente, pero el resultado debe acompañarse con seguimiento profesional.",
+      },
+      {
+        question: "¿Cuándo empieza a crecer el cabello?",
+        answer:
+          "El crecimiento visible suele comenzar a partir de los primeros meses y continúa mejorando de forma progresiva.",
+      },
+      {
+        question: "¿Necesito estudios previos?",
+        answer:
+          "Sí. Antes del procedimiento se solicitan estudios y una valoración profesional para realizarlo con seguridad.",
+      },
+    ],
   },
   "/prp-capilar": {
     title: "PRP capilar en CABA | Plasma rico en plaquetas | Dermaraíz",
@@ -34,16 +64,62 @@ const pages = {
       "PRP capilar, plasma rico en plaquetas capilar, tratamiento caída cabello, fortalecimiento capilar",
     image: treatmentImages.prpPlasma,
     imageAlt: "Plasma rico en plaquetas para PRP capilar en Dermaraíz",
+    language: "es-AR",
+    faqs: [
+      {
+        question: "¿Para quién está indicado el PRP capilar?",
+        answer:
+          "Puede indicarse en pacientes con caída capilar, afinamiento o pérdida de calidad del cabello, siempre luego de una evaluación profesional.",
+      },
+      {
+        question: "¿Cuántas sesiones se necesitan?",
+        answer:
+          "La cantidad de sesiones depende del diagnóstico, la evolución y si se combina con otros tratamientos capilares.",
+      },
+      {
+        question: "¿Se puede combinar con mesoterapia?",
+        answer:
+          "Sí, en algunos casos puede complementarse con mesoterapia u otros tratamientos para potenciar el abordaje.",
+      },
+      {
+        question: "¿Cuándo se ven cambios?",
+        answer:
+          "Los cambios suelen evaluarse de forma progresiva en los controles, observando caída, densidad y calidad capilar.",
+      },
+    ],
   },
   "/mesoterapia-capilar": {
-    title: "Mesoterapia capilar en CABA | Dermaraíz",
+    title: "Mesoterapia capilar en CABA y Buenos Aires | Dermaraíz",
     description:
-      "Mesoterapia capilar en CABA para caída del cabello, nutrición folicular y mejora de densidad. Tratamiento personalizado en Dermaraíz.",
+      "Mesoterapia capilar en CABA para caída del cabello, nutrición folicular y mejora de densidad. Evaluación personalizada y turnos online.",
     serviceName: "Mesoterapia capilar",
     keywords:
       "mesoterapia capilar, mesoterapia para caída cabello, tratamiento capilar Buenos Aires",
     image: treatmentImages.mesotherapy,
     imageAlt: "Aplicación de mesoterapia capilar en Dermaraíz Buenos Aires",
+    language: "es-AR",
+    faqs: [
+      {
+        question: "¿Para qué sirve la mesoterapia capilar?",
+        answer:
+          "Se utiliza para aplicar activos de forma localizada y acompañar tratamientos orientados a mejorar la calidad del cabello.",
+      },
+      {
+        question: "¿La mesoterapia reemplaza al diagnóstico?",
+        answer:
+          "No. Lo ideal es evaluar primero el cuero cabelludo para definir si es el tratamiento adecuado para cada caso.",
+      },
+      {
+        question: "¿Se puede combinar con PRP?",
+        answer:
+          "Sí, puede combinarse con PRP u otros tratamientos cuando el profesional lo considera conveniente.",
+      },
+      {
+        question: "¿Cuántas sesiones se recomiendan?",
+        answer:
+          "La frecuencia y cantidad de sesiones se define según la necesidad del paciente y la respuesta del tratamiento.",
+      },
+    ],
   },
   "/diagnostico-capilar": {
     title: "Diagnóstico capilar en CABA | Tricoscopia | Dermaraíz",
@@ -54,6 +130,93 @@ const pages = {
       "diagnóstico capilar, evaluación capilar, alopecia, caída del cabello, cuero cabelludo",
     image: treatmentImages.diagnosis,
     imageAlt: "Diagnóstico capilar profesional en Dermaraíz CABA",
+    language: "es-AR",
+    faqs: [
+      {
+        question: "¿Cuándo conviene hacer un diagnóstico capilar?",
+        answer:
+          "Cuando hay caída, afinamiento, cambios en la densidad o dudas sobre qué tratamiento capilar elegir.",
+      },
+      {
+        question: "¿Sirve para detectar el tipo de alopecia?",
+        answer:
+          "Sí, la evaluación ayuda a orientar el diagnóstico y a definir un plan según cada paciente.",
+      },
+      {
+        question: "¿Después del diagnóstico ya se indica tratamiento?",
+        answer:
+          "Según el caso, se puede definir una estrategia personalizada y los pasos a seguir.",
+      },
+      {
+        question: "¿Necesito diagnóstico antes de PRP o mesoterapia?",
+        answer:
+          "Es recomendable para elegir el tratamiento más adecuado y evitar indicaciones genéricas.",
+      },
+    ],
+  },
+  "/en": {
+    title: "Hair clinic in Buenos Aires | Dermaraiz",
+    description:
+      "Personalized hair diagnosis, PRP, mesotherapy and FUE hair transplant planning in Buenos Aires for international patients.",
+    keywords:
+      "hair clinic Buenos Aires, hair transplant Buenos Aires, PRP hair treatment Argentina, FUE hair transplant Argentina",
+    image: SITE_PREVIEW_IMAGE,
+    imageAlt: "Dermaraiz hair clinic in Buenos Aires",
+    language: "en",
+    alternates: {
+      "es-AR": "/",
+      en: "/en/",
+      pt: "/pt/",
+      "x-default": "/",
+    },
+    faqs: [
+      {
+        question: "Can I contact Dermaraiz from another country?",
+        answer:
+          "Yes. You can send your consultation by WhatsApp or book online to start with a first orientation.",
+      },
+      {
+        question: "Do I need a diagnosis before treatment?",
+        answer:
+          "Yes. A professional diagnosis helps define the most suitable plan for each patient.",
+      },
+      {
+        question: "Where is the clinic located?",
+        answer: "Dermaraiz is located in CABA, Buenos Aires, Argentina.",
+      },
+    ],
+  },
+  "/pt": {
+    title: "Clinica capilar em Buenos Aires | Dermaraiz",
+    description:
+      "Diagnostico capilar, PRP, mesoterapia e planejamento de transplante capilar FUE em Buenos Aires para pacientes internacionais.",
+    keywords:
+      "clinica capilar Buenos Aires, transplante capilar Argentina, PRP capilar Buenos Aires, mesoterapia capilar Argentina",
+    image: SITE_PREVIEW_IMAGE,
+    imageAlt: "Clinica capilar Dermaraiz em Buenos Aires",
+    language: "pt",
+    alternates: {
+      "es-AR": "/",
+      en: "/en/",
+      pt: "/pt/",
+      "x-default": "/",
+    },
+    faqs: [
+      {
+        question: "Posso entrar em contato de outro pais?",
+        answer:
+          "Sim. Voce pode enviar sua consulta por WhatsApp ou agendar online para iniciar uma primeira orientacao.",
+      },
+      {
+        question: "Preciso de diagnostico antes do tratamento?",
+        answer:
+          "Sim. O diagnostico profissional ajuda a definir o plano mais adequado para cada paciente.",
+      },
+      {
+        question: "Onde fica a clinica?",
+        answer: "A Dermaraiz fica em CABA, Buenos Aires, Argentina.",
+      },
+    ],
   },
 };
 
@@ -95,6 +258,20 @@ function upsertJsonLd(id, data) {
   element.textContent = JSON.stringify(data);
 }
 
+function upsertAlternateLinks(alternates = {}) {
+  document.head
+    .querySelectorAll('link[rel="alternate"][hreflang]')
+    .forEach((element) => element.remove());
+
+  Object.entries(alternates).forEach(([language, path]) => {
+    const element = document.createElement("link");
+    element.setAttribute("rel", "alternate");
+    element.setAttribute("hreflang", language);
+    element.setAttribute("href", new URL(path, SITE_URL).href);
+    document.head.appendChild(element);
+  });
+}
+
 function removeJsonLd(id) {
   document.head.querySelector(`script[data-seo="${id}"]`)?.remove();
 }
@@ -131,7 +308,7 @@ function RouteSeo() {
     });
     upsertMeta('meta[property="og:locale"]', {
       property: "og:locale",
-      content: "es_AR",
+      content: page.language === "pt" ? "pt_BR" : page.language === "en" ? "en_US" : "es_AR",
     });
     upsertMeta('meta[property="og:url"]', {
       property: "og:url",
@@ -183,6 +360,7 @@ function RouteSeo() {
     });
 
     upsertCanonical(canonical);
+    upsertAlternateLinks(page.alternates);
 
     upsertJsonLd("local-business", {
       "@context": "https://schema.org",
@@ -223,7 +401,7 @@ function RouteSeo() {
       description: page.description,
       url: canonical,
       image: imageUrl,
-      inLanguage: "es-AR",
+      inLanguage: page.language || "es-AR",
       isPartOf: {
         "@type": "WebSite",
         name: "Dermaraíz",
@@ -265,6 +443,23 @@ function RouteSeo() {
     } else {
       removeJsonLd("service");
       removeJsonLd("breadcrumbs");
+    }
+
+    if (page.faqs?.length) {
+      upsertJsonLd("faq", {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: page.faqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer,
+          },
+        })),
+      });
+    } else {
+      removeJsonLd("faq");
     }
   }, [canonical, imageUrl, page]);
 

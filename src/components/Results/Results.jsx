@@ -18,6 +18,20 @@ function Results() {
     ));
   };
 
+  const getComparisonImageClassName = (focus, orientation) => {
+    const classes = [];
+
+    if (focus) {
+      classes.push(`results-comparison-image--${focus}`);
+    }
+
+    if (orientation) {
+      classes.push(`results-comparison-image--${orientation}`);
+    }
+
+    return classes.length > 0 ? classes.join(" ") : undefined;
+  };
+
   return (
     <section className="results" id="resultados">
       <div className="section-header">
@@ -76,12 +90,28 @@ function Results() {
             ) : (
               <>
                 <figure>
-                  <img src={activeCase.beforeImage} alt={activeCase.beforeAlt} loading="lazy" />
+                  <img
+                    src={activeCase.beforeImage}
+                    alt={activeCase.beforeAlt}
+                    loading="lazy"
+                    className={getComparisonImageClassName(
+                      activeCase.beforeFocus,
+                      activeCase.beforeOrientation,
+                    )}
+                  />
                   <span>{activeCase.beforeLabel}</span>
                 </figure>
 
                 <figure>
-                  <img src={activeCase.afterImage} alt={activeCase.afterAlt} loading="lazy" />
+                  <img
+                    src={activeCase.afterImage}
+                    alt={activeCase.afterAlt}
+                    loading="lazy"
+                    className={getComparisonImageClassName(
+                      activeCase.afterFocus,
+                      activeCase.afterOrientation,
+                    )}
+                  />
                   <span>{activeCase.afterLabel}</span>
                 </figure>
               </>
@@ -106,12 +136,12 @@ function Results() {
       <div className="results-grid">
         {resultRecords.map((item) => (
           <article className="results-card" key={item.title}>
-            <div className="results-card-image">
+            <div className="results-card-media">
               <img
                 src={item.image}
                 alt={item.alt}
-                className={`results-image${item.toneDown ? " results-image--toned-down" : ""}`}
                 loading="lazy"
+                className={`results-image results-image--${item.imageFocus || "center"}${item.toneDown ? " results-image--toned-down" : ""}`}
               />
             </div>
 

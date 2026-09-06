@@ -14,7 +14,6 @@ import resultImplantPostAugust from "./results/implante-capilar-post-agosto-derm
 import resultMesotherapyMonthOne from "./results/mesoterapia-primer-mes-dermaraiz.jpeg";
 import resultMesotherapyMonthFour from "./results/mesoterapia-mes-4-dermaraiz.jpeg";
 import resultTreatmentBefore from "./results/tratamiento-capilar-antes-dermaraiz.jpeg";
-import resultImplantFue from "./results/post-implante-capilar-fue-dermaraiz.jpeg";
 import resultCoffeeFollowUp from "./results/resultado-tratamiento-capilar-dermaraiz.jpeg";
 import resultFemaleAugust from "./results/resultado-capilar-femenino-agosto-dermaraiz.jpeg";
 import resultFemaleAugustBefore from "./results/resultado-capilar-femenino-antes-dermaraiz.jpeg";
@@ -22,19 +21,19 @@ import resultFemaleAugustAfter from "./results/resultado-capilar-femenino-despue
 import resultMaleAugust from "./results/resultado-capilar-masculino-agosto-dermaraiz.jpeg";
 import resultMaleAugustBefore from "./results/resultado-capilar-masculino-antes-dermaraiz.jpeg";
 import resultMaleAugustAfter from "./results/resultado-capilar-masculino-despues-dermaraiz.jpeg";
+import resultFemaleSeptemberBefore from "./results/evolucion-femenina-antes-dermaraiz-septiembre.jpeg";
+import resultFemaleSeptemberFourMonths from "./results/evolucion-femenina-4-meses-dermaraiz-septiembre.jpeg";
 
 import treatmentAmpoulesMesotherapy from "./treatments/ampollas-mesoterapia-capilar.jpg";
 import treatmentConsultation from "./treatments/consulta-capilar-dermaraiz.jpeg";
 import treatmentDiagnosisOffice from "./treatments/diagnostico-capilar-consultorio-dermaraiz.jpeg";
+import treatmentDiagnosisLarisaConsultation from "./treatments/diagnostico-capilar-consulta-larisa-dermaraiz.jpeg";
 import treatmentDiagnosis from "./treatments/diagnostico-capilar-dermaraiz.jpg";
 import treatmentDhtMiniaturization from "./treatments/diagnostico-capilar-dht-miniaturizacion-dermaraiz.jpg";
 import treatmentTrichoscopyConsultation from "./treatments/diagnostico-capilar-tricoscopia-consulta-dermaraiz.jpg";
-import treatmentImplantTeam from "./treatments/implante-capilar-equipo-dermaraiz.jpeg";
-import treatmentImplantFue from "./treatments/implante-capilar-fue-dermaraiz.jpeg";
-import treatmentImplantFueProcedure from "./treatments/implante-capilar-fue-procedimiento-dermaraiz.jpeg";
 import treatmentImplantDonorMarking from "./treatments/implante-capilar-marcacion-donante-dermaraiz.jpeg";
 import treatmentImplantFrontMarking from "./treatments/implante-capilar-marcacion-frontal-dermaraiz.jpeg";
-import treatmentImplantDetail from "./treatments/implante-capilar-procedimiento-detalle-dermaraiz.jpeg";
+import treatmentImplantFue from "./treatments/implante-capilar-fue-dermaraiz.jpeg";
 import treatmentImplantDonorZoneDiagram from "./treatments/implante-capilar-zona-donante-esquema-dermaraiz.jpg";
 import treatmentImplantDoubleImplantation from "./treatments/implante-capilar-doble-implantacion-dermaraiz.jpeg";
 import treatmentImplantFrontalPostAugust from "./treatments/implante-capilar-zona-frontal-post-agosto-dermaraiz.webp";
@@ -66,7 +65,6 @@ export const resultImages = {
     mesotherapyMonthOne: resultMesotherapyMonthOne,
     mesotherapyMonthFour: resultMesotherapyMonthFour,
     treatmentBefore: resultTreatmentBefore,
-    implantFue: resultImplantFue,
     coffeeFollowUp: resultCoffeeFollowUp,
     femaleAugust: resultFemaleAugust,
     femaleAugustBefore: resultFemaleAugustBefore,
@@ -74,21 +72,21 @@ export const resultImages = {
     maleAugust: resultMaleAugust,
     maleAugustBefore: resultMaleAugustBefore,
     maleAugustAfter: resultMaleAugustAfter,
+    femaleSeptemberBefore: resultFemaleSeptemberBefore,
+    femaleSeptemberFourMonths: resultFemaleSeptemberFourMonths,
 };
 
 export const treatmentImages = {
     ampoulesMesotherapy: treatmentAmpoulesMesotherapy,
     consultation: treatmentConsultation,
     diagnosisOffice: treatmentDiagnosisOffice,
+    diagnosisLarisaConsultation: treatmentDiagnosisLarisaConsultation,
     diagnosis: treatmentDiagnosis,
     dhtMiniaturization: treatmentDhtMiniaturization,
     trichoscopyConsultation: treatmentTrichoscopyConsultation,
-    implantTeam: treatmentImplantTeam,
-    implantFue: treatmentImplantFue,
-    implantFueProcedure: treatmentImplantFueProcedure,
     implantDonorMarking: treatmentImplantDonorMarking,
     implantFrontMarking: treatmentImplantFrontMarking,
-    implantDetail: treatmentImplantDetail,
+    implantFue: treatmentImplantFue,
     implantDonorZoneDiagram: treatmentImplantDonorZoneDiagram,
     implantDoubleImplantation: treatmentImplantDoubleImplantation,
     implantFrontalPostAugust: treatmentImplantFrontalPostAugust,

@@ -255,8 +255,17 @@
 
     .treatment-image {
         grid-row: auto;
-        height: 260px;
-        min-height: 260px;
+        height: 300px;
+        min-height: 300px;
+    }
+
+    .treatment-image-mesoterapia img {
+        object-position: center 58%;
+        transform: scale(1.08);
+    }
+
+    .treatment-card:hover .treatment-image-mesoterapia img {
+        transform: scale(1.12);
     }
 
     .treatment-content {
@@ -273,6 +282,24 @@
 
     .aesthetic-treatment-list {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 900px) and (min-width: 769px) {
+    .treatments-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .treatment-card {
+        grid-template-columns: minmax(260px, 0.48fr) minmax(0, 1fr);
+        grid-template-rows: 1fr auto;
+        min-height: 320px;
+    }
+
+    .treatment-image {
+        grid-row: 1 / span 2;
+        height: 100%;
+        min-height: 320px;
     }
 }
 
@@ -338,5 +365,40 @@
     .aesthetic-treatment-content p {
         font-size: 0.95rem;
         line-height: 1.62;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    .treatments-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .treatment-card {
+        grid-template-columns: minmax(260px, 0.48fr) minmax(0, 1fr);
+        grid-template-rows: 1fr auto;
+        min-height: 320px;
+    }
+
+    .treatment-image {
+        grid-row: 1 / span 2;
+        height: 100%;
+        min-height: 320px;
+    }
+
+    .treatment-image img {
+        object-fit: cover;
+    }
+
+    .treatment-image-prp img {
+        object-fit: contain;
+    }
+
+    .treatment-image-mesoterapia img {
+        object-position: center center;
+        transform: scale(1.06);
+    }
+
+    .treatment-card:hover .treatment-image-mesoterapia img {
+        transform: scale(1.1);
     }
 }

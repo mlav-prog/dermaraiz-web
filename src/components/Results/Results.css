@@ -220,16 +220,48 @@
     overflow: hidden;
 }
 
+.results-card-media {
+    display: grid;
+    height: 248px;
+    place-items: center;
+    overflow: hidden;
+    background: #f7f2ea;
+}
+
 .results-image {
     width: 100%;
-    aspect-ratio: 13 / 9;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
     display: block;
     transition: transform 0.4s ease, filter 0.4s ease;
 }
 
 .results-image--toned-down {
     filter: saturate(35%) brightness(1.08) contrast(0.9);
+}
+
+.results-image--procedure {
+    object-fit: cover;
+    object-position: 50% 56%;
+}
+
+.results-image--implantImmediate {
+    object-position: center;
+}
+
+.results-image--application {
+    object-fit: cover;
+    object-position: 50% 42%;
+}
+
+.results-image--consultation {
+    object-fit: cover;
+    object-position: 50% 72%;
+}
+
+.results-image--consultationTeam {
+    object-fit: cover;
+    object-position: 50% 36%;
 }
 
 .results-card:hover .results-image {
@@ -285,14 +317,54 @@
 
     .results-comparison {
         justify-self: center;
+        max-width: 680px;
     }
 
     .results-comparison-list {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .results-image {
-        height: 320px;
+    .results-card-media {
+        height: 260px;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 769px) {
+    .results-before-after {
+        padding: 22px;
+    }
+
+    .results-comparison {
+        gap: 12px;
+    }
+
+    .results-comparison img {
+        aspect-ratio: 4 / 4.7;
+        max-height: 430px;
+        object-position: center top;
+    }
+
+    .results-card-media {
+        height: 280px;
+    }
+
+    .results-card:last-child:nth-child(odd) {
+        display: grid;
+        grid-column: 1 / -1;
+        grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
+        align-items: center;
+    }
+
+    .results-card:last-child:nth-child(odd) .results-card-media {
+        height: 300px;
+        min-height: 0;
+    }
+
+    .results-card:last-child:nth-child(odd) .results-card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 28px;
     }
 }
 
@@ -390,7 +462,7 @@
         letter-spacing: 0.8px;
     }
 
-    .results-image {
+    .results-card-media {
         height: 240px;
     }
 }
@@ -398,5 +470,77 @@
 @media (max-width: 860px) {
     .results-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    .results-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .results-before-after {
+        padding: 22px;
+    }
+
+    .results-comparison {
+        gap: 12px;
+    }
+
+    .results-comparison img {
+        aspect-ratio: 4 / 4.7;
+        max-height: 430px;
+        object-fit: contain;
+        object-position: center top;
+    }
+
+    .results-card-media {
+        height: 280px;
+    }
+
+    .results-card:last-child:nth-child(odd) {
+        display: grid;
+        grid-column: 1 / -1;
+        grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
+        align-items: center;
+    }
+
+    .results-card:last-child:nth-child(odd) .results-card-media {
+        height: 300px;
+        min-height: 0;
+    }
+
+    .results-card:last-child:nth-child(odd) .results-card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 28px;
+    }
+}
+
+.results-comparison-image--mesotherapyProgress {
+    object-fit: cover;
+    object-position: 50% 58%;
+}
+
+.results-comparison-image--upperFocus {
+    object-position: 50% 38%;
+}
+
+.results-comparison-image--implantDirection {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 992px) {
+    .results-comparison span {
+        top: 10px;
+        bottom: auto;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    .results-comparison img.results-comparison-image--mesotherapyProgress {
+        object-fit: cover;
+        object-position: 50% 58%;
     }
 }

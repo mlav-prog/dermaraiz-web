@@ -6,6 +6,7 @@ import ImplanteCapilar from "./pages/ImplanteCapilar/ImplanteCapilar";
 import PrpCapilar from "./pages/PrpCapilar/PrpCapilar";
 import MesoterapiaCapilar from "./pages/MesoterapiaCapilar/MesoterapiaCapilar";
 import DiagnosticoCapilar from "./pages/DiagnosticoCapilar/DiagnosticoCapilar";
+import InternationalLanding from "./pages/InternationalLanding/InternationalLanding";
 
 import ScrollToHash from "./components/ScrollToHash/ScrollToHash";
 import ScrollReveal from "./components/ScrollReveal/ScrollReveal";
@@ -30,6 +31,8 @@ function App() {
         <Route path="/prp-capilar" element={<PrpCapilar />} />
         <Route path="/mesoterapia-capilar" element={<MesoterapiaCapilar />} />
         <Route path="/diagnostico-capilar" element={<DiagnosticoCapilar />} />
+        <Route path="/en/" element={<InternationalLanding locale="en" />} />
+        <Route path="/pt/" element={<InternationalLanding locale="pt" />} />
         
       </Routes>
 

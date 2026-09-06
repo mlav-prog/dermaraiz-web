@@ -6,8 +6,12 @@ function GithubPagesRedirect() {
   const navigate = useNavigate();
 
   useEffect(() => {
+    const isProductionHost =
+      window.location.hostname === "dermaraiz.com.ar" ||
+      window.location.hostname === "www.dermaraiz.com.ar";
+
     if (
-      window.location.protocol !== "https:" ||
+      isProductionHost && window.location.protocol !== "https:" ||
       window.location.hostname === "www.dermaraiz.com.ar"
     ) {
       window.location.replace(
