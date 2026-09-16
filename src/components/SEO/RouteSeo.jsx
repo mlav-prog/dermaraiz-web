@@ -23,9 +23,9 @@ const pages = {
     },
   },
   "/implante-capilar": {
-    title: "Implante capilar FUE en CABA | Dermaraíz",
+    title: "Implante capilar FUE en CABA | Trasplante capilar Dermaraíz",
     description:
-      "Implante capilar FUE en CABA con diagnóstico, planificación de línea capilar y técnica zafiro. Conocé el procedimiento y reservá tu consulta.",
+      "Implante capilar FUE en CABA con diagnóstico, diseño de línea capilar, extracción folicular y seguimiento profesional. Reservá tu evaluación.",
     serviceName: "Implante capilar FUE",
     keywords:
       "implante capilar FUE, implante capilar Buenos Aires, transplante capilar, recuperar cabello",
@@ -33,6 +33,11 @@ const pages = {
     imageAlt: "Procedimiento de implante capilar FUE en Dermaraíz Buenos Aires",
     language: "es-AR",
     faqs: [
+      {
+        question: "¿El implante capilar FUE deja un resultado natural?",
+        answer:
+          "La naturalidad depende del diseño, la distribución, el ángulo de implantación y la planificación de cada caso.",
+      },
       {
         question: "¿Quién puede realizarse un implante capilar?",
         answer:
@@ -56,9 +61,9 @@ const pages = {
     ],
   },
   "/prp-capilar": {
-    title: "PRP capilar en CABA | Plasma rico en plaquetas | Dermaraíz",
+    title: "PRP capilar en CABA | Plasma rico en plaquetas para el cabello",
     description:
-      "PRP capilar en CABA con plasma rico en plaquetas y evaluación profesional para fortalecer el cabello. Reservá tu consulta en Dermaraíz.",
+      "PRP capilar en CABA con plasma rico en plaquetas para caída, afinamiento y fortalecimiento del cabello. Evaluación profesional en Dermaraíz.",
     serviceName: "PRP capilar",
     keywords:
       "PRP capilar, plasma rico en plaquetas capilar, tratamiento caída cabello, fortalecimiento capilar",
@@ -66,6 +71,11 @@ const pages = {
     imageAlt: "Plasma rico en plaquetas para PRP capilar en Dermaraíz",
     language: "es-AR",
     faqs: [
+      {
+        question: "¿El PRP capilar sirve para la caída del cabello?",
+        answer:
+          "Puede ayudar a acompañar la recuperación capilar cuando está indicado, pero primero se evalúa la causa de la caída.",
+      },
       {
         question: "¿Para quién está indicado el PRP capilar?",
         answer:
@@ -89,9 +99,9 @@ const pages = {
     ],
   },
   "/mesoterapia-capilar": {
-    title: "Mesoterapia capilar en CABA y Buenos Aires | Dermaraíz",
+    title: "Mesoterapia capilar en CABA | Tratamiento para caída del cabello",
     description:
-      "Mesoterapia capilar en CABA para caída del cabello, nutrición folicular y mejora de densidad. Evaluación personalizada y turnos online.",
+      "Mesoterapia capilar en CABA para caída, nutrición folicular, calidad y densidad del cabello. Evaluación personalizada y turnos online.",
     serviceName: "Mesoterapia capilar",
     keywords:
       "mesoterapia capilar, mesoterapia para caída cabello, tratamiento capilar Buenos Aires",
@@ -99,6 +109,11 @@ const pages = {
     imageAlt: "Aplicación de mesoterapia capilar en Dermaraíz Buenos Aires",
     language: "es-AR",
     faqs: [
+      {
+        question: "¿La mesoterapia capilar sirve para la caída del cabello?",
+        answer:
+          "Puede formar parte de un plan para caída o afinamiento cuando el diagnóstico indica que es conveniente.",
+      },
       {
         question: "¿Para qué sirve la mesoterapia capilar?",
         answer:
@@ -122,9 +137,9 @@ const pages = {
     ],
   },
   "/diagnostico-capilar": {
-    title: "Diagnóstico capilar en CABA | Tricoscopia | Dermaraíz",
+    title: "Diagnóstico capilar en CABA | Tricoscopia y alopecia",
     description:
-      "Diagnóstico capilar en CABA con evaluación del cuero cabelludo, tricoscopia y análisis de alopecia para definir un plan personalizado.",
+      "Diagnóstico capilar en CABA con evaluación del cuero cabelludo, tricoscopia, alopecia, caída del cabello y plan personalizado.",
     serviceName: "Diagnóstico capilar",
     keywords:
       "diagnóstico capilar, evaluación capilar, alopecia, caída del cabello, cuero cabelludo",
@@ -132,6 +147,11 @@ const pages = {
     imageAlt: "Diagnóstico capilar profesional en Dermaraíz CABA",
     language: "es-AR",
     faqs: [
+      {
+        question: "¿Qué incluye una evaluación capilar?",
+        answer:
+          "Incluye entrevista, revisión del cuero cabelludo, análisis de signos visibles y definición de una estrategia según cada paciente.",
+      },
       {
         question: "¿Cuándo conviene hacer un diagnóstico capilar?",
         answer:

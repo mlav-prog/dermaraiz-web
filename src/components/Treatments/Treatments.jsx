@@ -1,5 +1,6 @@
 import "./Treatments.css";
 import { aestheticTreatments, treatments } from "../../data/treatments";
+import { getTreatmentContactHref } from "../../utils/treatmentInterest";
 
 function Treatments() {
     return (
@@ -60,7 +61,7 @@ function Treatments() {
                         ))}
                     </div>
 
-                    <a className="aesthetic-treatment-link" href="#contacto">
+                    <a className="aesthetic-treatment-link" href={getTreatmentContactHref("unsure")}>
                         Solicitar evaluación
                     </a>
                 </div>

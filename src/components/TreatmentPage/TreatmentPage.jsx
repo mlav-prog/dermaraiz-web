@@ -2,7 +2,8 @@ import "./TreatmentPage.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import RelatedTreatments from "../RelatedTreatments/RelatedTreatments";
-import { AGENDA_PRO_URL, getWhatsappUrl } from "../../utils/contactLinks";
+import { AGENDA_PRO_URL } from "../../utils/contactLinks";
+import { getTreatmentContactHref } from "../../utils/treatmentInterest";
 
 function TreatmentPage({
   tag,
@@ -20,11 +21,12 @@ function TreatmentPage({
   detailImageAlt,
   whatsappMessage,
   primaryCtaText = "Reservar turno online",
-  whatsappCtaText = "Consultar por WhatsApp",
+  consultationCtaText = "Solicitar consulta",
   faqs,
   ctaTitle,
   ctaText,
   currentPath,
+  treatmentKey,
 }) {
   function handleGoBack() {
     window.location.href = "/#tratamientos";
@@ -62,14 +64,12 @@ function TreatmentPage({
                 {primaryCtaText}
               </a>
 
-              {whatsappMessage && (
+              {(treatmentKey || whatsappMessage) && (
                 <a
-                  href={getWhatsappUrl(whatsappMessage)}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={getTreatmentContactHref(treatmentKey)}
                   className="btn-secondary"
                 >
-                  {whatsappCtaText}
+                  {consultationCtaText}
                 </a>
               )}
             </div>
@@ -230,14 +230,12 @@ function TreatmentPage({
               {primaryCtaText}
             </a>
 
-            {whatsappMessage && (
+            {(treatmentKey || whatsappMessage) && (
               <a
-                href={getWhatsappUrl(whatsappMessage)}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={getTreatmentContactHref(treatmentKey)}
                 className="btn-secondary"
               >
-                {whatsappCtaText}
+                {consultationCtaText}
               </a>
             )}
           </div>

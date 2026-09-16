@@ -4,10 +4,11 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import RelatedTreatments from "../../components/RelatedTreatments/RelatedTreatments";
 import { treatmentImages } from "../../assets/images";
-import { AGENDA_PRO_URL, getWhatsappUrl } from "../../utils/contactLinks";
+import { AGENDA_PRO_URL } from "../../utils/contactLinks";
+import { getTreatmentContactHref } from "../../utils/treatmentInterest";
 
 function ImplanteCapilar() {
-  const whatsappUrl = getWhatsappUrl("Hola, quiero consultar por implante capilar FUE.");
+  const implantContactHref = getTreatmentContactHref("implante");
 
   return (
     <>
@@ -48,12 +49,10 @@ function ImplanteCapilar() {
               </a>
 
               <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={implantContactHref}
                 className="btn-secondary"
               >
-                Consultar por WhatsApp
+                Solicitar consulta por implante
               </a>
             </div>
           </div>
@@ -384,6 +383,14 @@ function ImplanteCapilar() {
 
           <div className="implant-faq-grid">
             <article className="implant-faq-card">
+              <h3>¿El implante capilar FUE deja un resultado natural?</h3>
+              <p>
+                La naturalidad depende del diseño, la distribución, el ángulo
+                de implantación y la planificación de cada caso.
+              </p>
+            </article>
+
+            <article className="implant-faq-card">
               <h3>¿Quién puede realizarse un implante capilar?</h3>
               <p>
                 La indicación depende de la zona donante, el tipo de alopecia,
@@ -438,12 +445,10 @@ function ImplanteCapilar() {
             </a>
 
             <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={implantContactHref}
               className="btn-secondary"
             >
-              Consultar por WhatsApp
+              Solicitar consulta por implante
             </a>
           </div>
         </section>

@@ -15,6 +15,15 @@ function getPageData() {
   };
 }
 
+function getTreatmentFromUrl(url) {
+  try {
+    const parsedUrl = new URL(url, window.location.origin);
+    return parsedUrl.searchParams.get("tratamiento") || undefined;
+  } catch {
+    return undefined;
+  }
+}
+
 function sendLeadIntent(method, parameters = {}) {
   sendEvent("generate_lead", {
     method,
@@ -40,9 +49,11 @@ function AnalyticsTracker() {
 
       if (link) {
         const href = link.href;
+        const treatment = getTreatmentFromUrl(href);
         const commonParameters = {
           link_url: href,
           page_path: window.location.pathname,
+          ...(treatment ? { treatment_interest: treatment } : {}),
         };
 
         if (href.includes("wa.me/")) {
@@ -56,6 +67,8 @@ function AnalyticsTracker() {
         } else if (href.startsWith("tel:")) {
           sendEvent("click_phone", commonParameters);
           sendLeadIntent("phone", commonParameters);
+        } else if (href.includes("#contacto")) {
+          sendEvent("select_treatment_consultation", commonParameters);
         }
       }
 
@@ -69,9 +82,12 @@ function AnalyticsTracker() {
 
     function handleSubmit(event) {
       if (!event.target.matches("form.contact-form")) return;
+      const formData = new FormData(event.target);
+      const treatment = formData.get("treatment");
 
       sendLeadIntent("contact_form_whatsapp", {
         page_path: window.location.pathname,
+        ...(treatment ? { treatment_interest: treatment } : {}),
       });
     }
 

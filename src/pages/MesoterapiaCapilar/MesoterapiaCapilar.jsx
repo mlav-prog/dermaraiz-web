@@ -7,6 +7,7 @@ function MesoterapiaCapilar() {
       tag="Mesoterapia Capilar"
       title="Mesoterapia capilar en CABA para el cuidado del cabello"
       currentPath="/mesoterapia-capilar/"
+      treatmentKey="mesoterapia"
       description="La mesoterapia capilar consiste en la aplicación localizada de activos específicos sobre el cuero cabelludo para acompañar la recuperación capilar, mejorar la calidad del pelo y complementar planes personalizados."
       heroImage={treatmentImages.mesotherapy}
       heroImageAlt="Aplicación de mesoterapia capilar en consultorio Dermaraíz"
@@ -86,7 +87,13 @@ function MesoterapiaCapilar() {
       ]}
       whatsappMessage="Hola, quiero consultar por mesoterapia capilar."
       primaryCtaText="Reservar turno para mesoterapia"
+      consultationCtaText="Solicitar consulta por mesoterapia"
       faqs={[
+        {
+          question: "¿La mesoterapia capilar sirve para la caída del cabello?",
+          answer:
+            "Puede formar parte de un plan para caída o afinamiento cuando el diagnóstico indica que es conveniente y se combina con seguimiento profesional.",
+        },
         {
           question: "¿Para qué sirve la mesoterapia capilar?",
           answer:

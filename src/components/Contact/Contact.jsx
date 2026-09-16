@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import "./Contact.css";
 import { AGENDA_PRO_URL, getWhatsappUrl } from "../../utils/contactLinks";
+import { getTreatmentInterestFromSearch } from "../../utils/treatmentInterest";
 
 const initialFormData = {
   name: "",
@@ -11,9 +13,12 @@ const initialFormData = {
 };
 
 function Contact() {
+  const location = useLocation();
   const [showMap, setShowMap] = useState(false);
   const [formData, setFormData] = useState(initialFormData);
   const [status, setStatus] = useState("");
+  const selectedTreatment = getTreatmentInterestFromSearch(location.search);
+  const treatmentValue = formData.treatment || selectedTreatment;
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -29,7 +34,7 @@ function Contact() {
       `Nombre: ${formData.name}`,
       `Teléfono: ${formData.phone}`,
       formData.email ? `Email: ${formData.email}` : null,
-      `Tratamiento de interés: ${formData.treatment}`,
+      `Tratamiento de interés: ${treatmentValue}`,
       formData.message ? `Mensaje: ${formData.message}` : null,
     ].filter(Boolean);
 
@@ -92,7 +97,7 @@ function Contact() {
                 <span>Tratamiento de interés</span>
                 <select
                   name="treatment"
-                  value={formData.treatment}
+                  value={treatmentValue}
                   onChange={handleChange}
                   required
                 >

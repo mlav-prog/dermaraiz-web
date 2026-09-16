@@ -7,6 +7,7 @@ function DiagnosticoCapilar() {
       tag="Diagnóstico Capilar"
       title="Diagnóstico capilar en CABA con evaluación personalizada"
       currentPath="/diagnostico-capilar/"
+      treatmentKey="diagnostico"
       description="El diagnóstico capilar permite analizar el cuero cabelludo, identificar causas posibles de caída, detectar signos de miniaturización y definir un tratamiento adecuado según cada paciente."
       heroImage={treatmentImages.diagnosis}
       heroImageAlt="Evaluación capilar profesional en consultorio Dermaraíz CABA"
@@ -81,7 +82,13 @@ function DiagnosticoCapilar() {
       ]}
       whatsappMessage="Hola, quiero consultar por un diagnóstico capilar."
       primaryCtaText="Reservar diagnóstico capilar"
+      consultationCtaText="Solicitar consulta diagnóstica"
       faqs={[
+        {
+          question: "¿Qué incluye una evaluación capilar?",
+          answer:
+            "Incluye entrevista, revisión del cuero cabelludo, análisis de signos visibles y definición de una estrategia personalizada según cada paciente.",
+        },
         {
           question: "¿Cuándo conviene hacer un diagnóstico capilar?",
           answer:

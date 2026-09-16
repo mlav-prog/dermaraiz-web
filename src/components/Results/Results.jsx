@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./Results.css";
 import { comparisonCases, resultRecords } from "../../data/results";
+import { getTreatmentContactHref } from "../../utils/treatmentInterest";
 
 function Results() {
   const [activeCaseIndex, setActiveCaseIndex] = useState(0);
@@ -76,7 +77,7 @@ function Results() {
             <span className="results-case-tag">{activeCase.category}</span>
             <h3>{activeCase.title}</h3>
             <p>{activeCase.description}</p>
-            <a href="#contacto" className="results-link">
+            <a href={getTreatmentContactHref(activeCase.treatmentKey)} className="results-link">
               Consultar mi caso
             </a>
           </div>
@@ -149,7 +150,7 @@ function Results() {
               <span className="results-case-tag">{item.category}</span>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
-              <a href="#contacto" className="results-link">
+              <a href={getTreatmentContactHref(item.treatmentKey)} className="results-link">
                 Consultar mi caso
               </a>
             </div>

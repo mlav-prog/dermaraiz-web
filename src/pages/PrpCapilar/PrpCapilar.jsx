@@ -7,6 +7,7 @@ function PrpCapilar() {
       tag="PRP Capilar"
       title="PRP capilar en CABA con Plasma Rico en Plaquetas"
       currentPath="/prp-capilar/"
+      treatmentKey="prp"
       description="El PRP Capilar es un tratamiento regenerativo que utiliza factores de crecimiento obtenidos de la propia sangre del paciente para acompañar la recuperación capilar, fortalecer el cabello y complementar planes personalizados."
       heroImage={treatmentImages.prpPlasma}
       heroImageAlt="Preparación de plasma rico en plaquetas para PRP capilar en Dermaraíz"
@@ -58,7 +59,13 @@ function PrpCapilar() {
       ]}
       whatsappMessage="Hola, quiero consultar por PRP capilar."
       primaryCtaText="Reservar turno para PRP"
+      consultationCtaText="Solicitar consulta por PRP"
       faqs={[
+        {
+          question: "¿El PRP capilar sirve para la caída del cabello?",
+          answer:
+            "Puede ayudar a acompañar la recuperación capilar cuando está indicado, pero primero se evalúa la causa de la caída para definir el plan correcto.",
+        },
         {
           question: "¿Para quién está indicado el PRP capilar?",
           answer:
