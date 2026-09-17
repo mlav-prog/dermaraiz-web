@@ -157,12 +157,16 @@
 }
 
 .results-comparison img {
+    --comparison-rotation: 0deg;
+    --comparison-scale: 1;
+    --comparison-position: 50% 50%;
     width: 100%;
     aspect-ratio: 4 / 5;
     max-height: 360px;
     display: block;
     object-fit: cover;
-    object-position: center;
+    object-position: var(--comparison-position);
+    transform: rotate(var(--comparison-rotation)) scale(var(--comparison-scale));
     background: var(--beige);
 }
 
@@ -177,7 +181,8 @@
     position: absolute;
     left: 14px;
     right: 14px;
-    bottom: 14px;
+    top: 14px;
+    bottom: auto;
     z-index: 1;
     padding: 9px 14px;
     border-radius: 999px;
@@ -341,7 +346,6 @@
     .results-comparison img {
         aspect-ratio: 4 / 4.7;
         max-height: 430px;
-        object-position: center top;
     }
 
     .results-card-media {
@@ -490,8 +494,7 @@
     .results-comparison img {
         aspect-ratio: 4 / 4.7;
         max-height: 430px;
-        object-fit: contain;
-        object-position: center top;
+        object-fit: cover;
     }
 
     .results-card-media {
@@ -518,29 +521,73 @@
     }
 }
 
-.results-comparison-image--mesotherapyProgress {
-    object-fit: cover;
-    object-position: 50% 58%;
+.results-comparison img.results-comparison-image--mesotherapyBefore {
+    --comparison-scale: 1.12;
+    --comparison-position: 50% 48%;
 }
 
-.results-comparison-image--upperFocus {
-    object-position: 50% 38%;
+.results-comparison img.results-comparison-image--mesotherapyAfter {
+    --comparison-scale: 1.18;
+    --comparison-position: 50% 46%;
 }
 
-.results-comparison-image--implantDirection {
-    transform: rotate(180deg);
+.results-comparison img.results-comparison-image--femaleAugustBefore {
+    --comparison-scale: 1.12;
+    --comparison-position: 50% 48%;
+}
+
+.results-comparison img.results-comparison-image--femaleAugustAfter {
+    --comparison-scale: 1.12;
+    --comparison-position: 50% 50%;
+}
+
+.results-comparison img.results-comparison-image--femaleSeptemberBefore {
+    --comparison-scale: 1.12;
+    --comparison-position: 50% 43%;
+}
+
+.results-comparison img.results-comparison-image--femaleSeptemberAfter {
+    --comparison-scale: 1.16;
+    --comparison-position: 50% 42%;
+}
+
+.results-comparison img.results-comparison-image--maleAugustBefore {
+    --comparison-scale: 1.08;
+    --comparison-position: 50% 49%;
+}
+
+.results-comparison img.results-comparison-image--maleAugustAfter {
+    --comparison-scale: 1.08;
+    --comparison-position: 50% 48%;
+}
+
+.results-comparison img.results-comparison-image--maleTreatmentBefore {
+    --comparison-scale: 1.2;
+    --comparison-position: 50% 42%;
+}
+
+.results-comparison img.results-comparison-image--maleTreatmentAfter {
+    --comparison-scale: 1.55;
+    --comparison-position: 50% 37%;
+}
+
+.results-comparison img.results-comparison-image--implantBefore {
+    --comparison-scale: 1.1;
+    --comparison-position: 50% 43%;
+}
+
+.results-comparison img.results-comparison-image--implantPost {
+    --comparison-scale: 1.08;
+    --comparison-position: 50% 48%;
+}
+
+.results-comparison img.results-comparison-image--implantDirection {
+    --comparison-rotation: 180deg;
 }
 
 @media (max-width: 992px) {
     .results-comparison span {
         top: 10px;
         bottom: auto;
-    }
-}
-
-@media (min-width: 700px) and (max-width: 900px) {
-    .results-comparison img.results-comparison-image--mesotherapyProgress {
-        object-fit: cover;
-        object-position: 50% 58%;
     }
 }
