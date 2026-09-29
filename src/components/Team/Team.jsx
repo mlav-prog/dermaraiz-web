@@ -26,19 +26,29 @@ function Team() {
                 <div className="professionals-grid">
                     {team.map((person) => (
                         <article className="professional-card" key={person.name}>
-                            <span className="professional-role">{person.role}</span>
+                            <div className="professional-card-media">
+                                <img
+                                    src={brandImages[person.imageKey]}
+                                    alt={person.imageAlt}
+                                    loading="lazy"
+                                />
+                            </div>
 
-                            <h3>{person.name}</h3>
+                            <div className="professional-card-content">
+                                <span className="professional-role">{person.role}</span>
 
-                            <span className="professional-license">
-                                Matrícula: {person.license}
-                            </span>
+                                <h3>{person.name}</h3>
 
-                            <p>{person.description}</p>
+                                <span className="professional-license">
+                                    Matrícula: {person.license}
+                                </span>
 
-                            <a href="#contacto" className="professional-link">
-                                Consultar con este especialista
-                            </a>
+                                <p>{person.description}</p>
+
+                                <a href="#contacto" className="professional-link">
+                                    Consultar con este especialista
+                                </a>
+                            </div>
                         </article>
                     ))}
                 </div>

@@ -5,7 +5,9 @@ import productAntiCaida from "./products/shampoo-anticaida-dermaraiz.webp";
 import productAntiCaspa from "./products/shampoo-anticaspa-dermaraiz.webp";
 import productNeutro from "./products/shampoo-neutro-dermaraiz.webp";
 
-import teamMain from "./team/team-dermaraiz-2.jpg";
+import teamMain from "./team/equipo-dermaraiz-2026.webp";
+import teamHernan from "./team/dr-hernan-lopez-dermaraiz.webp";
+import teamLarisa from "./team/dra-larisa-espindola-dermaraiz.webp";
 
 import resultImplantBefore from "./results/implante-capilar-before-02.jpeg";
 import resultImplantPost from "./results/implante-capilar-post-02.jpeg";
@@ -23,6 +25,10 @@ import resultMaleAugustBefore from "./results/resultado-capilar-masculino-antes-
 import resultMaleAugustAfter from "./results/resultado-capilar-masculino-despues-dermaraiz.jpeg";
 import resultFemaleSeptemberBefore from "./results/evolucion-femenina-antes-dermaraiz-septiembre.jpeg";
 import resultFemaleSeptemberFourMonths from "./results/evolucion-femenina-4-meses-dermaraiz-septiembre.jpeg";
+import resultSeptemberBefore from "./results/evolucion-capilar-septiembre-antes.webp";
+import resultSeptemberAfter from "./results/evolucion-capilar-septiembre-despues.webp";
+import resultSeptemberBeforeFront from "./results/evolucion-capilar-septiembre-antes-frontal.webp";
+import resultSeptemberAfterFront from "./results/evolucion-capilar-septiembre-despues-frontal.webp";
 
 import treatmentAmpoulesMesotherapy from "./treatments/ampollas-mesoterapia-capilar.jpg";
 import treatmentConsultation from "./treatments/consulta-capilar-dermaraiz.jpeg";
@@ -49,6 +55,8 @@ export const brandImages = {
     heroMain,
     logoIcon,
     teamMain,
+    teamHernan,
+    teamLarisa,
 };
 
 export const productImages = {
@@ -74,6 +82,10 @@ export const resultImages = {
     maleAugustAfter: resultMaleAugustAfter,
     femaleSeptemberBefore: resultFemaleSeptemberBefore,
     femaleSeptemberFourMonths: resultFemaleSeptemberFourMonths,
+    septemberBefore: resultSeptemberBefore,
+    septemberAfter: resultSeptemberAfter,
+    septemberBeforeFront: resultSeptemberBeforeFront,
+    septemberAfterFront: resultSeptemberAfterFront,
 };
 
 export const treatmentImages = {

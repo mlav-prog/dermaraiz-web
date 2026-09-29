@@ -153,16 +153,26 @@ function Contact() {
           </div>
 
           <div className="contact-card">
-            <h3>Seguinos en Instagram</h3>
+            <h3>Seguinos en redes</h3>
             <p>Resultados, novedades y contenido del equipo Dermaraíz.</p>
-            <a
-              className="contact-button secondary"
-              href="https://www.instagram.com/derma_raiz/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Ver Instagram
-            </a>
+            <div className="contact-social-actions">
+              <a
+                className="contact-button secondary"
+                href="https://www.instagram.com/derma_raiz/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Instagram
+              </a>
+              <a
+                className="contact-button secondary"
+                href="https://www.tiktok.com/@dermaraiz"
+                target="_blank"
+                rel="noreferrer"
+              >
+                TikTok
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -99,6 +99,28 @@ function Footer() {
 
                     <p>
                         <a
+                            href="https://www.tiktok.com/@dermaraiz"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="footer-item"
+                        >
+                            <span className="footer-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M14.4 3.5v10.1a4.7 4.7 0 1 1-4-4.6v2.8a2 2 0 1 0 1.3 1.8V3.5h2.7Zm0 0c.4 2.3 1.8 3.7 4.1 4.1v2.7a7.2 7.2 0 0 1-4.1-1.5"
+                                        stroke="currentColor"
+                                        strokeWidth="1.8"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                    />
+                                </svg>
+                            </span>
+                            TikTok
+                        </a>
+                    </p>
+
+                    <p>
+                        <a
                             href="https://share.google/rISe30XnZe3u7ZIem"
                             target="_blank"
                             rel="noopener noreferrer"

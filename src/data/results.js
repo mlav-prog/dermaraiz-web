@@ -68,23 +68,6 @@ export const comparisonCases = [
         afterOrientation: "implantDirection",
     },
     {
-        category: "Seguimiento capilar",
-        title: "Antes y después del tratamiento",
-        treatmentKey: "diagnostico",
-        description:
-            "Comparación real de evolución capilar durante el seguimiento del tratamiento indicado.",
-        beforeLabel: "Antes",
-        afterLabel: "Después",
-        beforeImage: resultImages.treatmentBefore,
-        beforeAlt: "Antes de tratamiento capilar personalizado en Dermaraíz Buenos Aires",
-        beforeFocus: "maleTreatmentBefore",
-        beforeOrientation: "implantDirection",
-        afterImage: resultImages.coffeeFollowUp,
-        afterAlt: "Después de tratamiento capilar personalizado en Dermaraíz Buenos Aires",
-        afterFocus: "maleTreatmentAfter",
-        afterOrientation: "implantDirection",
-    },
-    {
         category: "Implante capilar FUE",
         title: "Antes y post inmediato",
         treatmentKey: "implante",
@@ -98,6 +81,39 @@ export const comparisonCases = [
         afterImage: resultImages.implantPost,
         afterAlt: "Post inmediato de implante capilar FUE en Dermaraíz Buenos Aires",
         afterFocus: "implantPost",
+    },
+    {
+        category: "Seguimiento capilar",
+        title: "Evolución capilar desde distintos ángulos",
+        treatmentKey: "diagnostico",
+        description:
+            "Registro del mismo paciente desde vistas cenital y frontal para mostrar con mayor claridad el cambio de cobertura.",
+        images: [
+            {
+                image: resultImages.septemberBefore,
+                alt: "Vista cenital antes del seguimiento capilar masculino en Dermaraíz Buenos Aires",
+                label: "Antes · vista superior",
+                focus: "septemberBefore",
+            },
+            {
+                image: resultImages.septemberAfter,
+                alt: "Vista cenital después del seguimiento capilar masculino en Dermaraíz Buenos Aires",
+                label: "Después · vista superior",
+                focus: "septemberAfter",
+            },
+            {
+                image: resultImages.septemberBeforeFront,
+                alt: "Vista frontal antes del seguimiento capilar masculino en Dermaraíz Buenos Aires",
+                label: "Antes · vista frontal",
+                focus: "septemberBeforeFront",
+            },
+            {
+                image: resultImages.septemberAfterFront,
+                alt: "Vista frontal después del seguimiento capilar masculino en Dermaraíz Buenos Aires",
+                label: "Después · vista frontal",
+                focus: "septemberAfterFront",
+            },
+        ],
     },
 ];
 

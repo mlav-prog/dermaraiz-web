@@ -411,6 +411,7 @@ function RouteSeo() {
       ],
       sameAs: [
         "https://www.instagram.com/derma_raiz/",
+        "https://www.tiktok.com/@dermaraiz",
       ],
     });
 

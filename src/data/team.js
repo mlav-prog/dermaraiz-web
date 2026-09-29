@@ -1,6 +1,8 @@
 export const team = [
     {
         name: "Dr. Hernán López",
+        imageKey: "teamHernan",
+        imageAlt: "Dr. Hernán López, especialista en implante capilar FUE en Dermaraíz",
         license: "MN 199837",
         role: "Implante capilar (FUE)",
         description:
@@ -8,6 +10,8 @@ export const team = [
     },
     {
         name: "Dra. Larisa Espíndola",
+        imageKey: "teamLarisa",
+        imageAlt: "Dra. Larisa Espíndola, especialista en medicina estética y capilar en Dermaraíz",
         license: "MN 194054",
         role: "Medicina estética y capilar",
         description:

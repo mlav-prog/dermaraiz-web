@@ -64,6 +64,8 @@ function AnalyticsTracker() {
           sendLeadIntent("online_booking", commonParameters);
         } else if (href.includes("instagram.com/")) {
           sendEvent("click_instagram", commonParameters);
+        } else if (href.includes("tiktok.com/")) {
+          sendEvent("click_tiktok", commonParameters);
         } else if (href.startsWith("tel:")) {
           sendEvent("click_phone", commonParameters);
           sendLeadIntent("phone", commonParameters);

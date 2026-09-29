@@ -110,6 +110,14 @@ function Testimonials() {
                             <span className="stars" aria-label="5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                         </div>
                         <p>{testimonialsSummary.total}</p>
+                        <a
+                            className="testimonials-google-link"
+                            href={testimonialsSummary.url}
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Ver todas las reseñas
+                        </a>
                     </aside>
                 </div>
 
