@@ -19,6 +19,12 @@ const orderedResultRecords = [...resultRecords].sort(
   ),
 );
 
+const getCaseImageSources = (caseItem) => (
+  caseItem.images
+    ? caseItem.images.map((item) => item.image)
+    : [caseItem.beforeImage, caseItem.afterImage].filter(Boolean)
+);
+
 function Results() {
   const [activeCaseIndex, setActiveCaseIndex] = useState(0);
   const [recordSlideIndex, setRecordSlideIndex] = useState(orderedResultRecords.length);
@@ -85,6 +91,24 @@ function Results() {
     const autoplay = window.setInterval(() => scrollRecords(1), 3200);
     return () => window.clearInterval(autoplay);
   }, [recordsPaused]);
+
+  useEffect(() => {
+    const nextCase = comparisonCases[(activeCaseIndex + 1) % comparisonCases.length];
+    const preloadNextCase = () => {
+      getCaseImageSources(nextCase).forEach((source) => {
+        const image = new Image();
+        image.src = source;
+      });
+    };
+
+    if ("requestIdleCallback" in window) {
+      const idleCallback = window.requestIdleCallback(preloadNextCase, { timeout: 1200 });
+      return () => window.cancelIdleCallback(idleCallback);
+    }
+
+    const timeout = window.setTimeout(preloadNextCase, 400);
+    return () => window.clearTimeout(timeout);
+  }, [activeCaseIndex]);
 
   useEffect(() => {
     if (recordsTransitioning) return undefined;

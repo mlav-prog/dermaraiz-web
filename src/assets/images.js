@@ -9,22 +9,17 @@ import teamMain from "./team/equipo-dermaraiz-2026.webp";
 import teamHernan from "./team/dr-hernan-lopez-dermaraiz.webp";
 import teamLarisa from "./team/dra-larisa-espindola-dermaraiz.webp";
 
-import resultImplantBefore from "./results/implante-capilar-before-02.jpeg";
-import resultImplantPost from "./results/implante-capilar-post-02.jpeg";
-import resultImplantImmediateAugust from "./results/implante-capilar-post-inmediato-agosto-dermaraiz.jpeg";
-import resultImplantPostAugust from "./results/implante-capilar-post-agosto-dermaraiz.jpeg";
-import resultMesotherapyMonthOne from "./results/mesoterapia-primer-mes-dermaraiz.jpeg";
-import resultMesotherapyMonthFour from "./results/mesoterapia-mes-4-dermaraiz.jpeg";
-import resultTreatmentBefore from "./results/tratamiento-capilar-antes-dermaraiz.jpeg";
-import resultCoffeeFollowUp from "./results/resultado-tratamiento-capilar-dermaraiz.jpeg";
-import resultFemaleAugust from "./results/resultado-capilar-femenino-agosto-dermaraiz.jpeg";
-import resultFemaleAugustBefore from "./results/resultado-capilar-femenino-antes-dermaraiz.jpeg";
-import resultFemaleAugustAfter from "./results/resultado-capilar-femenino-despues-dermaraiz.jpeg";
-import resultMaleAugust from "./results/resultado-capilar-masculino-agosto-dermaraiz.jpeg";
-import resultMaleAugustBefore from "./results/resultado-capilar-masculino-antes-dermaraiz.jpeg";
-import resultMaleAugustAfter from "./results/resultado-capilar-masculino-despues-dermaraiz.jpeg";
-import resultFemaleSeptemberBefore from "./results/evolucion-femenina-antes-dermaraiz-septiembre.jpeg";
-import resultFemaleSeptemberFourMonths from "./results/evolucion-femenina-4-meses-dermaraiz-septiembre.jpeg";
+import resultImplantBefore from "./results/implante-capilar-before-02.webp";
+import resultImplantPost from "./results/implante-capilar-post-02.webp";
+import resultImplantImmediateAugust from "./results/implante-capilar-post-inmediato-agosto-dermaraiz.webp";
+import resultMesotherapyMonthOne from "./results/mesoterapia-primer-mes-dermaraiz.webp";
+import resultMesotherapyMonthFour from "./results/mesoterapia-mes-4-dermaraiz.webp";
+import resultFemaleAugustBefore from "./results/resultado-capilar-femenino-antes-dermaraiz.webp";
+import resultFemaleAugustAfter from "./results/resultado-capilar-femenino-despues-dermaraiz.webp";
+import resultMaleAugustBefore from "./results/resultado-capilar-masculino-antes-dermaraiz.webp";
+import resultMaleAugustAfter from "./results/resultado-capilar-masculino-despues-dermaraiz.webp";
+import resultFemaleSeptemberBefore from "./results/evolucion-femenina-antes-dermaraiz-septiembre.webp";
+import resultFemaleSeptemberFourMonths from "./results/evolucion-femenina-4-meses-dermaraiz-septiembre.webp";
 import resultSeptemberBefore from "./results/evolucion-capilar-septiembre-antes.webp";
 import resultSeptemberAfter from "./results/evolucion-capilar-septiembre-despues.webp";
 import resultSeptemberBeforeFront from "./results/evolucion-capilar-septiembre-antes-frontal.webp";
@@ -69,15 +64,10 @@ export const resultImages = {
     implantBefore: resultImplantBefore,
     implantPost: resultImplantPost,
     implantImmediateAugust: resultImplantImmediateAugust,
-    implantPostAugust: resultImplantPostAugust,
     mesotherapyMonthOne: resultMesotherapyMonthOne,
     mesotherapyMonthFour: resultMesotherapyMonthFour,
-    treatmentBefore: resultTreatmentBefore,
-    coffeeFollowUp: resultCoffeeFollowUp,
-    femaleAugust: resultFemaleAugust,
     femaleAugustBefore: resultFemaleAugustBefore,
     femaleAugustAfter: resultFemaleAugustAfter,
-    maleAugust: resultMaleAugust,
     maleAugustBefore: resultMaleAugustBefore,
     maleAugustAfter: resultMaleAugustAfter,
     femaleSeptemberBefore: resultFemaleSeptemberBefore,
