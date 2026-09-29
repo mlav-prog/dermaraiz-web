@@ -25,7 +25,7 @@ function getTreatmentFromUrl(url) {
 }
 
 function sendLeadIntent(method, parameters = {}) {
-  sendEvent("generate_lead", {
+  sendEvent("lead_intent", {
     method,
     lead_source: "website",
     ...parameters,
@@ -87,7 +87,14 @@ function AnalyticsTracker() {
       const formData = new FormData(event.target);
       const treatment = formData.get("treatment");
 
-      sendLeadIntent("contact_form_whatsapp", {
+      sendEvent("form_submit", {
+        form_name: "contact_form",
+        page_path: window.location.pathname,
+        ...(treatment ? { treatment_interest: treatment } : {}),
+      });
+      sendEvent("generate_lead", {
+        method: "contact_form_whatsapp",
+        lead_source: "website",
         page_path: window.location.pathname,
         ...(treatment ? { treatment_interest: treatment } : {}),
       });

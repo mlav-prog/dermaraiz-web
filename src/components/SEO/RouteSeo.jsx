@@ -23,9 +23,9 @@ const pages = {
     },
   },
   "/implante-capilar": {
-    title: "Implante capilar FUE en CABA | Trasplante capilar Dermaraíz",
+    title: "Implante capilar en CABA | Técnica FUE | Dermaraíz",
     description:
-      "Implante capilar FUE en CABA con diagnóstico, diseño de línea capilar, extracción folicular y seguimiento profesional. Reservá tu evaluación.",
+      "Implante capilar FUE en CABA con evaluación médica, diseño personalizado, extracción folicular y seguimiento. Conocé casos reales y reservá tu consulta.",
     serviceName: "Implante capilar FUE",
     keywords:
       "implante capilar FUE, implante capilar Buenos Aires, transplante capilar, recuperar cabello",
@@ -57,6 +57,11 @@ const pages = {
         question: "¿Necesito estudios previos?",
         answer:
           "Sí. Antes del procedimiento se solicitan estudios y una valoración profesional para realizarlo con seguridad.",
+      },
+      {
+        question: "¿Cuánto cuesta un implante capilar?",
+        answer:
+          "El valor depende de la cantidad de unidades foliculares, la zona a tratar y la planificación del caso. La evaluación permite preparar un presupuesto personalizado.",
       },
     ],
   },
@@ -99,9 +104,9 @@ const pages = {
     ],
   },
   "/mesoterapia-capilar": {
-    title: "Mesoterapia capilar en CABA | Tratamiento para caída del cabello",
+    title: "Mesoterapia capilar en CABA | Evaluación y tratamiento | Dermaraíz",
     description:
-      "Mesoterapia capilar en CABA para caída, nutrición folicular, calidad y densidad del cabello. Evaluación personalizada y turnos online.",
+      "Mesoterapia capilar en CABA y Buenos Aires con activos seleccionados según diagnóstico. Conocé cómo se realiza, resultados y cantidad de sesiones.",
     serviceName: "Mesoterapia capilar",
     keywords:
       "mesoterapia capilar, mesoterapia para caída cabello, tratamiento capilar Buenos Aires",
@@ -133,6 +138,11 @@ const pages = {
         question: "¿Cuántas sesiones se recomiendan?",
         answer:
           "La frecuencia y cantidad de sesiones se define según la necesidad del paciente y la respuesta del tratamiento.",
+      },
+      {
+        question: "¿Cuánto cuesta una sesión de mesoterapia capilar?",
+        answer:
+          "El valor depende de los activos indicados y del plan recomendado. Luego de evaluar el caso se informa la frecuencia y el presupuesto correspondiente.",
       },
     ],
   },
@@ -412,6 +422,20 @@ function RouteSeo() {
       sameAs: [
         "https://www.instagram.com/derma_raiz/",
         "https://www.tiktok.com/@dermaraiz",
+      ],
+      employee: [
+        {
+          "@type": "Physician",
+          name: "Dr. Hernán López",
+          jobTitle: "Especialista en implante capilar FUE",
+          medicalSpecialty: "HairTransplantation",
+        },
+        {
+          "@type": "Physician",
+          name: "Dra. Larisa Espíndola",
+          jobTitle: "Especialista en medicina estética y capilar",
+          medicalSpecialty: "Dermatology",
+        },
       ],
     });
 

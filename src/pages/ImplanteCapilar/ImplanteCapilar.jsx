@@ -30,7 +30,7 @@ function ImplanteCapilar() {
           <div className="implant-hero-content">
             <span className="section-tag">Implante capilar FUE</span>
 
-            <h1>Implante capilar FUE en CABA con planificación personalizada</h1>
+            <h1>Implante capilar en CABA con técnica FUE y planificación personalizada</h1>
 
             <p>
               El implante capilar FUE traslada unidades foliculares propias
@@ -419,6 +419,15 @@ function ImplanteCapilar() {
               <p>
                 Sí. Antes del procedimiento se solicitan estudios y una
                 valoración profesional para realizarlo con seguridad.
+              </p>
+            </article>
+
+            <article className="implant-faq-card">
+              <h3>¿Cuánto cuesta un implante capilar?</h3>
+              <p>
+                El valor depende de la cantidad de unidades foliculares, la zona
+                a tratar y la planificación. La evaluación permite preparar un
+                presupuesto personalizado para cada caso.
               </p>
             </article>
           </div>

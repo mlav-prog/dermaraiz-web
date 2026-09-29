@@ -5,7 +5,7 @@ function MesoterapiaCapilar() {
   return (
     <TreatmentPage
       tag="Mesoterapia Capilar"
-      title="Mesoterapia capilar en CABA para el cuidado del cabello"
+      title="Mesoterapia capilar en CABA para caída y fortalecimiento del cabello"
       currentPath="/mesoterapia-capilar/"
       treatmentKey="mesoterapia"
       description="La mesoterapia capilar consiste en la aplicación localizada de activos específicos sobre el cuero cabelludo para acompañar la recuperación capilar, mejorar la calidad del pelo y complementar planes personalizados."
@@ -113,6 +113,11 @@ function MesoterapiaCapilar() {
           question: "¿Cuántas sesiones se recomiendan?",
           answer:
             "La frecuencia y cantidad de sesiones se define según la necesidad del paciente y la respuesta del tratamiento.",
+        },
+        {
+          question: "¿Cuánto cuesta una sesión de mesoterapia capilar?",
+          answer:
+            "El valor depende de los activos indicados y del plan recomendado. Luego de evaluar el caso se informa la frecuencia y el presupuesto correspondiente.",
         },
       ]}
       ctaTitle="¿Querés mejorar la calidad de tu cabello?"
