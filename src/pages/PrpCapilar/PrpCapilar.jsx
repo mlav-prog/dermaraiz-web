@@ -5,10 +5,10 @@ function PrpCapilar() {
   return (
     <TreatmentPage
       tag="PRP Capilar"
-      title="PRP capilar en CABA con Plasma Rico en Plaquetas"
+      title="PRP capilar en CABA para caída y fortalecimiento del cabello"
       currentPath="/prp-capilar/"
       treatmentKey="prp"
-      description="El PRP Capilar es un tratamiento regenerativo que utiliza factores de crecimiento obtenidos de la propia sangre del paciente para acompañar la recuperación capilar, fortalecer el cabello y complementar planes personalizados."
+      description="En Dermaraíz, CABA, el PRP capilar utiliza plasma obtenido de la propia sangre del paciente para acompañar la recuperación capilar, fortalecer el cabello y complementar planes personalizados."
       heroImage={treatmentImages.prpPlasma}
       heroImageAlt="Preparación de plasma rico en plaquetas para PRP capilar en Dermaraíz"
       benefits={[
@@ -85,6 +85,11 @@ function PrpCapilar() {
           question: "¿Cuándo se ven cambios?",
           answer:
             "Los cambios suelen evaluarse de forma progresiva en los controles, observando caída, densidad y calidad capilar.",
+        },
+        {
+          question: "¿Cuánto cuesta una sesión de PRP capilar?",
+          answer:
+            "El valor depende del plan indicado y de la cantidad de sesiones. Luego de la evaluación se informa la frecuencia y el presupuesto correspondiente.",
         },
       ]}
       ctaTitle="¿Querés fortalecer tu cabello?"

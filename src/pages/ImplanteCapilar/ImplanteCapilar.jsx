@@ -30,12 +30,13 @@ function ImplanteCapilar() {
           <div className="implant-hero-content">
             <span className="section-tag">Implante capilar FUE</span>
 
-            <h1>Implante capilar en CABA con técnica FUE y planificación personalizada</h1>
+            <h1>Implante capilar en Buenos Aires con técnica FUE y planificación personalizada</h1>
 
             <p>
-              El implante capilar FUE traslada unidades foliculares propias
-              desde la zona donante hacia las áreas despobladas. Cada caso se
-              planifica para cuidar diseño, ángulo, dirección y densidad.
+              En Dermaraíz, CABA, el implante capilar FUE traslada unidades
+              foliculares propias desde la zona donante hacia las áreas
+              despobladas. Cada caso se planifica para cuidar diseño, ángulo,
+              dirección y densidad.
             </p>
 
             <div className="implant-hero-buttons">

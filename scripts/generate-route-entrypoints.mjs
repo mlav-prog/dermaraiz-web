@@ -9,21 +9,21 @@ const sitemap = await readFile(sitemapPath, "utf8");
 
 const routeMetadata = {
   "/implante-capilar/": {
-    title: "Implante capilar en CABA | Técnica FUE | Dermaraíz",
+    title: "Implante capilar en Buenos Aires y CABA | Técnica FUE",
     description:
-      "Implante capilar FUE en CABA con evaluación médica, diseño personalizado, extracción folicular y seguimiento. Conocé casos reales y reservá tu consulta.",
+      "Implante capilar FUE en Buenos Aires con evaluación profesional, diseño personalizado y seguimiento. Conocé casos reales y reservá tu consulta en CABA.",
     language: "es-AR",
   },
   "/prp-capilar/": {
-    title: "PRP capilar en CABA | Plasma rico en plaquetas | Dermaraíz",
+    title: "PRP capilar en CABA para caída del cabello | Dermaraíz",
     description:
-      "PRP capilar en CABA para acompañar casos de caída y afinamiento del cabello. Evaluación profesional, plan personalizado y turnos online.",
+      "PRP capilar con plasma propio para caída, afinamiento y fortalecimiento del cabello. Evaluación profesional y turnos en Dermaraíz, CABA.",
     language: "es-AR",
   },
   "/mesoterapia-capilar/": {
-    title: "Mesoterapia capilar en CABA | Evaluación y tratamiento | Dermaraíz",
+    title: "Mesoterapia capilar en Buenos Aires y CABA | Dermaraíz",
     description:
-      "Mesoterapia capilar en CABA y Buenos Aires con activos seleccionados según diagnóstico. Conocé cómo se realiza, resultados y cantidad de sesiones.",
+      "Mesoterapia capilar en Buenos Aires para caída y fortalecimiento. Activos seleccionados según diagnóstico, seguimiento y turnos en CABA.",
     language: "es-AR",
   },
   "/diagnostico-capilar/": {

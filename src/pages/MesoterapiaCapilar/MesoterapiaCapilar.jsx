@@ -5,10 +5,10 @@ function MesoterapiaCapilar() {
   return (
     <TreatmentPage
       tag="Mesoterapia Capilar"
-      title="Mesoterapia capilar en CABA para caída y fortalecimiento del cabello"
+      title="Mesoterapia capilar en Buenos Aires para caída y fortalecimiento"
       currentPath="/mesoterapia-capilar/"
       treatmentKey="mesoterapia"
-      description="La mesoterapia capilar consiste en la aplicación localizada de activos específicos sobre el cuero cabelludo para acompañar la recuperación capilar, mejorar la calidad del pelo y complementar planes personalizados."
+      description="En Dermaraíz, CABA, la mesoterapia capilar aplica activos seleccionados sobre el cuero cabelludo para acompañar la recuperación, mejorar la calidad del pelo y complementar planes personalizados."
       heroImage={treatmentImages.mesotherapy}
       heroImageAlt="Aplicación de mesoterapia capilar en consultorio Dermaraíz"
       benefits={[

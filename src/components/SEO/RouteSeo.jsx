@@ -23,9 +23,9 @@ const pages = {
     },
   },
   "/implante-capilar": {
-    title: "Implante capilar en CABA | Técnica FUE | Dermaraíz",
+    title: "Implante capilar en Buenos Aires y CABA | Técnica FUE",
     description:
-      "Implante capilar FUE en CABA con evaluación médica, diseño personalizado, extracción folicular y seguimiento. Conocé casos reales y reservá tu consulta.",
+      "Implante capilar FUE en Buenos Aires con evaluación profesional, diseño personalizado y seguimiento. Conocé casos reales y reservá tu consulta en CABA.",
     serviceName: "Implante capilar FUE",
     keywords:
       "implante capilar FUE, implante capilar Buenos Aires, transplante capilar, recuperar cabello",
@@ -66,9 +66,9 @@ const pages = {
     ],
   },
   "/prp-capilar": {
-    title: "PRP capilar en CABA | Plasma rico en plaquetas para el cabello",
+    title: "PRP capilar en CABA para caída del cabello | Dermaraíz",
     description:
-      "PRP capilar en CABA con plasma rico en plaquetas para caída, afinamiento y fortalecimiento del cabello. Evaluación profesional en Dermaraíz.",
+      "PRP capilar con plasma propio para caída, afinamiento y fortalecimiento del cabello. Evaluación profesional y turnos en Dermaraíz, CABA.",
     serviceName: "PRP capilar",
     keywords:
       "PRP capilar, plasma rico en plaquetas capilar, tratamiento caída cabello, fortalecimiento capilar",
@@ -101,12 +101,17 @@ const pages = {
         answer:
           "Los cambios suelen evaluarse de forma progresiva en los controles, observando caída, densidad y calidad capilar.",
       },
+      {
+        question: "¿Cuánto cuesta una sesión de PRP capilar?",
+        answer:
+          "El valor depende del plan indicado y de la cantidad de sesiones. Luego de la evaluación se informa la frecuencia y el presupuesto correspondiente.",
+      },
     ],
   },
   "/mesoterapia-capilar": {
-    title: "Mesoterapia capilar en CABA | Evaluación y tratamiento | Dermaraíz",
+    title: "Mesoterapia capilar en Buenos Aires y CABA | Dermaraíz",
     description:
-      "Mesoterapia capilar en CABA y Buenos Aires con activos seleccionados según diagnóstico. Conocé cómo se realiza, resultados y cantidad de sesiones.",
+      "Mesoterapia capilar en Buenos Aires para caída y fortalecimiento. Activos seleccionados según diagnóstico, seguimiento y turnos en CABA.",
     serviceName: "Mesoterapia capilar",
     keywords:
       "mesoterapia capilar, mesoterapia para caída cabello, tratamiento capilar Buenos Aires",
