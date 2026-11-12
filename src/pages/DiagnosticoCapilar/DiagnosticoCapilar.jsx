@@ -111,7 +111,13 @@ function DiagnosticoCapilar() {
         },
       ]}
       ctaTitle="¿Querés conocer el estado de tu salud capilar?"
-      ctaText="Reservá una consulta profesional para recibir un diagnóstico personalizado."
+      ctaText={
+        <>
+          Reservá una consulta profesional para recibir un diagnóstico personalizado.
+          Si te indican <a href="/mesoterapia-capilar/">mesoterapia capilar en Buenos Aires</a>,
+          podés consultar cómo se definen las sesiones y cómo pedir presupuesto.
+        </>
+      }
     />
   );
 }

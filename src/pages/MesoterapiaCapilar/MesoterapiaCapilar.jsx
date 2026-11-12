@@ -87,7 +87,7 @@ function MesoterapiaCapilar() {
       ]}
       whatsappMessage="Hola, quiero consultar por mesoterapia capilar."
       primaryCtaText="Reservar turno para mesoterapia"
-      consultationCtaText="Solicitar consulta por mesoterapia"
+      consultationCtaText="Consultar por sesiones y presupuesto"
       faqs={[
         {
           question: "¿La mesoterapia capilar sirve para la caída del cabello?",
@@ -120,8 +120,8 @@ function MesoterapiaCapilar() {
             "El valor depende de los activos indicados y del plan recomendado. Luego de evaluar el caso se informa la frecuencia y el presupuesto correspondiente.",
         },
       ]}
-      ctaTitle="¿Querés mejorar la calidad de tu cabello?"
-      ctaText="Reservá una consulta para evaluar si la mesoterapia capilar es adecuada para tu caso."
+      ctaTitle="Evaluación para mesoterapia capilar en Buenos Aires"
+      ctaText="En nuestro consultorio de CABA revisamos tu historial de caída o afinamiento y evaluamos el cuero cabelludo para saber si la mesoterapia es adecuada para vos. Según el diagnóstico y tu evolución, definimos la cantidad y frecuencia de las sesiones. Podés pedir el presupuesto de tu plan después de la evaluación."
     />
   );
 }
