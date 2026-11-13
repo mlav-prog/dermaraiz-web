@@ -2,7 +2,7 @@ import "./TreatmentPage.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import RelatedTreatments from "../RelatedTreatments/RelatedTreatments";
-import { AGENDA_PRO_URL } from "../../utils/contactLinks";
+import { BOOKING_PATH } from "../../utils/contactLinks";
 import { getTreatmentContactHref } from "../../utils/treatmentInterest";
 
 function TreatmentPage({
@@ -56,9 +56,7 @@ function TreatmentPage({
 
             <div className="treatment-page-buttons">
               <a
-                href={AGENDA_PRO_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={BOOKING_PATH}
                 className="btn-primary"
               >
                 {primaryCtaText}
@@ -222,9 +220,7 @@ function TreatmentPage({
 
           <div className="treatment-cta-actions">
             <a
-              href={AGENDA_PRO_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={BOOKING_PATH}
               className="btn-primary"
             >
               {primaryCtaText}

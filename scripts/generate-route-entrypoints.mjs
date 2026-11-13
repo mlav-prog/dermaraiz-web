@@ -8,6 +8,11 @@ const sourceHtmlPath = join(projectRoot, "dist", "index.html");
 const sitemap = await readFile(sitemapPath, "utf8");
 
 const routeMetadata = {
+  "/reservar-turno/": {
+    title: "Reservar turno | Dermaraíz",
+    description: "Reservá un turno en Dermaraíz con AgendaPro.",
+    language: "es-AR",
+  },
   "/implante-capilar/": {
     title: "Implante capilar en Buenos Aires y CABA | Técnica FUE",
     description:
@@ -98,6 +103,7 @@ function buildRouteHtml(sourceHtml, pathname) {
 const routePaths = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)]
   .map(([, location]) => new URL(location).pathname)
   .filter((pathname) => pathname !== "/");
+routePaths.push("/reservar-turno/");
 
 for (const pathname of routePaths) {
   const routeDirectory = join(projectRoot, "dist", pathname.replace(/^\/+|\/+$/g, ""));

@@ -22,6 +22,14 @@ const pages = {
       "x-default": "/",
     },
   },
+  "/reservar-turno": {
+    title: "Reservar turno | Dermaraíz",
+    description: "Reservá un turno en Dermaraíz con AgendaPro.",
+    keywords: "Dermaraíz, turnos",
+    image: SITE_PREVIEW_IMAGE,
+    imageAlt: "Dermaraíz",
+    language: "es-AR",
+  },
   "/implante-capilar": {
     title: "Implante capilar en Buenos Aires y CABA | Técnica FUE",
     description:

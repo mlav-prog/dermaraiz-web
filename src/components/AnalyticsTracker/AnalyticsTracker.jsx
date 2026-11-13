@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { BOOKING_PATH } from "../../utils/contactLinks";
 
 function sendEvent(eventName, parameters = {}) {
   if (typeof window.gtag !== "function") return;
@@ -59,7 +60,7 @@ function AnalyticsTracker() {
         if (href.includes("wa.me/")) {
           sendEvent("click_whatsapp", commonParameters);
           sendLeadIntent("whatsapp", commonParameters);
-        } else if (href.includes("agendapro.com/")) {
+        } else if (link.getAttribute("href") === BOOKING_PATH || href.includes("agendapro.com/")) {
           sendEvent("click_book_appointment", commonParameters);
           sendLeadIntent("online_booking", commonParameters);
         } else if (href.includes("instagram.com/")) {

@@ -3,7 +3,7 @@ import "./InternationalLanding.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import { treatmentImages } from "../../assets/images";
-import { AGENDA_PRO_URL, getWhatsappUrl } from "../../utils/contactLinks";
+import { BOOKING_PATH, getWhatsappUrl } from "../../utils/contactLinks";
 
 const content = {
   en: {
@@ -325,9 +325,7 @@ function InternationalLanding({ locale }) {
 
             <div className="international-actions">
               <a
-                href={AGENDA_PRO_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={BOOKING_PATH}
                 className="btn-primary"
               >
                 {page.primary}

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./Contact.css";
-import { AGENDA_PRO_URL, getWhatsappUrl } from "../../utils/contactLinks";
+import { BOOKING_PATH, getWhatsappUrl } from "../../utils/contactLinks";
 import { getTreatmentInterestFromSearch } from "../../utils/treatmentInterest";
 
 const initialFormData = {
@@ -147,7 +147,7 @@ function Contact() {
               Elegí día y horario desde la agenda online para reservar tu
               consulta en pocos pasos.
             </p>
-            <a className="contact-button" href={AGENDA_PRO_URL} target="_blank" rel="noreferrer">
+            <a className="contact-button" href={BOOKING_PATH}>
               Reservar ahora
             </a>
           </div>

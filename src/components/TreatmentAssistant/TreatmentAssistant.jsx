@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import { AGENDA_PRO_URL, getWhatsappUrl } from "../../utils/contactLinks";
+import { BOOKING_PATH, getWhatsappUrl } from "../../utils/contactLinks";
 import "./TreatmentAssistant.css";
 
 const steps = [
@@ -148,7 +148,7 @@ function TreatmentAssistant() {
                   Ver tratamiento
                 </Link>
 
-                <a href={AGENDA_PRO_URL} target="_blank" rel="noopener noreferrer">
+                <a href={BOOKING_PATH}>
                   Reservar turno
                 </a>
 

@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
+import ReservarTurno from "./pages/ReservarTurno";
+import { BOOKING_PATH } from "./utils/contactLinks";
 
 import ImplanteCapilar from "./pages/ImplanteCapilar/ImplanteCapilar";
 import PrpCapilar from "./pages/PrpCapilar/PrpCapilar";
@@ -26,6 +28,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path={BOOKING_PATH} element={<ReservarTurno />} />
 
         <Route path="/implante-capilar" element={<ImplanteCapilar />} />
         <Route path="/prp-capilar" element={<PrpCapilar />} />

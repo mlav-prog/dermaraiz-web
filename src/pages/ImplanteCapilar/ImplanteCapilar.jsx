@@ -4,7 +4,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import RelatedTreatments from "../../components/RelatedTreatments/RelatedTreatments";
 import { treatmentImages } from "../../assets/images";
-import { AGENDA_PRO_URL } from "../../utils/contactLinks";
+import { BOOKING_PATH } from "../../utils/contactLinks";
 import { getTreatmentContactHref } from "../../utils/treatmentInterest";
 
 function ImplanteCapilar() {
@@ -41,9 +41,7 @@ function ImplanteCapilar() {
 
             <div className="implant-hero-buttons">
               <a
-                href={AGENDA_PRO_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={BOOKING_PATH}
                 className="btn-primary"
               >
                 Reservar evaluación para implante
@@ -446,9 +444,7 @@ function ImplanteCapilar() {
 
           <div className="implant-cta-actions">
             <a
-              href={AGENDA_PRO_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={BOOKING_PATH}
               className="btn-primary"
             >
               Reservar evaluación para implante

@@ -1,0 +1,28 @@
+.booking-page {
+  width: min(100% - 2rem, 72rem);
+  margin-inline: auto;
+  padding-block: 2rem;
+}
+
+.booking-page h1 {
+  margin: 0;
+}
+
+.booking-page-agenda {
+  display: block;
+  width: 100%;
+  height: max(64rem, 110dvh);
+  margin-block: 1rem;
+  border: 0;
+}
+
+@media (max-width: 600px) {
+  .booking-page {
+    width: calc(100% - 1rem);
+    padding-block-start: 1rem;
+  }
+
+  .booking-page-agenda {
+    height: max(76rem, 125dvh);
+  }
+}
