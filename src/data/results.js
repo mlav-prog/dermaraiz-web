@@ -1,4 +1,6 @@
 import { resultImages, treatmentImages } from "../assets/images";
+import implantMarkingAndPost from "../assets/registros-noviembre/implante-marcacion-y-post.jpeg";
+import scalpFollowUp from "../assets/registros-noviembre/registro-cuero-cabelludo.jpeg";
 
 export const comparisonCases = [
     {
@@ -81,6 +83,26 @@ export const comparisonCases = [
         afterImage: resultImages.implantPost,
         afterAlt: "Post inmediato de implante capilar FUE en Dermaraíz Buenos Aires",
         afterFocus: "implantPost",
+    },
+    {
+        category: "Implante capilar",
+        title: "Marcación previa y post inmediato",
+        treatmentKey: "implante",
+        description: "Arriba, la marcación antes del implante. Abajo, el aspecto al finalizar el procedimiento. Este registro no muestra la evolución del crecimiento.",
+        isComposite: true,
+        beforeImage: implantMarkingAndPost,
+        beforeAlt: "Marcación previa arriba y aspecto inmediato después del implante abajo",
+        beforeLabel: "Marcación previa y post inmediato",
+    },
+    {
+        category: "Tratamiento capilar",
+        title: "Seguimiento capilar",
+        treatmentKey: "diagnostico",
+        description: "Registro comparativo del cuero cabelludo en dos momentos del seguimiento.",
+        isComposite: true,
+        beforeImage: scalpFollowUp,
+        beforeAlt: "Dos fotografías del cuero cabelludo tomadas desde arriba durante el seguimiento capilar",
+        beforeLabel: "Registro comparativo",
     },
     {
         category: "Seguimiento capilar",

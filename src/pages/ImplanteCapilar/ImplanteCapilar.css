@@ -68,6 +68,14 @@
   object-position: center;
 }
 
+.implant-microscope video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
 .implant-visual-story {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -160,7 +168,42 @@
 }
 
 .implant-process-section {
-  margin-bottom: 76px;
+  margin-bottom: 1.5rem;
+}
+
+.implant-process-cta {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.implant-case-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(0.5rem, 2vw, 1.25rem);
+  max-width: 48rem;
+  margin-inline: auto;
+}
+
+.implant-case-pair figure {
+  margin: 0;
+  min-width: 0;
+}
+
+.implant-case-pair img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #eef1ef;
+}
+
+.implant-case-pair figcaption {
+  padding-block: 0.5rem;
+  color: #2d5959;
+  font-weight: 700;
+  text-align: center;
 }
 
 .implant-section-header {
@@ -172,9 +215,75 @@
 /* STEPS */
 
 .implant-steps {
+  max-width: 64rem;
+  margin-inline: auto;
+}
+
+.implant-step-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.implant-step-controls button {
+  width: 44px;
+  height: 44px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  background: var(--white);
+  color: #2d5959;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.implant-steps .implant-card:not([hidden]) {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 24px;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  grid-template-rows: 1fr auto auto auto 1fr;
+  column-gap: clamp(1rem, 4%, 2.5rem);
+  padding: 0 clamp(1rem, 4%, 2.5rem) 0 0;
+  align-items: start;
+}
+
+.implant-steps .implant-card-media {
+  grid-area: 1 / 1 / -1 / 2;
+  margin: 0;
+  height: clamp(16rem, 32vw, 23rem);
+  aspect-ratio: auto;
+}
+
+.implant-steps .implant-card > span {
+  grid-area: 2 / 2;
+}
+
+.implant-steps .implant-card > h3 {
+  grid-area: 3 / 2;
+}
+
+.implant-steps .implant-card > p {
+  grid-area: 4 / 2;
+}
+
+.implant-steps .implant-card-media img:not(.implant-recipient-marking) {
+  object-fit: contain;
+  object-position: center;
+}
+
+@media (max-width: 640px) {
+  .implant-steps .implant-card:not([hidden]) {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem;
+  }
+
+  .implant-steps .implant-card-media {
+    order: 1;
+    height: min(65vw, 18rem);
+    margin-top: 1rem;
+  }
 }
 
 .implant-card {
@@ -199,6 +308,10 @@
   height: 100%;
   display: block;
   object-fit: cover;
+}
+
+.implant-card-media .implant-recipient-marking {
+  object-position: center top;
 }
 
 .implant-card:hover {
@@ -480,10 +593,6 @@
     aspect-ratio: 16 / 10;
   }
 
-  .implant-steps {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .implant-info-grid {
     grid-template-columns: 1fr;
   }
@@ -542,10 +651,6 @@
 
   .implant-section {
     margin-bottom: 60px;
-  }
-
-  .implant-steps {
-    grid-template-columns: 1fr;
   }
 
   .implant-visual-story {

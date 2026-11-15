@@ -198,7 +198,7 @@ function Results() {
             ) : activeCase.isComposite ? (
               <figure>
                 <img src={activeCase.beforeImage} alt={activeCase.beforeAlt} loading="lazy" />
-                <span>Antes / Después</span>
+                <span>{activeCase.beforeLabel || "Antes / Después"}</span>
               </figure>
             ) : (
               <>

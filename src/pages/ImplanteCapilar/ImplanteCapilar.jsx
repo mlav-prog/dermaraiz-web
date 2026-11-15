@@ -1,14 +1,49 @@
+import { useEffect, useRef, useState } from "react";
 import "./ImplanteCapilar.css";
 import "../../components/TreatmentPage/TreatmentPage.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import RelatedTreatments from "../../components/RelatedTreatments/RelatedTreatments";
-import { treatmentImages } from "../../assets/images";
+import { resultImages, treatmentImages } from "../../assets/images";
+import recipientMarking from "../../assets/registros-noviembre/implante-marcacion-y-post.jpeg";
+import microscope from "../../assets/registros-noviembre/equipo-microscopio.jpeg";
+import microscopeVideo from "../../assets/registros-noviembre/registro-04.mp4";
 import { BOOKING_PATH } from "../../utils/contactLinks";
 import { getTreatmentContactHref } from "../../utils/treatmentInterest";
 
+const PROCESS_STEP_COUNT = 5;
+
 function ImplanteCapilar() {
   const implantContactHref = getTreatmentContactHref("implante");
+  const [activeStep, setActiveStep] = useState(0);
+  const [autoAdvance] = useState(
+    () => !window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+  );
+  const [hoveringStep, setHoveringStep] = useState(false);
+  const [focusedStep, setFocusedStep] = useState(false);
+  const [stepsVisible, setStepsVisible] = useState(false);
+  const stepsRef = useRef(null);
+  const rotating = autoAdvance && !hoveringStep && !focusedStep;
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      setStepsVisible(entry.isIntersecting);
+    }, { threshold: 0.25 });
+    observer.observe(stepsRef.current);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!rotating || !stepsVisible) return;
+    const timer = window.setTimeout(() => {
+      setActiveStep((step) => (step + 1) % PROCESS_STEP_COUNT);
+    }, activeStep === 2 ? 12000 : 7000);
+    return () => window.clearTimeout(timer);
+  }, [activeStep, rotating, stepsVisible]);
+
+  function moveStep(direction) {
+    setActiveStep((step) => (step + direction + PROCESS_STEP_COUNT) % PROCESS_STEP_COUNT);
+  }
 
   return (
     <>
@@ -44,7 +79,7 @@ function ImplanteCapilar() {
                 href={BOOKING_PATH}
                 className="btn-primary"
               >
-                Reservar evaluación para implante
+                Reservar evaluación capilar
               </a>
 
               <a
@@ -67,6 +102,24 @@ function ImplanteCapilar() {
           </figure>
         </section>
 
+        <section className="implant-section implant-case" aria-labelledby="implant-case-title">
+          <div className="implant-section-header">
+            <span className="section-tag">Caso de Dermaraíz</span>
+            <h2 id="implant-case-title">Antes y post inmediato del implante</h2>
+            <p>Dos momentos del mismo procedimiento: antes del implante y al finalizarlo. El crecimiento del cabello se evalúa más adelante, durante los controles.</p>
+          </div>
+          <div className="implant-case-pair">
+            <figure>
+              <img src={resultImages.implantBefore} alt="Vista superior del cuero cabelludo antes del implante" loading="lazy" decoding="async" />
+              <figcaption>Antes del implante</figcaption>
+            </figure>
+            <figure>
+              <img src={resultImages.implantPost} alt="Vista superior de la zona implantada al finalizar el procedimiento" loading="lazy" decoding="async" />
+              <figcaption>Post inmediato</figcaption>
+            </figure>
+          </div>
+        </section>
+
         <section className="implant-section implant-process-section">
           <div className="implant-section-header">
             <span className="section-tag">¿Cómo se realiza?</span>
@@ -80,8 +133,24 @@ function ImplanteCapilar() {
             </p>
           </div>
 
-          <div className="implant-steps">
-            <article className="implant-card">
+          <div ref={stepsRef} className="implant-steps" role="group" aria-label="Etapas del implante capilar">
+            <div className="implant-step-controls">
+              <button type="button" onClick={() => moveStep(-1)} aria-label="Paso anterior" aria-controls="implant-step-slides">‹</button>
+              <span aria-live={rotating ? "off" : "polite"}>Paso {activeStep + 1} de {PROCESS_STEP_COUNT}</span>
+              <button type="button" onClick={() => moveStep(1)} aria-label="Paso siguiente" aria-controls="implant-step-slides">›</button>
+            </div>
+            <div
+              id="implant-step-slides"
+              onPointerEnter={(event) => {
+                if (event.pointerType === "mouse") setHoveringStep(true);
+              }}
+              onPointerLeave={() => setHoveringStep(false)}
+              onFocus={() => setFocusedStep(true)}
+              onBlur={(event) => {
+                if (!event.currentTarget.contains(event.relatedTarget)) setFocusedStep(false);
+              }}
+            >
+            <article className="implant-card" hidden={activeStep !== 0}>
               <figure className="implant-card-media">
                 <img
                   src={treatmentImages.implantFrontMarking}
@@ -98,7 +167,7 @@ function ImplanteCapilar() {
               </p>
             </article>
 
-            <article className="implant-card">
+            <article className="implant-card" hidden={activeStep !== 1}>
               <figure className="implant-card-media">
                 <img
                   src={treatmentImages.implantDonorMarking}
@@ -115,16 +184,34 @@ function ImplanteCapilar() {
               </p>
             </article>
 
-            <article className="implant-card">
+            <article className="implant-card implant-microscope" hidden={activeStep !== 2}>
+              <figure className="implant-card-media">
+                {activeStep === 2 && <video
+                  src={microscopeVideo}
+                  poster={microscope}
+                  autoPlay
+                  muted
+                  controls
+                  playsInline
+                  aria-labelledby="implant-microscope-title"
+                />}
+              </figure>
+              <span>03</span>
+              <h3 id="implant-microscope-title">Trabajo con microscopio</h3>
+              <p>El equipo prepara las unidades foliculares antes de colocarlas.</p>
+            </article>
+
+            <article className="implant-card" hidden={activeStep !== 3}>
               <figure className="implant-card-media">
                 <img
-                  src={treatmentImages.implantProcedure}
-                  alt="Preparación de zona receptora durante implante capilar FUE"
+                  className="implant-recipient-marking"
+                  src={recipientMarking}
+                  alt="Marcación previa de la zona receptora del implante"
                   loading="lazy"
                   decoding="async"
                 />
               </figure>
-              <span>03</span>
+              <span>04</span>
               <h3>Zona receptora</h3>
               <p>
                 Se realizan incisiones en el cuero cabelludo según la zona, la
@@ -132,7 +219,7 @@ function ImplanteCapilar() {
               </p>
             </article>
 
-            <article className="implant-card">
+            <article className="implant-card" hidden={activeStep !== 4}>
               <figure className="implant-card-media">
                 <img
                   src={treatmentImages.implantProcedure}
@@ -141,15 +228,20 @@ function ImplanteCapilar() {
                   decoding="async"
                 />
               </figure>
-              <span>04</span>
+              <span>05</span>
               <h3>Colocación</h3>
               <p>
                 Los folículos extraídos se insertan en las incisiones respetando
                 el ángulo correspondiente para un resultado natural.
               </p>
             </article>
+            </div>
           </div>
         </section>
+
+        <div className="implant-process-cta">
+          <a href={BOOKING_PATH} className="btn-primary">Reservar evaluación capilar</a>
+        </div>
 
         <section className="implant-visual-story" aria-label="Imágenes de implante capilar FUE">
           <div className="implant-visual-story-header">
